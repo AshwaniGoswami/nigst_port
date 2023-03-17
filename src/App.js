@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Training from './components/NavComponents/Training';
 import Footer from './components/Footer';
 import Copyright from './components/Copyright';
+import About from './about/About';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
            <Route path='/training' element={<Training/>} />
+           <Route path='/about/introduction' element={<About/>} />
         </Routes>
         <Footer/>
         <Copyright/>
