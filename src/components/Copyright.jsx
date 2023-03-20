@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const Copyright = () => {
   return (
-    <div className='flex flex-col md:grid grid-cols-3 bg-[#1050A2] p-2 text-sm text-white'>
-    <div className='flex flex-col'>
+    <div className='flex flex-col md:grid grid-cols-3 bg-[#1050A2] p-1 text-white'>
+    <div className='flex flex-col text-[12px]'>
       <span className='flex flex-row'>
         Copyright  
         <BiCopyright/>
@@ -15,7 +15,7 @@ const Copyright = () => {
         This is the official website of NIGST and all contents in the website are the property of NIGST.
       </span>
     </div>
-    <div className='pl-0 md:pl-4 mt-4 md:mt-0 md:flex md:justify-center'>
+    <div className='pl-0 md:pl-4 mt-4 md:mt-0 md:flex md:justify-center md:items-center text-[12px]'>
       <Link to="#" className='mr-2 md:mr-4'>
         Privacy Policy
       </Link>
@@ -32,7 +32,7 @@ const Copyright = () => {
         Copyright Policies
       </Link>
     </div>
-    <div className='mt-4 md:mt-0 md:text-right'>
+    <div className='flex  md:justify-end  md:items-center text-[12px]'>
       <Link to="https://ks-tech.in/" target="_blank" >
         Develop and Designed By- KRITASUTRA PRIVATE LIMITED
       </Link>

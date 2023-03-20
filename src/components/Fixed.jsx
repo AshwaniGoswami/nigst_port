@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 
 const Fixed = () => {
   return (
-    <div className='fixed top-0 left-0 right-0 z-10 '>
+    <div className='sticky top-0 left-0 right-0 z-10 '>
         <Header/>
         <Navbar/>
     </div>
