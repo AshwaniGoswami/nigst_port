@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {GiHamburgerMenu} from 'react-icons/gi'
+import {GiHamburgerMenu } from 'react-icons/gi'
 
 
 const Navbar = () => {
@@ -8,6 +8,7 @@ const Navbar = () => {
   return (
 
     <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-6 w-full">
+      <div>
     <div className="block lg:hidden">
       <button className="flex items-center px-3 py-2 border rounded text-white hover:text-yellow-300 hover:border-white">
         <GiHamburgerMenu/>
@@ -64,6 +65,10 @@ const Navbar = () => {
           FAQ
         </Link>
       </div>
+    </div>
+    </div>
+    <div>
+    <h3>Announcements</h3>
     </div>
   </nav>
   )
