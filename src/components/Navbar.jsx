@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { HiChevronRight } from "react-icons/hi"
+import {AiOutlineSearch} from 'react-icons/ai'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,20 +29,31 @@ const showSidePanel=()=>{
 
   return (
 
-    <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-6 w-full cursor-pointer">
+    <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-4 w-full cursor-pointer">
       <div className="block lg:hidden">
         <button className="flex items-center px-3 py-2 border rounded text-white hover:text-yellow-300 hover:border-white" >
           <GiHamburgerMenu onClick={toggle} />
         </button>
       </div>
-
+       
+       <div className='md:hidden lg:hidden'>
+       <section className="flex items-center mr-5 relative">
+          <input
+            type="search"
+            name="search"
+            placeholder="Search here.."
+            className="py-1 px-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-transparent"
+          />
+          <AiOutlineSearch className="h-full right-2 absolute" />
+        </section>
+       </div>
      
       <div className={`${isOpen ? "block" : "hidden"} w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
       <div className="text-sm lg:flex-grow relative md:flex lg:flex ">
   <button className="hidden md:block lg:block px-3 py-2 text-white" onClick={showSidePanel}>
     <GiHamburgerMenu />
   </button>
-  <ul className={`bg-[#1050A2] py-0 ml-0 absolute top-full  mt-1 z-50
+  <ul className={`bg-[#1050A2] py-0 ml-0 absolute top-full md:-ml-4 lg:-ml-4  mt-1 z-50
              ${ispanelopen ? "block" : "hidden"}
             `}>
             <div className='w-40  flex flex-col h-screen'>
