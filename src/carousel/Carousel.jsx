@@ -46,7 +46,7 @@ const Carousel = () => {
             <img
               src={image}
               alt="carousel"
-              style={{ width: '100%', height: '50vh' }}
+              style={{ width: '100%', height: '45vh',objectFit:'cover' }}
             />
             <Box sx={{ position: 'absolute', bottom: '10px', width: '100%', display: 'flex', justifyContent: 'center' }}>
               {images.map((image, index) => (
@@ -76,6 +76,7 @@ const Carousel = () => {
           zIndex: '2',
           cursor: 'pointer',
           left: '0',
+          color:'#ffcb00'
         }}
         onClick={handleBack}
       >
@@ -94,7 +95,9 @@ const Carousel = () => {
           right: '0',
           transform: 'translateY(-50%)',
           zIndex: '2',
-          cursor: 'pointer'
+          cursor: 'pointer',
+          color:'#ffcb00'
+
         }}
         onClick={handleNext}
       >

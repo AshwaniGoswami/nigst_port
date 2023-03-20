@@ -1,6 +1,5 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-
 import Home from './components/Home';
 // import Navbar from './components/Navbar';
 // import Header from './components/Header';
@@ -14,15 +13,14 @@ function App() {
   return (
     <>
       <Router>
-        <Routes>
-           <Route path="/nigstadmin" element={<NIGSTAdmin />}></Route>
-        </Routes>
-        {/* <Header /> */}
-        {/* <Navbar /> */}
-        {/* <Announcements /> */}
+      {/* <Fixed/> */}
+      {/* <Header/> */}
+      {/* <Navbar/> */}
+      
         <Routes>
           <Route path='/' element={<Home />} />
            <Route path='/training' element={<Training/>} />
+           <Route path='/about/introduction' element={<About/>} />
         </Routes>
         {/* <Footer/> */}
         {/* <Copyright/> */}
