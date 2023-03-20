@@ -1,21 +1,25 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Home from './components/Home';
-// import Navbar from './components/Navbar';
-// import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Training from './components/NavComponents/Training';
-// import Footer from './components/Footer';
-// import Copyright from './components/Copyright';
+import Footer from './components/Footer';
+import Copyright from './components/Copyright';
 // import Announcements from './components/Announcements';
 import NIGSTAdmin from './Dashoboard/NIGSTAdmin';
+import About from  './about/About'
+import FacultyGeodesy from  './components/faculty/FacultyGeodesy';
+
 
 function App() {
   return (
     <>
       <Router>
       {/* <Fixed/> */}
-      {/* <Header/> */}
-      {/* <Navbar/> */}
+      
+      <Header/>
+      <Navbar/>
       
         <Routes>
           <Route path='/' element={<Home />} />
@@ -23,8 +27,8 @@ function App() {
            <Route path='/about/introduction' element={<About/>} />
            <Route path='/faculty/geodesy' element={<FacultyGeodesy/>}/>
         </Routes>
-        {/* <Footer/> */}
-        {/* <Copyright/> */}
+        <Footer/>
+        <Copyright/>
       </Router>
     </>
   );
