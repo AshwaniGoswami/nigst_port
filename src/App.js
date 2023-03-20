@@ -21,6 +21,7 @@ function App() {
           <Route path='/' element={<Home />} />
            <Route path='/training' element={<Training/>} />
            <Route path='/about/introduction' element={<About/>} />
+           <Route path='/faculty/geodesy' element={<FacultyGeodesy/>}/>
         </Routes>
         {/* <Footer/> */}
         {/* <Copyright/> */}
