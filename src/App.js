@@ -19,6 +19,8 @@ function App() {
       <Fixed/>
       
         <Routes>
+           <Route path="/nigstadmin" element={<NIGSTAdmin />}></Route>
+       
           <Route path='/' element={<Home />} />
            <Route path='/training' element={<Training/>} />
            <Route path='/about/introduction' element={<About/>} />
