@@ -16,17 +16,17 @@ const About = () => {
     };
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-6'>
-            <div className='bg-[#f5eeee76] p-6 rounded-md  leading-normal'>
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-8 m-8 '>
+            <div className='bg-[#f5eeee76] p-20 rounded-md  leading-normal'>
                 <h1 className='font-bold text-lg pt-6 mt-10 mb-4'>Message From Head</h1>
                 <img src={require('../assests/Dr. Srivari Chandrasekhar.jpg')} alt="Head" className='rounded-md ' />
                 <span className='font-semibold'>Dr. Srivari Chandrasekhar</span>
                 <p className='text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nemo commodi! Optio, sed nesciunt! Similique rerum maxime ducimus incidunt! Rerum aspernatur quas minima facilis?</p>
             </div>
-            <div className=' bg-[#f5eeee76] p-6 rounded-md leading-normal md:col-span-2'>
-                <button onClick={handleTranslate} className='bg-blue-900 rounded-md p-2 text-white float-right mr-6 mt-2 hover:bg-blue-700' >हिंदी/English</button>
+            <div className=' bg-[#f5eeee76] p-6 rounded-md leading-normal md:col-span-2 '>
+                <button onClick={handleTranslate} className='bg-blue-900 rounded-md p-2 text-white float-right   hover:bg-blue-700' >{isEnglish? 'हिंदी': 'English'}</button>
                 {isEnglish ? (
-                    <div className='english text-justify p-6 md:p-12 lg:p-14'>
+                    <div className='english text-justify p-6 md:p-16 lg:p-24'>
                         <h1 className='font-bold text-lg pt-6 mt-10 mb-4'>Welcome To <br /> National Institute for Geo-Informatics Science and Technology</h1>
                         <p>Survey of India, the National Mapping organization was established in 1767. In the last two and
                             a quarter
@@ -104,7 +104,7 @@ const About = () => {
 
 
             </div>
-            <div className=' p-6 rounded-md md:ml-6'>
+            <div className=' p-6 rounded-md'>
           <div className='flex flex-col gap-3'>
     <img src={require('../assests/Home Banner NIGST.png')} alt="homebanner" className='w-auto h-[250px] object-cover rounded-md'  />
     <img src={require('../assests/IMG-20230225-WA0070.jpg')} alt="img1"  className='w-auto h-[250px] object-cover rounded-md' />

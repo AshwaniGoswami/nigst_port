@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <>
-    <div className="grid grid-cols-1 md:grid-cols-3 items-center ">
+    <div className="grid grid-cols-1 md:grid-cols-3 items-center bg-white ">
 
 
     <div className="flex flex-col-reverse md:flex-row md:col-span-1 ">
