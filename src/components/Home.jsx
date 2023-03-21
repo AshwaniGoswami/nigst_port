@@ -1,18 +1,37 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
 import About from '../about/About'
 import Carousel from '../carousel/Carousel'
+import banner1 from '../assests/Mann ki Baat.jfif'
+import banner2 from '../assests/g20 Banner.jpg'
+
+const Banner = [banner1, banner2]
 
 const Home = () => {
+  const [images, setImages] = useState([])
+  useEffect(() => {
+    async function fetchBannerImages() {
+      const response = await axios.get('/api/banner_images');
+      setImages(response.data);
+    }
+    fetchBannerImages();
+  }, [])
+
   return (
-    <div className=''>
-      {/* <img src={require("../assests/G20Small.png")} alt="" srcset="" /> */}
-      <Carousel/>
-      <div className='flex flex-col md:flex-row lg:flex-row  '>
-      <img src={require('../assests/Mann ki Baat.jfif')} alt="Mann ki Baat" className=' w-full md:w-[50%] lg:w-[50%] '/>
-      <img src={require('../assests/g20 Banner.jpg')} alt="G20" className='w-full md:w-[50%] lg:w-[50%] ' />
+    <>
+      <div className=''>
+        <Carousel />
+        <div className='flex flex-col md:flex-row lg:flex-row  ' >
+
+          {Banner.map((image, index) => (
+            <img src={image} alt="banner" className='w-full  ' />
+
+          ))}
+        </div>
+
       </div>
-      <About/>
-    </div>
+      <About />
+    </>
   )
 }
 
