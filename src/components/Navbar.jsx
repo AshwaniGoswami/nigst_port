@@ -28,7 +28,6 @@ const showSidePanel=()=>{
   }
 
   return (
-
     <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-4 w-full cursor-pointer">
       <div className="block lg:hidden">
         <button className="flex items-center px-3 py-2 border rounded text-white hover:text-yellow-300 hover:border-white" >
@@ -64,10 +63,7 @@ const showSidePanel=()=>{
       <Link to="#" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">Training</Link>
     </li>
             </div>
-
   </ul>
-
-
 
           <Link to="/" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Home
