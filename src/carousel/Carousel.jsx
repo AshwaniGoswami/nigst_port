@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 import images from './index'
+import axios from 'axios';
 
 
 
@@ -12,6 +13,14 @@ const StyledBox = styled(Box)({
 
 
 const Carousel = () => {
+const [carouselImages, setCarouselImages] = useState([])  
+useEffect(() => {
+    async function fetchBannerImages() {
+      const response = await axios.get('/api/carouselImages');
+      setCarouselImages(response.data);
+    }
+    fetchBannerImages();
+  }, [])
   const [activeStep, setActiveStep] = useState(0);
   useEffect(() => {
     const intervalId = setInterval(() => {

@@ -21,14 +21,11 @@ const Home = () => {
     <>
       <div className=''>
         <Carousel />
-        <div className='flex flex-col md:flex-row lg:flex-row  ' >
-
+        <div className='flex flex-col md:flex-row lg:flex-row' >
           {Banner.map((image, index) => (
             <img src={image} alt="banner" className='w-full  ' />
-
           ))}
         </div>
-
       </div>
       <About />
     </>
