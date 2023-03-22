@@ -85,7 +85,7 @@ const Footer = () => {
     <div className='mt-0'>
     <footer className="bg-[#262C31] text-gray-100">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-6 pl-16 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-8 pl-16 py-8">
   
           <div className="flex flex-col font-sans md:col-span-2 md:col-start-2 mb-8 md:mb-0">
             <h3 className="text-[#ffcb00] text-[20px] mb-2 font-bold ">Contact Us</h3>
@@ -119,19 +119,19 @@ const Footer = () => {
                 <FaYoutube color='red' size="2.5em" className='p-5 w-auto h-auto'/>
               </Link>
               <Link to='https://www.facebook.com/' target="_blank">
-                <FaFacebookSquare  size="2.0em" className='p-5 w-auto h-auto'/>
+                <FaFacebookSquare color='#4267B2'  size="2.0em" className='p-5 w-auto h-auto'/>
               </Link>
               <Link to='https://twitter.com/' target="_blank">
-                <GrTwitter  size="2.0em" className='p-5 w-auto h-auto'/>
+                <GrTwitter color='#1DA1F2'  size="2.0em" className='p-5 w-auto h-auto'/>
               </Link>
               <Link to='https://in.linkedin.com/' target="_blank">
-                <FaLinkedin  size="2.0em" className='p-5 w-auto h-auto'/>
+                <FaLinkedin color='#0A66C2'  size="2.0em" className='p-5 w-auto h-auto'/>
               </Link>
               
             </div>
           </div>
   
-          <div className="flex flex-col  mb-8 md:mb-0">
+          <div className="flex flex-col  md:col-start-4 md:col-end-5 items-center mb-8 md:ml-[40%] md:mb-0">
             <h3 className="text-lg text-[#ffcb00] text-[20px] font-bold mb-4">Quick Links</h3>
             <div className="flex flex-col   mb-2">
             {quicklinks.map((links,index)=>(
@@ -141,7 +141,7 @@ const Footer = () => {
             </div>
           </div>
           
-        <div className="flex flex-col md:col-span-2">
+        <div className="flex flex-col md:col-span-2  md:col-start-6">
           <h3 className="text-[20px] text-[#ffcb00] mb-4 font-bold">Important Links</h3>
           <div className="flex flex-col">
 
