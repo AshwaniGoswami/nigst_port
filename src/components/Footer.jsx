@@ -85,7 +85,7 @@ const Footer = () => {
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-6 pl-16 py-8">
   
-          <div className="flex flex-col font-sans md:col-span-2 md:col-start-1 mb-8 md:mb-0">
+          <div className="flex flex-col font-sans md:col-span-2 md:col-start-2 mb-8 md:mb-0">
             <h3 className="text-[#ffcb00] text-[20px] mb-2 font-bold ">Contact Us</h3>
             <div className="flex  items-center mb-2 ">
               <HiLocationMarker color='black' size="1.5em" className='rounded-full w-auto h-auto p-2  bg-[#ffcb00]'/> 
