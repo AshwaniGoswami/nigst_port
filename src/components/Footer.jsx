@@ -35,6 +35,8 @@ const importantLinks=[
   { name: "UNGGIM-AP Portal", url: "https://www.un-ggim-ap.org/" },
   { name: "DigitalSky-Airspace Map", url: "https://digitalsky.dgca.gov.in/airspace-map/#/app" }
 
+
+
 ]
 
 
@@ -117,13 +119,13 @@ const Footer = () => {
                 <FaYoutube color='red' size="2.5em" className='p-5 w-auto h-auto'/>
               </Link>
               <Link to='https://www.facebook.com/' target="_blank">
-                <FaFacebookSquare  size="2.5em" className='p-5 w-auto h-auto'/>
+                <FaFacebookSquare  size="2.0em" className='p-5 w-auto h-auto'/>
               </Link>
               <Link to='https://twitter.com/' target="_blank">
-                <GrTwitter  size="2.5em" className='p-5 w-auto h-auto'/>
+                <GrTwitter  size="2.0em" className='p-5 w-auto h-auto'/>
               </Link>
               <Link to='https://in.linkedin.com/' target="_blank">
-                <FaLinkedin  size="2.5em" className='p-5 w-auto h-auto'/>
+                <FaLinkedin  size="2.0em" className='p-5 w-auto h-auto'/>
               </Link>
               
             </div>
@@ -149,13 +151,91 @@ const Footer = () => {
         </Link>
 ))}
 
-
       </div>
     </div>
   </div>
 </div>
 </footer>
 </div>
+// {/* <div className="mt-0">
+//   <footer className="bg-[#262C31] text-gray-100">
+//     <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+//       <div className="flex flex-col md:flex-row md:justify-center md:items-center pl-16 py-8">
+//         <div className="flex flex-col font-sans md:w-2/6 md:ml-4">
+//           <h3 className="text-[#ffcb00] text-[20px] mb-2 font-bold ">Contact Us</h3>
+//           <div className="flex items-center mb-2 ">
+//             <HiLocationMarker color="black" size="1.5em" className="rounded-full w-auto h-auto p-2 bg-[#ffcb00]" />
+//             {contactus.address.map((address, index) => (
+//               <p className="text-[15px] w-[70%] ml-3 " key={index}>
+//                 {address}
+//               </p>
+//             ))}
+//           </div>
+//           <div className="flex items-center mb-2">
+//             <FaPhoneAlt color="black" size="1.5em" className="rounded-full w-auto h-auto p-2 bg-[#ffcb00]" />
+//             <span>
+//               {contactus.phone.map((phone, index) => (
+//                 <p className="text-[15px] ml-3 " key={index}>
+//                   {phone}
+//                 </p>
+//               ))}
+//             </span>
+//           </div>
+//           <div className="flex items-center mb-2">
+//             <GrMail color="black" size="1.5em" className="rounded-full w-auto h-auto p-2 bg-[#ffcb00]" />
+//             <Link to={contactus.mailLink} className="text-[17px] px-3">
+//               {contactus.mail}
+//             </Link>
+//           </div>
+//           <div className="flex flex-wrap">
+//             <Link to={contactus.ytLink} target="_blank">
+//               <FaYoutube color="red" size="2.5em" className="p-5 w-auto h-auto" />
+//             </Link>
+//             <Link to="https://www.facebook.com/" target="_blank">
+//               <FaFacebookSquare size="2.5em" className="p-5 w-auto h-auto" />
+//             </Link>
+//             <Link to="https://twitter.com/" target="_blank">
+//               <GrTwitter size="2.5em" className="p-5 w-auto h-auto" />
+//             </Link>
+//             <Link to="https://in.linkedin.com/" target="_blank">
+//               <FaLinkedin size="2.5em" className="p-5 w-auto h-auto" />
+//             </Link>
+//           </div>
+//         </div>
+//         <div className="flex flex-col md:w-2/6 md:mr-4 md:mt-0 mt-8">
+//           <h3 className="text-lg text-[#ffcb00] text-[20px] font-bold mb-4">Quick Links</h3>
+//           <div className="flex flex-col mb-2">
+//             {quicklinks.map((links, index) => (
+//               <Link to={links.url} key={index} target="_blank" className="mr-2 mb-2 text-[17px]">
+//                 {links.name}
+//               </Link>
+//             ))}
+//           </div>
+//         </div>
+//         <div className="flex flex-col md:w-2/6">
+//           <h3 className="text-[20px] text-[#ffcb00] mb-4 font-bold">Important Links</h3>
+// <div className="flex flex-col">
+// {importantLinks.map((impLinks, index) => (
+// <Link
+//              to={impLinks.url}
+//              target="_blank"
+//              key={index}
+//              className="
+//              text-[16px] 
+//              text-[#ffffff] 
+//              hover:text-[#ffcb00] 
+//              mb-2"
+//            >
+// {impLinks.name}
+// </Link>
+// ))}
+// </div>
+// </div>
+// </div>
+// </div>
+//   </footer>
+// </div> */}
+
 
   )
 }

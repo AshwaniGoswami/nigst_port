@@ -2,9 +2,9 @@ import React from 'react'
 import { useState } from 'react';
 import Modal from './Modal';
 
-const LowerLeft = () => {
+const LowerLeft = (props) => {
+  const { title, data } = props.Modata;
   const [showModal, setShowModal] = useState(false);
-
   const handleShowModal = () => {
     setShowModal(!showModal);
   };
@@ -28,7 +28,7 @@ const LowerLeft = () => {
         <button onClick={handleShowModal} className='p-1.5 md:p-2.5  bg-[#1050A2] rounded-md text-white mt-4'>Show More...</button>
 
       </div>
-      {showModal && <Modal onClose={handleCloseModal}  />}
+      {showModal && <Modal onClose={handleCloseModal} title={title} data={data} />}
 
     </div>
 </>
