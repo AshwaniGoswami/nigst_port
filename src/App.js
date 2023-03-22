@@ -9,6 +9,7 @@ import Training from './components/NavComponents/Training';
 import NIGSTAdmin from './Dashoboard/NIGSTAdmin';
 
 function App() {
+  
   return (
     <>
       <Router>
