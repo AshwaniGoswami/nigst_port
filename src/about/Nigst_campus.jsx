@@ -11,20 +11,6 @@ const data = [
 
 const NigstCampus = () => {
   return (
-//  <div className='grid grid-cols-1 md:grid-cols-2 m-auto p-6'>
-//          <div>
-//          <h1>Hello</h1>
-// <p>         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ducimus molestias tempore quod? Accusamus non, quia quo unde quod temporibus, sint eos molestias reprehenderit autem similique officiis. Ab, vero non nihil voluptates eum pariatur modi suscipit blanditiis iste quidem beatae molestiae magnam corporis natus doloribus consectetur tempora ratione sed itaque et. Saepe, doloremque provident?</p> 
-//          </div>
-//          <div className='flex flex-wrap gap-4'>
-//           <img src='https://picsum.photos/seed/picsum/200/300' alt="image" />
-//           <img src='https://picsum.photos/seed/picsum/200/300' alt="image" />
-//           <img src='https://picsum.photos/seed/picsum/200/300' alt="image" />
-//           <img src='https://picsum.photos/seed/picsum/200/300' alt="image" />
-
-//          </div>
-//  </div>
-
 <div className="grid grid-cols-1 md:grid-cols-2 h-full">
   <div className="p-4">
     <div className="rounded-lg overflow-hidden shadow-lg bg-white h-full">
