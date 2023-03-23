@@ -1,37 +1,27 @@
 import React from 'react';
-import { SlClose } from 'react-icons/sl';
+import { AiFillCloseCircle } from 'react-icons/ai';
 
-const Modal = ({ onClose }) => {
+const Modal = ({ onClose, data, title }) => {
   return (
-    <div className="md:fixed md:top-0 md:left-0 flex items-center justify-center h-screen w-full">
-    <div className="bg-white rounded-md p-4 max-w-lg w-full md:max-w-2xl h-96 overflow-y-scroll relative">
-      <button onClick={onClose} className="absolute right-0 md:top-2 md:right-5">
-        <SlClose className='fixed' />
-      </button>
-  
-      <h2 className="text-2xl font-bold mb-4">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem totam possimus molestiae necessitatibus reprehenderit eaque est deserunt odio quis reiciendis.
-      </h2>
-      <p className="mb-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae consequatur accusamus labore quasi! Rerum temporibus at placeat repellat, iusto aliquam totam porro eius quidem, vel et? Quisquam sapiente cupiditate aperiam soluta voluptates minima veniam, nisi reprehenderit amet sint asperiores magni? Laudantium dolore officia, illum autem perspiciatis enim error? Sapiente non dignissimos dolores vel?
-      </p>
-      <h3 className="text-lg font-bold mb-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur nostrum quas explicabo, laudantium molestiae.
-      </h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit recusandae, praesentium quisquam assumenda, eligendi consequuntur minima hic quas earum cupiditate doloremque voluptate. Ad fugit doloribus ipsa omnis molestiae nisi nam consectetur deleniti dolor, consequatur dolore aut eum repudiandae natus cupiditate? At odit reiciendis inventore maxime non magni nostrum?
-      </p>
-      <h3 className="text-lg font-bold mb-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur nostrum quas explicabo, laudantium molestiae.
-      </h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit recusandae, praesentium quisquam assumenda, eligendi consequuntur minima hic quas earum cupiditate doloremque voluptate. Ad fugit doloribus ipsa omnis molestiae nisi nam consectetur deleniti dolor, consequatur dolore aut eum repudiandae natus cupiditate? At odit reiciendis inventore maxime non magni nostrum?
-      </p>
+    <div className="fixed top-0 left-0  md:left-[10%] md:top-[30%] md:right-0 w-full h-auto md:w-auto md:h-[50%] flex justify-center items-center z-50   ">   
+     <div className="bg-white rounded-lg shadow-lg w-full md:max-w-2xl overflow-y-auto  md:ml-10 md:mr-28 md:mb-20">
+     <div className="max-h-screen overflow-y-auto mb-4 relative p-8 md:pt-12 md:pb-[10%]  md:max-h-[80vh] max-w-full ">
+
+        <button onClick={onClose} className="absolute  top-2 right-2 md:top-2 md:right-10">
+          <AiFillCloseCircle className="fixed top-auto right-3 md:right-auto    w-6 h-6 md:w-8 md:h-8" />
+        </button>
+        <h2 className="text-2xl font-bold mb-4">{title}</h2>
+        <div>
+            {data.map((detail, index) => (
+              <div key={index}>
+                <h2 className="font-semibold">{detail.heading}</h2>
+                <p className="text-justify pb-4">{detail.details}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  
-
-
   );
 };
 
