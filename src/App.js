@@ -14,8 +14,6 @@ import Nigst_campus from './about/Nigst_campus';
 
 // import Announcements from './components/Announcements';
 import NIGSTAdmin from './Dashboard/NIGSTAdmin';
-// import About from  './about/About'
-// import FacultyGeodesy from  './components/faculty/FacultyGeodesy';
 import FacultyAdmin from './Dashboard/FacultyAdmin';
 import Signup from './Dashboard/Signup'
 
@@ -24,8 +22,7 @@ function App() {
     <>
       <Router>
       <Fixed/>
-      {/* <Header/> */}
-      {/* <Navbar/> */}
+   
       
         <Routes>
           <Route path='/' element={<Home />} />
