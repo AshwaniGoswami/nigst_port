@@ -7,28 +7,31 @@ import Training from './components/NavComponents/Training';
 import Footer from './components/Footer';
 import Copyright from './components/Copyright';
 // import Announcements from './components/Announcements';
-import NIGSTAdmin from './Dashoboard/NIGSTAdmin';
+import NIGSTAdmin from './Dashboard/NIGSTAdmin';
 import About from  './about/About'
 import FacultyGeodesy from  './components/faculty/FacultyGeodesy';
-
+import FacultyAdmin from './Dashboard/FacultyAdmin';
+import Signup from './Dashboard/Signup'
 
 function App() {
   return (
     <>
       <Router>
       {/* <Fixed/> */}
+      <NIGSTAdmin/>
+      {/* <FacultyAdmin/> */}
+      {/* <Header/> */}
+      {/* <Navbar/> */}
       
-      <Header/>
-      <Navbar/>
-      
-        <Routes>
+        {/* <Routes>
           <Route path='/' element={<Home />} />
-           <Route path='/training' element={<Training/>} />
-           <Route path='/about/introduction' element={<About/>} />
-           <Route path='/faculty/geodesy' element={<FacultyGeodesy/>}/>
-        </Routes>
-        <Footer/>
-        <Copyright/>
+          <Route path='/signup' element={<Signup/>}></Route>
+          <Route path='/training' element={<Training/>} />
+          <Route path='/about/introduction' element={<About/>} />
+          <Route path='/faculty/geodesy' element={<FacultyGeodesy/>}/>
+        </Routes> */}
+        {/* <Footer/> */}
+        {/* <Copyright/> */}
       </Router>
     </>
   );

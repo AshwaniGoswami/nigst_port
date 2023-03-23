@@ -25,14 +25,13 @@ export default function CreationFacultyPosition() {
   function handleFacultyCreation() {
     setCircularResponse(true);
     const data = {
-      facultyPosition: `${inputs.facultyPosition}`,
+      faculty_pos: `${inputs.facultyPosition}`,
       description: `${inputs.description}`,
     };
     console.log(
-      inputs.facultyPosition,
-      inputs.description,
+     data
     );
-    const url = "https://nigst.onrender.com/dep/d";
+    const url = "https://nigst.onrender.com/sauth/position";
     axios
       .post(url, data)
       .then((res) => {
