@@ -12,14 +12,15 @@ import About from  './about/About'
 import FacultyGeodesy from  './components/faculty/FacultyGeodesy';
 import FacultyAdmin from './Dashboard/FacultyAdmin';
 import Signup from './Dashboard/Signup'
+import Fixed from './components/Fixed'
 
 function App() {
   
   return (
     <>
       <Router>
-      {/* <Fixed/> */}
-      <NIGSTAdmin/>
+      <Fixed/>
+      {/* <NIGSTAdmin/> */}
       {/* <FacultyAdmin/> */}
       {/* <Header/> */}
       {/* <Navbar/> */}
@@ -29,7 +30,7 @@ function App() {
            <Route path='/training' element={<Training/>} />
            <Route path='/about/introduction' element={<About/>} />
            <Route path='/faculty/geodesy' element={<FacultyGeodesy/>}/>
-           <Route path='/about/nigst_campus' element={<Nigst_campus/>} />
+           {/* <Route path='/about/nigst_campus' element={<Nigst_campus/>} /> */}
         </Routes>
         <Footer/>
         <Copyright/>
