@@ -12,15 +12,15 @@ import Fixed from './components/Fixed';
 import FacultyGeodesy from './components/faculty/FacultyGeodesy';
 import Nigst_campus from './about/Nigst_campus';
 
-import Footer from './components/Footer';
-import Copyright from './components/Copyright';
+// import Footer from './components/Footer';
+// import Copyright from './components/Copyright';
 // import Announcements from './components/Announcements';
 import NIGSTAdmin from './Dashboard/NIGSTAdmin';
-import About from  './about/About'
-import FacultyGeodesy from  './components/faculty/FacultyGeodesy';
+// import About from  './about/About'
+// import FacultyGeodesy from  './components/faculty/FacultyGeodesy';
 import FacultyAdmin from './Dashboard/FacultyAdmin';
 import Signup from './Dashboard/Signup'
-import Fixed from './components/Fixed'
+// import Fixed from './components/Fixed'
 
 function App() {
   return (
