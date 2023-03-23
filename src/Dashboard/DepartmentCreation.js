@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Inputs from "../components/Inputs";
 import Button from "../components/Buttons/Button";
 import axios from "axios";
@@ -222,6 +222,7 @@ export default function DepartmentCreation() {
     contact: "",
     category: "",
   });
+let typeRef = useRef();
 
   useEffect(() => {
     let objectData = Object.keys(ministryDepartments);
@@ -236,6 +237,7 @@ export default function DepartmentCreation() {
     let objectKeys = Object.keys(myCountryCodesObject);
     setCountryCode(objectKeys);
     setCountryCodeObject(myCountryCodesObject);
+    console.log(typeRef.current.options[selectedIndex])
   }, []);
 
   function handleInputs(e) {
@@ -350,6 +352,8 @@ export default function DepartmentCreation() {
   function addNewOtherCategoryFunHide() {
     setDisplayInputOther(false);
   }
+
+
   return (
     <div className="department-creation-wrapper">
       {responseCircular ? (
@@ -380,8 +384,8 @@ export default function DepartmentCreation() {
         name={"organization"}
         fun={handleInputs}
       />
-      <select onChange={(e) => setOrganisationType(e.target.value)}>
-        <option defaultValue={"PSU-STATE"}>Select Type of Organisation</option>
+      <select onChange={(e) => setOrganisationType(e.target.value)} className='demo' ref={typeRef}>
+        <option defaultValue={"PSU-STATE"}><span style={{color:"red"}}>Select Type of Organisation</span></option>
         <option value={"PSU – Central Government"}>
           PSU – Central Government
         </option>
