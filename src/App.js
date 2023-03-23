@@ -14,6 +14,7 @@ import FacultyAdmin from './Dashboard/FacultyAdmin';
 import Signup from './Dashboard/Signup'
 
 function App() {
+  
   return (
     <>
       <Router>
@@ -23,15 +24,15 @@ function App() {
       {/* <Header/> */}
       {/* <Navbar/> */}
       
-        {/* <Routes>
+        <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/signup' element={<Signup/>}></Route>
-          <Route path='/training' element={<Training/>} />
-          <Route path='/about/introduction' element={<About/>} />
-          <Route path='/faculty/geodesy' element={<FacultyGeodesy/>}/>
-        </Routes> */}
-        {/* <Footer/> */}
-        {/* <Copyright/> */}
+           <Route path='/training' element={<Training/>} />
+           <Route path='/about/introduction' element={<About/>} />
+           <Route path='/faculty/geodesy' element={<FacultyGeodesy/>}/>
+           <Route path='/about/nigst_campus' element={<Nigst_campus/>} />
+        </Routes>
+        <Footer/>
+        <Copyright/>
       </Router>
     </>
   );
