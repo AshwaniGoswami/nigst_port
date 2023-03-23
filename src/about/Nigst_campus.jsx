@@ -19,22 +19,30 @@ const NigstCampus = () => {
       </div>
     </div>
   </div>
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
-    <div className="rounded-lg overflow-hidden shadow-lg bg-white">
-      <img src="https://picsum.photos/seed/picsum/200/300" alt="image" className="w-full h-auto"/>
+  <div className="flex flex-wrap md:w-1/2">
+    <div className="p-4 w-full md:w-1/2 lg:w-1/4">
+      <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="image" className="w-full h-auto"/>
+      </div>
     </div>
-    <div className="rounded-lg overflow-hidden shadow-lg bg-white">
-      <img src="https://picsum.photos/seed/picsum/200/300" alt="image" className="w-full h-auto"/>
+    <div className="p-4 w-full md:w-1/2 lg:w-1/4">
+      <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="image" className="w-full h-auto"/>
+      </div>
     </div>
-    <div className="rounded-lg overflow-hidden shadow-lg bg-white">
-      <img src="https://picsum.photos/seed/picsum/200/300" alt="image" className="w-full h-auto"/>
+    <div className="p-4 w-full md:w-1/2 lg:w-1/4">
+      <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="image" className="w-full h-auto"/>
+      </div>
     </div>
-    <div className="rounded-lg overflow-hidden shadow-lg bg-white">
-      <img src="https://picsum.photos/seed/picsum/200/300" alt="image" className="w-full h-auto"/>
+    <div className="p-4 w-full md:w-1/2 lg:w-1/4">
+      <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="image" className="w-full h-auto"/>
+      </div>
     </div>
+    
   </div>
 </div>
-
 
 
   );
