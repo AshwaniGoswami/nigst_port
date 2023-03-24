@@ -131,7 +131,7 @@ const Footer = () => {
             </div>
           </div>
   
-          <div className="flex flex-col  md:col-start-4 md:col-end-5 items-center mb-8 md:ml-[40%] md:mb-0">
+          <div className="flex flex-col  md:col-start-4 md:col-end-5 md:items-center mb-8 ml-0 md:ml-[40%] md:mb-0">
             <h3 className="text-lg text-[#ffcb00] text-[20px] font-bold mb-4">Quick Links</h3>
             <div className="flex flex-col   mb-2">
             {quicklinks.map((links,index)=>(
