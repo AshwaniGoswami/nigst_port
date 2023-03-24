@@ -99,12 +99,12 @@ const About = () => {
     };
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-8 m-8 '>
-            <div className='bg-[#f5eeee76] p-20 rounded-md  leading-normal'>
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-8 m-0 md:m-8 '>
+            <div className='bg-[#f5eeee76] p-8 rounded-md  leading-normal'>
                 <h1 className='font-bold text-lg pt-6 mt-10 mb-4'>Message From Head</h1>
                 <img src={MessageFromHead.image} alt="Head" className='rounded-md ' />
                 <span className='font-semibold'>{MessageFromHead.name}</span>
-                <p className='text-justify'>{MessageFromHead.description}</p>
+                <p className='text-justify p-4'>{MessageFromHead.description}</p>
             </div>
             <div className=' bg-[#f5eeee76] p-6 rounded-md leading-normal md:col-span-2 '>
                 <button onClick={handleTranslate} className='bg-blue-900 rounded-md p-2 text-white float-right   hover:bg-blue-700' >{isEnglish ? 'हिंदी' : 'English'}</button>
