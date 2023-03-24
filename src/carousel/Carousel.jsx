@@ -55,7 +55,7 @@ useEffect(() => {
             <img
               src={image}
               alt="carousel"
-              style={{ width: '100%', height: '45vh',objectFit:'cover' }}
+              style={{ width: '100%', height: '65vh',objectFit:'cover' }}
             />
             <Box sx={{ position: 'absolute', bottom: '10px', width: '100%', display: 'flex', justifyContent: 'center' }}>
               {images.map((image, index) => (

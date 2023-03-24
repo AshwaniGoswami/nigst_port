@@ -16,6 +16,7 @@ import Nigst_campus from './about/Nigst_campus';
 import NIGSTAdmin from './Dashboard/NIGSTAdmin';
 import FacultyAdmin from './Dashboard/FacultyAdmin';
 import Signup from './Dashboard/Signup'
+import NigstCampus from './about/Nigst_campus';
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
            <Route path='/training' element={<Training/>} />
            <Route path='/about/introduction' element={<About/>} />
            <Route path='/faculty/geodesy' element={<FacultyGeodesy/>}/>
+           <Route path='/about/nigst_campus' element={<NigstCampus/>}/>
+           <Route path='/training/registration' element={<Signup/>}/>
         </Routes>
         <Footer/>
         <Copyright/>

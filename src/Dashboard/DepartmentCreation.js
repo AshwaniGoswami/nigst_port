@@ -237,7 +237,7 @@ let typeRef = useRef();
     let objectKeys = Object.keys(myCountryCodesObject);
     setCountryCode(objectKeys);
     setCountryCodeObject(myCountryCodesObject);
-    console.log(typeRef.current.options[selectedIndex])
+    // console.log(typeRef.current.options[selectedIndex])
   }, []);
 
   function handleInputs(e) {

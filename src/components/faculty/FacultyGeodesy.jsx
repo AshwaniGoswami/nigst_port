@@ -84,12 +84,16 @@ const Modata = {
 
 const FacultyGeodesy = () => {
   return (
+    <div className='m-6'>
+    <h1 className='text-center font-bold text-[24px]'>Faculty Geodesy</h1>
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  m-4 md:m-6 lg:m-8 rounded-md gap-2 md:gap-4 lg:gap-6'>
       <LeftSection heading={heading} content={content} />
       <RightSection images={images} />
       <LowerLeft Modata={Modata} headData={headData} />
       <LowerRight data={data} />
     </div>
+    </div>
+ 
   )
 }
 
