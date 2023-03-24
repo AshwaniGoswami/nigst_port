@@ -85,7 +85,7 @@ const Footer = () => {
     <div className='mt-0'>
     <footer className="bg-[#262C31] text-gray-100">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-8 pl-16 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-8 pl-4 md:pl-16 py-8">
   
           <div className="flex flex-col font-sans md:col-span-2 md:col-start-2 mb-8 md:mb-0">
             <h3 className="text-[#ffcb00] text-[20px] mb-2 font-bold ">Contact Us</h3>

@@ -23,8 +23,6 @@ function App() {
     <>
       <Router>
       <Fixed/>
-   
-      
         <Routes>
           <Route path='/' element={<Home />} />
            <Route path='/training' element={<Training/>} />
