@@ -104,7 +104,7 @@ const About = () => {
                 <h1 className='font-bold text-lg pt-6 mt-10 mb-4'>Message From Head</h1>
                 <img src={MessageFromHead.image} alt="Head" className='rounded-md ' />
                 <span className='font-semibold'>{MessageFromHead.name}</span>
-                <p className='text-justify p-4'>{MessageFromHead.description}</p>
+                <p className='text-justify '>{MessageFromHead.description}</p>
             </div>
             <div className=' bg-[#f5eeee76] p-6 rounded-md leading-normal md:col-span-2 '>
                 <button onClick={handleTranslate} className='bg-blue-900 rounded-md p-2 text-white float-right   hover:bg-blue-700' >{isEnglish ? 'हिंदी' : 'English'}</button>
@@ -134,7 +134,7 @@ const About = () => {
 
 
             </div>
-            <div className=' p-6 rounded-md'>
+            <div className='  rounded-md'>
                 <div className='flex flex-col gap-3'>
                     {StaticImages.map((image, index) => (
                         <div key={index}>
