@@ -4,15 +4,8 @@ import LowerLeft from './LowerLeft';
 import LowerRight from './LowerRight';
 import RightSection from './RightSection'
 import imageHead from '../../assests/geodesy/G. Varun Kumar, Head Faculty.JPG'
-const images = [
-  { path: require('../../assests/geodesy/Image No. 5.jpg') },
-  { path: require('../../assests/geodesy/Image No. 7.jpg') },
-  { path: require('../../assests/geodesy/Snapshot_1420.png') },
-  { path: require('../../assests/geodesy/Snapshot_1421.png') }
-];
+import DetilnImg from '../pageStructure/DetilnImg';
 
-const heading = 'Faculty Geo'
-const content = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, accusantium, recusandae suscipit minus mollitia tempore amet ducimus dolorum dicta quasi dignissimos voluptatibus. Doloremque quos, non omnis earum saepe placeat nulla necessitatibus fugit ex? Temporibus nisi cum tenetur in alias debitis corporis laborum numquam vel autem. Enim repellat nam doloremque dolorum quia, veritatis autem consequuntur.'
 
 const headData = {
   name: 'G. Varun Kumar',
@@ -82,18 +75,30 @@ const Modata = {
   ]
 }
 
+const facultyPage={
+  images:[
+    { path: require('../../assests/geodesy/Image No. 5.jpg') },
+    { path: require('../../assests/geodesy/Image No. 7.jpg') },
+    { path: require('../../assests/geodesy/Snapshot_1420.png') },
+    { path: require('../../assests/geodesy/Snapshot_1421.png') }
+  ],
+  
+  heading:'Faculty Geodesy',
+  content:['Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, accusantium, recusandae suscipit minus mollitia tempore amet ducimus dolorum dicta quasi dignissimos voluptatibus. Doloremque quos, non omnis earum saepe placeat nulla necessitatibus fugit ex? Temporibus nisi cum tenetur in alias debitis corporis laborum numquam vel autem. Enim repellat nam doloremque dolorum quia, veritatis autem consequuntur.',' ipsum dolor sit amet consectetur adipisicing elit. Numquam, accusantium, recusandae suscipit minus mollitia tempore amet ducimus dolorum dicta quasi dignissimos voluptatibus. Doloremque quos, non omnis']
+}
+
 const FacultyGeodesy = () => {
   return (
-    <div className='m-6'>
-    <h1 className='text-center font-bold text-[24px]'>Faculty Geodesy</h1>
+<div className='m-2 md:m-4 p-2 md:p-6'>
+    <DetilnImg heading={facultyPage.heading} text={facultyPage.content} images={facultyPage.images} />
+
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  m-4 md:m-6 lg:m-8 rounded-md gap-2 md:gap-4 lg:gap-6'>
-      <LeftSection heading={heading} content={content} />
-      <RightSection images={images} />
+      {/* <LeftSection heading={heading} content={content} />
+      <RightSection images={images} /> */}
       <LowerLeft Modata={Modata} headData={headData} />
       <LowerRight data={data} />
     </div>
     </div>
- 
   )
 }
 
