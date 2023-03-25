@@ -2,6 +2,8 @@ import React from 'react';
 import HostelComp from './HostelComp';
 import SportsComp from './SportsComp';
 import CampusComp from './CampusComp';
+import DetilnImg from '../components/pageStructure/DetilnImg';
+import ImgLeftComp from '../components/pageStructure/ImgLeftComp';
 
 const wholeData={
   campus:{
@@ -76,12 +78,14 @@ const wholeData={
 
 const NigstCampus = () => {
   return (
-//  
+
 <div className='m-2 md:m-4 p-2 md:p-6'>
-<CampusComp wholeData={wholeData} />
+{/* <CampusComp wholeData={wholeData} />
  <SportsComp wholeData={wholeData} />
- <HostelComp wholeData={wholeData} />
- {/* <DetilnImg heading={wholeData.campus.heading} text={wholeData.campus.data} images={wholeData.campus.images} /> */}
+ <HostelComp wholeData={wholeData} /> */}
+ <DetilnImg heading={wholeData.campus.heading} text={wholeData.campus.data} images={wholeData.campus.images} />
+ <ImgLeftComp heading={wholeData.sports.heading} text={wholeData.sports.data} images={wholeData.sports.images} />
+ <DetilnImg heading={wholeData.hostel.heading} text={wholeData.hostel.data} images={wholeData.hostel.images}/>
 </div>
 
 
