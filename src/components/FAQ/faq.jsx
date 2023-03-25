@@ -1,6 +1,7 @@
 import React from 'react'
+import './faq.css'
 
-const faq = () => {
+const Faq = () => {
   return (
     <div class="faq-content-wrapper">
 
@@ -65,4 +66,4 @@ const faq = () => {
   )
 }
 
-export default faq
+export default Faq

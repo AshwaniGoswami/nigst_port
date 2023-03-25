@@ -2,6 +2,7 @@ import React from 'react'
 import {AiOutlineSearch} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import FontSizer from './fontsize/FontSizer';
+import './Header.css'
 const Header = () => {
   return (
     <>
@@ -54,7 +55,7 @@ const Header = () => {
         <section className="search-bar flex flex-col py-2 space-y-4 col-start-2 ">
         <div className="survey-of-india flex flex-row gap-4">
           <Link to="https://www.surveyofindia.gov.in/" target="_blank">
-          <span className=' text-blue-600 hover:bg-[#1050a2] hover:text-white hover:rounded-md hover:p-3'>
+          <span className=' text-blue-600 hover:bg-[#1050a2] hover:text-white hover:rounded-md hover:p-2'>
           Survey of India Website
           </span>
           
