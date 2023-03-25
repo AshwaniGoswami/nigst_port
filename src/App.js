@@ -12,7 +12,7 @@ import Fixed from './components/Fixed';
 import FacultyGeodesy from './components/faculty/FacultyGeodesy';
 import FacultyPhotogrammetry from './components/faculty/FacultyPhotogrammetry';
 import Nigst_campus from './about/Nigst_campus';
-import faq from './components/FAQ/faq';
+import Faq from './components/FAQ/faq';
 // import Announcements from './components/Announcements';
 import NIGSTAdmin from './Dashboard/NIGSTAdmin';
 import FacultyAdmin from './Dashboard/FacultyAdmin';
