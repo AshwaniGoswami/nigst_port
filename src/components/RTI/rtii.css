@@ -78,8 +78,10 @@
     margin-left: 45px;
 }
 #vertical-line{
-    border-right: 5px solid #ffcb00;
+    border-right: 6px solid #ffcb00;
     height: 686px;
+    /* box-shadow: 3px 2px #0059ff6d; */
     margin-top: 100px;
+    border-radius: 15px;
 
 }
