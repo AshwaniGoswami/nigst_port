@@ -87,7 +87,7 @@ const facultyPage={
   content:['Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, accusantium, recusandae suscipit minus mollitia tempore amet ducimus dolorum dicta quasi dignissimos voluptatibus. Doloremque quos, non omnis earum saepe placeat nulla necessitatibus fugit ex? Temporibus nisi cum tenetur in alias debitis corporis laborum numquam vel autem. Enim repellat nam doloremque dolorum quia, veritatis autem consequuntur.',' ipsum dolor sit amet consectetur adipisicing elit. Numquam, accusantium, recusandae suscipit minus mollitia tempore amet ducimus dolorum dicta quasi dignissimos voluptatibus. Doloremque quos, non omnis']
 }
 
-const FacultyPandRS = () => {
+const FacultyPhotogrammetry = () => {
   return (
 <div className='m-2 md:m-4 p-2 md:p-6'>
     <DetilnImg heading={facultyPage.heading} text={facultyPage.content} images={facultyPage.images} />
@@ -102,4 +102,4 @@ const FacultyPandRS = () => {
   )
 }
 
-export default FacultyPandRS
+export default FacultyPhotogrammetry

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../RTI/rti.css'
 
 function RightToInformation() {
   return (
@@ -22,7 +23,7 @@ function RightToInformation() {
                         <li> दूरभाषा सं : 040 – 27201503</li>
                         <li> फैक्स सं : 040 – 27200286</li>
                         <li> ई – मैल : iism.soi@gov.in</li>
-                    </ul>
+                    </ul><br/>
                     <p>यदि आवेदक संबंधित केंद्रीय लोक अधिकारी द्वारा दिए गए जवाब से संतुष्ट नहीं है तो आप प्रथम अपीलीय
                         प्राधिकारी को लिख सकते हैं।</p>
                     <p> प्रथम अपीलीय प्राधिकारी का विवरण निम्नानुसार दिया गया है:</p>
@@ -48,7 +49,7 @@ function RightToInformation() {
             <li>TEL NO. 040 – 27201507</li>
             <li>FAX NO. 040 – 27200286</li>
             <li>E-MAIL : iism.soi@gov.in</li>
-          </ul>
+          </ul><br/>
           <p>In case, applicant is not satisfied with the response given by concerned Central Public Officer you may write to first appellate authority.</p>
           <p>The details of first appellate authority given as under :</p>
           <ul>
