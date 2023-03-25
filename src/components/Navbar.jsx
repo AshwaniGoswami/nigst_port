@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { HiChevronRight } from "react-icons/hi"
 import {AiOutlineSearch} from 'react-icons/ai'
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,10 @@ const Navbar = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   }
-
+  const location = useLocation()
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
 
   const [ispanelopen, setIspanelopen] = useState(false)
 const showSidePanel=()=>{
