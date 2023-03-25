@@ -1,5 +1,5 @@
 import React from 'react';
-import '../RTI/rti.css'
+import './rtii.css'
 
 function RightToInformation() {
   return (
@@ -10,12 +10,10 @@ function RightToInformation() {
 
       <div className="rti-container">
       <div class="hindi-rti">
-                    <div class="heading-container">
-                    <h4>RTI</h4>
-                </div>
+                    
                     <p> सूचना का अधिकार अधिनियम 2005 से संबंधित किसी भी जानकारी के लिए आप केंद्रीय लोक सूचना अधिकारी,
                         एनआईजीएसटी से संपर्क कर सकते हैं।</p>
-                    <p> केंद्रीय लोक सूचना अधिकारी का विवरण निम्नानुसार दिया गया है:</p>
+                    <p> केंद्रीय लोक सूचना अधिकारी का विवरण निम्नानुसार दिया गया है:</p><br/>
                     <h5> केंद्रीय जन सूचना अधिकारी</h5>
                     <ul>
                         <li> श्री ऐ.के. रथ</li>
@@ -27,7 +25,7 @@ function RightToInformation() {
                     <p>यदि आवेदक संबंधित केंद्रीय लोक अधिकारी द्वारा दिए गए जवाब से संतुष्ट नहीं है तो आप प्रथम अपीलीय
                         प्राधिकारी को लिख सकते हैं।</p>
                     <p> प्रथम अपीलीय प्राधिकारी का विवरण निम्नानुसार दिया गया है:</p>
-                    <ul>
+                    <ul><br/>
                         <li>प्रथम अपीलीय प्रधिकारी</li>
                         <li>श्री पी. वी. श्रीनिवास</li>
                         <li>अपर महासर्वेक्षक</li>
@@ -52,7 +50,7 @@ function RightToInformation() {
           </ul><br/>
           <p>In case, applicant is not satisfied with the response given by concerned Central Public Officer you may write to first appellate authority.</p>
           <p>The details of first appellate authority given as under :</p>
-          <ul>
+          <ul><br/>
             <li>FIRST APPELLATE AUTHORITY</li>
             <li>SHRI P.V. SRINIVAS</li>
             <li>ADDL. SURVEYOR GENERAL</li>

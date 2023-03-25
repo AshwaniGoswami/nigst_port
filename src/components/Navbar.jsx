@@ -69,6 +69,9 @@ const showSidePanel=()=>{
     <li>
       <Link to="#" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">Training</Link>
     </li>
+    <li>
+      <Link to="/components/RTI/rti" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">RTI</Link>
+    </li>
             </div>
   </ul>
 
