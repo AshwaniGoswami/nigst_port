@@ -27,18 +27,18 @@ function LoginForm() {
         <div className="input">
           <input type="password" placeholder="Password" name="password" className="user-details" id="password" />
         </div>
-        <div className="input">
+        {/* <div className="input">
           <select name="user-type" id="user-type">
             <option value="user-type" selected disabled>User Type</option>
             <option value="student">Student / Departmental Student</option>
             <option value="faculty">Faculty</option>
           </select>
-        </div>
-        {/* <iframe src="../captcha/captcha.html" frameborder="0"></iframe> */}
+        </div> */}
+        {/* <iframe className='captchaframe' src="" frameborder="0"></iframe> */}
         <div className="input">
           <div className="mainContainer" id="CaptchaBlock">
             <div className="captcha_div">
-              <div className="form_div">
+              <div className="form_div"><br/>
                 <input type="text" name="userInput" id="userInput" placeholder="Enter text" />
                 <canvas id="canvas" className="canvas"> </canvas>
                 <i className="fa fa-refresh reload" onClick={generateCaptcha} aria-hidden="true"></i>
