@@ -10,6 +10,7 @@ import Copyright from './components/Copyright';
 import About from './about/About';
 import Fixed from './components/Fixed';
 import FacultyGeodesy from './components/faculty/FacultyGeodesy';
+import FacultyPandRS from './components/faculty/FacultyP&RS';
 import Nigst_campus from './about/Nigst_campus';
 
 // import Announcements from './components/Announcements';
