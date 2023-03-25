@@ -10,7 +10,7 @@ import Copyright from './components/Copyright';
 import About from './about/About';
 import Fixed from './components/Fixed';
 import FacultyGeodesy from './components/faculty/FacultyGeodesy';
-import FacultyPandRS from './components/faculty/FacultyPandRS';
+import FacultyPhotogrammetry from './components/faculty/FacultyPhotogrammetry';
 import Nigst_campus from './about/Nigst_campus';
 
 // import Announcements from './components/Announcements';
@@ -29,6 +29,7 @@ function App() {
            <Route path='/training' element={<Training/>} />
            <Route path='/about/introduction' element={<About/>} />
            <Route path='/faculty/geodesy' element={<FacultyGeodesy/>}/>
+           <Route path='/faculty/Photogrammetry' element={<FacultyPhotogrammetry/>}/>
            <Route path='/about/nigst_campus' element={<NigstCampus/>}/>
            <Route path='/training/registration' element={<Signup/>}/>
         </Routes>
