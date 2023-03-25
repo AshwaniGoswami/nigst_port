@@ -11,6 +11,8 @@ import About from './about/About';
 import Fixed from './components/Fixed';
 import FacultyGeodesy from './components/faculty/FacultyGeodesy';
 import FacultyPhotogrammetry from './components/faculty/FacultyPhotogrammetry';
+import RightToInformation from './components/RTI/rti'
+import LoginForm from './components/forms/Login';
 import Nigst_campus from './about/Nigst_campus';
 
 // import Announcements from './components/Announcements';
@@ -34,10 +36,10 @@ function App() {
            <Route path='/faculty/geodesy' element={<FacultyGeodesy/>}/>
            <Route path='/faculty/Photogrammetry' element={<FacultyPhotogrammetry/>}/>
            <Route path='/about/nigst_campus' element={<NigstCampus/>}/>
+           <Route path='/components/RTI/rti' element={<RightToInformation/>}/>
            <Route path='/training/registration' element={<Signup/>}/>
-           <Route path='/about/governance/board_of_governance' element={<Board_of_governance/>} />
-           <Route path='/board_of_evalution'/>
-        </Routes>
+           <Route path='/components/forms/Login' element={<LoginForm/>}/>
+        </Routes>r
         <Footer/>
         <Copyright/>
       </Router>
