@@ -14,7 +14,7 @@ import FacultyPhotogrammetry from './components/faculty/FacultyPhotogrammetry';
 import RightToInformation from './components/RTI/rti'
 import LoginForm from './components/forms/Login';
 import Nigst_campus from './about/Nigst_campus';
-
+import faq from './components/FAQ/faq';
 // import Announcements from './components/Announcements';
 import NIGSTAdmin from './Dashboard/NIGSTAdmin';
 import FacultyAdmin from './Dashboard/FacultyAdmin';
@@ -36,6 +36,7 @@ function App() {
            <Route path='/components/RTI/rti' element={<RightToInformation/>}/>
            <Route path='/training/registration' element={<Signup/>}/>
            <Route path='/components/forms/Login' element={<LoginForm/>}/>
+           <Route path='/components/FAQ/faq' element={<faq/>}/>
         </Routes>r
         <Footer/>
         <Copyright/>
