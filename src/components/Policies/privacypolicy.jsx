@@ -1,13 +1,11 @@
 import React from 'react'
-import './Privacypolicy.css'
+import './privacypolicy.css'
 
 const Privacypolicy = () => {
   return (
-    <div>
-      <h3>Privacy Policy</h3>
-    <div class="policycontent-container">
-    
-<div className='policycontent'>
+    <div class="content-container">
+    <div class="heading"><h2>Privacy Policy</h2></div>
+
    <p> Thanks for visiting website of Indian Institute of Surveying & Mapping, Survey of India and reviewing our privacy policy.
     
     As a general rule, this website does not collect any Personal Information about you or anyone who visit the site. Anyone can generally visit the site without revealing Personal Information, unless he chooses to provide such information.</p>
@@ -31,8 +29,6 @@ const Privacypolicy = () => {
    <p> If visitors are asked for any other Personal Information they will be informed how it will be used if visitor choose to give it. If at any time visitor believe the principles referred to in this privacy statement have not been followed, or have any other comments on these principles, please notify the Web Administrator through the contact us page.</p>
      
     <p><span id="note">Note:</span> The use of the term "Personal Information" in this privacy statement refers to any information from which your identity is apparent or can be reasonably ascertained.</p>
-    </div>
-  </div>
   </div>
   )
 }

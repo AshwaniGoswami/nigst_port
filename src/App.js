@@ -23,7 +23,6 @@ import Websitepolicy from './components/Policies/Websitepolicy';
 import RightToInformation from './components/RTI/rti'
 import LoginForm from './components/forms/Login';
 import Privacypolicy from './components/Policies/Privacypolicy';
-import Faq from './components/FAQ/faq';
 
 function App() {
   return (
