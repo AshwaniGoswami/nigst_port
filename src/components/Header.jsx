@@ -51,10 +51,22 @@ const Header = () => {
           <span className='text-blue-600 hover:bg-[#1050a2] hover:text-white hover:rounded-md hover:py-1.5 px-2.5 hover:translate-y-0'>
             Survey of India Website
           </span>
-        </Link>
-        <button className="login-btn bg-[#1050a2] rounded-md p-1 ">
-          <Link to="/login" className='text-white p-5'>Login</Link>
-        </button>
+          
+          </Link>
+          <div className="login-btn">
+            <Link to="./components/forms/Login">Login</Link>
+          </div>
+          </div>
+          <div className='flex flex-row relative'>
+          <input
+            type="search"
+            name="search"
+            placeholder="Search here.."
+            className="py-2 px-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent w-full"
+          />
+          <AiOutlineSearch className="h-full absolute right-2" />
+          </div>
+        </section>
       </div>
       <div className='flex flex-row relative px-3 py-1'>
         <Searchbar />
