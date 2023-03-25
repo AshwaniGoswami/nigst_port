@@ -15,12 +15,12 @@ const Header = () => {
     <img
     src={require("../assests/75 Yrs Aazadi ka Mahautsav Small.png")}
     alt="Azadi_ka_amrit_mahotsav"
-    className="w-full md:h-full object-contain rounded-md"
+    className="w-[50%] md:h-full object-contain rounded-md"
   />
     <img
       src={require("../assests/G20Small.png")}
       alt="G-20"
-      className="w-full md:h-full object-contain rounded-md "
+      className="w-[50%] md:h-full object-contain rounded-md "
     />
     </div>
 

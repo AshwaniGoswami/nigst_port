@@ -17,11 +17,13 @@ import NIGSTAdmin from './Dashboard/NIGSTAdmin';
 import FacultyAdmin from './Dashboard/FacultyAdmin';
 import Signup from './Dashboard/Signup'
 import NigstCampus from './about/Nigst_campus';
+import OpenPageFromTop from './components/OpenPageFromTop';
 
 function App() {
   return (
     <>
       <Router>
+      <OpenPageFromTop/>
       <Fixed/>
         <Routes>
           <Route path='/' element={<Home />} />
