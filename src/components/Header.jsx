@@ -56,15 +56,7 @@ const Header = () => {
             <Link to="./components/forms/Login">Login</Link>
           </div>
           </div>
-          <div className='flex flex-row relative'>
-          <input
-            type="search"
-            name="search"
-            placeholder="Search here.."
-            className="py-2 px-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent w-full"
-          />
-          <AiOutlineSearch className="h-full absolute right-2" />
-          </div>
+        <Searchbar/>
         </section>
       </div>
       <div className='flex flex-row relative px-3 py-1'>
