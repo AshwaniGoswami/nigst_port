@@ -14,7 +14,6 @@ import RightToInformation from './components/RTI/rti'
 import LoginForm from './components/forms/Login';
 import Nigst_campus from './about/Nigst_campus';
 import Faq from './components/FAQ/faq';
-import Privacypolicy from './components/Policies/Privacypolicy';
 // import Announcements from './components/Announcements';
 import NIGSTAdmin from './Dashboard/NIGSTAdmin';
 import FacultyAdmin from './Dashboard/FacultyAdmin';
@@ -31,6 +30,7 @@ import Captcha from './components/Captcha';
 import Location from './about/Location';
 import Board_of_evaluation from './about/Board_of_evaluation';
 import Board_of_studies from './about/Board_of_studies';
+import Privacypolicy from './components/Policies/Privacypolicy';
 
 function App() {
   return (
@@ -60,6 +60,11 @@ function App() {
             <Route path='/faculty/geo_ict' element={<FacultyGeo/>}/>
             <Route path='/location' element={<Location/>}/>
            <Route path='/captcha' element={<Captcha/>}/>
+           <Route path='/components/forms/Login' element={<LoginForm/>}/>
+           <Route path='/components/FAQ/faq' element={<Faq/>}/>
+           <Route path='/Policies/Privacypolicy' element={<Privacypolicy/>}/>
+           <Route path='/components/publicgrievances/Publicgrievance' element={<Publicgrievance/>}/>
+           <Route path='/components/Policies/Websitepolicy' element={<Websitepolicy/>}/>
         </Routes>
         <Footer/>
         <Copyright/>
