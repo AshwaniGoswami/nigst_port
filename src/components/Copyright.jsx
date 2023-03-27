@@ -16,11 +16,11 @@ const Copyright = () => {
       </span>
     </div>
     <div className='pl-0 md:pl-4 mb-4 md:mb-0 mt-4 md:mt-0 md:flex md:justify-center md:items-center text-[12px]'>
-      <Link to="/components/Policies/Privacypolicy" className='mr-2 md:mr-4'>
+      <Link to="/privacypolicy" className='mr-2 md:mr-4'>
         Privacy Policy
       </Link>
       <span >|</span>
-      <Link to="/components/Policies/Websitepolicy" className='ml-2 md:ml-3 mr-2 md:mr-4'>
+      <Link to="/websitepolicy" className='ml-2 md:ml-3 mr-2 md:mr-4'>
         Website Policies
       </Link>
       <span >|</span>
