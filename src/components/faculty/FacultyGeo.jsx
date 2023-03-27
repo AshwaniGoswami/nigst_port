@@ -88,15 +88,16 @@ const headData = {
   }
 const FacultyGeo = () => {
   return (
-<div className='m-2 md:m-4 p-2 md:p-6'>
-    <DetilnImg heading={facultyPage.heading} text={facultyPage.content} images={facultyPage.images} />
+    <div>GEO_ICT</div>
+// {/* <div className='m-2 md:m-4 p-2 md:p-6'>
+//     <DetilnImg heading={facultyPage.heading} text={facultyPage.content} images={facultyPage.images} />
 
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  m-4 md:m-6 lg:m-8 rounded-md gap-2 md:gap-4 lg:gap-6'>
+//     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  m-4 md:m-6 lg:m-8 rounded-md gap-2 md:gap-4 lg:gap-6'>
     
-      <LowerLeft Modata={Modata} headData={headData} />
-      <LowerRight data={data} />
-    </div>
-    </div>
+//       <LowerLeft Modata={Modata} headData={headData} />
+//       <LowerRight data={data} />
+//     </div>
+//     </div> */}
       )
 }
 

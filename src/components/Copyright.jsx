@@ -20,7 +20,7 @@ const Copyright = () => {
         Privacy Policy
       </Link>
       <span >|</span>
-      <Link to="/components/Policies/Websitepolicy" className='ml-2 md:ml-3 mr-2 md:mr-4'>
+      <Link to="/websitepolicy" className='ml-2 md:ml-3 mr-2 md:mr-4'>
         Website Policies
       </Link>
       <span >|</span>
