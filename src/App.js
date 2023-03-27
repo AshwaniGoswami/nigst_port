@@ -1,4 +1,4 @@
-import './App.css';
+
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Home from './components/Home';
 import Navbar from './components/Navbar';
@@ -13,6 +13,8 @@ import FacultyGeodesy from './components/faculty/FacultyGeodesy';
 import FacultyPhotogrammetry from './components/faculty/FacultyPhotogrammetry';
 import Nigst_campus from './about/Nigst_campus';
 import Faq from './components/FAQ/faq';
+import Privacypolicy from './components/Policies/privacypolicy';
+import publicgrievance from './components/publicgrievances/publicgrievance';
 // import Announcements from './components/Announcements';
 import NIGSTAdmin from './Dashboard/NIGSTAdmin';
 import FacultyAdmin from './Dashboard/FacultyAdmin';
@@ -20,11 +22,6 @@ import Signup from './Dashboard/Signup'
 import NigstCampus from './about/Nigst_campus';
 import OpenPageFromTop from './components/OpenPageFromTop';
 import Board_of_governance from './about/Board_of_governance';
-import Publicgrievance from './components/publicgrievances/Publicgrievance';
-import Websitepolicy from './components/Policies/Websitepolicy';
-import RightToInformation from './components/RTI/rti'
-import LoginForm from './components/forms/Login';
-import Privacypolicy from './components/Policies/Privacypolicy';
 
 function App() {
   return (
@@ -41,11 +38,10 @@ function App() {
            <Route path='/about/nigst_campus' element={<NigstCampus/>}/>
            <Route path='/training/registration' element={<Signup/>}/>
            <Route path='/about/governance/board_of_governance' element={<Board_of_governance/>} />
-           <Route path='/components/RTI/rti' element={<RightToInformation/>}/>
-           <Route path='/training/registration' element={<Signup/>}/>
-           <Route path='/publicgrievances' element={<Publicgrievance/>}/>
-           <Route path='/websitepolicy'  element={<Websitepolicy/>} />
-           <Route  path='login' element={<LoginForm/>} />
+           <Route path='/components/forms/Login' element={<LoginForm/>}/>
+           <Route path='/components/FAQ/faq' element={<Faq/>}/>
+           <Route path='/components/policies/privatepolicy' element={<Privacypolicy/>}/>
+           <Route path='/components/publicgrievances/publicgrievance' element={<publicgrievance/>}/>
         </Routes>
         <Footer/>
         <Copyright/>
