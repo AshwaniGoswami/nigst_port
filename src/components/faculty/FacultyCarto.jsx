@@ -1,4 +1,7 @@
 import React from 'react'
+import DetilnImg from '../pageStructure/DetilnImg';
+import LowerLeft from './LowerLeft';
+import LowerRight from './LowerRight';
 
 const headData = {
     name: 'S K Sinha',
@@ -75,10 +78,7 @@ const headData = {
   
   const facultyPage={
     images:[
-      { path: require('../../assests/geodesy/Snapshot_1420.png') },
-      { path: require('../../assests/geodesy/Snapshot_1421.png') },
-      { path: require('../../assests/geodesy/Image No. 7.jpg') },
-          { path: require('../../assests/geodesy/Image No. 5.jpg') },
+  
   
       
     ],
@@ -88,8 +88,16 @@ const headData = {
   }
 const FacultyCarto = () => {
   return (
-    <div>FacultyCarto</div>
-  )
+<div className='m-2 md:m-4 p-2 md:p-6'>
+    <DetilnImg heading={facultyPage.heading} text={facultyPage.content} images={facultyPage.images} />
+
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  m-4 md:m-6 lg:m-8 rounded-md gap-2 md:gap-4 lg:gap-6'>
+    
+      <LowerLeft Modata={Modata} headData={headData} />
+      <LowerRight data={data} />
+    </div>
+    </div>
+      )
 }
 
 export default FacultyCarto
