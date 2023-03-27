@@ -15,9 +15,10 @@ function RightToInformation() {
                         एनआईजीएसटी से संपर्क कर सकते हैं।</p>
                     <p> केंद्रीय लोक सूचना अधिकारी का विवरण निम्नानुसार दिया गया है:</p><br/>
                     <h5> केंद्रीय जन सूचना अधिकारी</h5>
-                    <ul>
-                        <li> श्री ऐ.के. रथ</li>
-                        <li> अधीक्षक सर्वेक्षक (Adhoc )</li>
+                   
+                        <p>श्री ऐ.के. रथ</p>
+                        <p> अधीक्षक सर्वेक्षक (Adhoc )</p>
+                        <ul>
                         <li> दूरभाषा सं : 040 – 27201503</li>
                         <li> फैक्स सं : 040 – 27200286</li>
                         <li> ई – मैल : iism.soi@gov.in</li>
@@ -26,9 +27,9 @@ function RightToInformation() {
                         प्राधिकारी को लिख सकते हैं।</p>
                     <p> प्रथम अपीलीय प्राधिकारी का विवरण निम्नानुसार दिया गया है:</p>
                     <ul><br/>
-                        <li>प्रथम अपीलीय प्रधिकारी</li>
-                        <li>श्री पी. वी. श्रीनिवास</li>
-                        <li>अपर महासर्वेक्षक</li>
+                        <h5>प्रथम अपीलीय प्रधिकारी</h5>
+                        <p>श्री पी. वी. श्रीनिवास</p>
+                        <p>अपर महासर्वेक्षक</p>
                         <li>दूरभाषा सं : 040 – 27201507</li>
                         <li>फैक्स सं : 040 – 27200286</li>
                         <li>ई – मैल : iism.soi@gov.in</li>
@@ -42,8 +43,8 @@ function RightToInformation() {
           <p>The details of Central Public Information officer given as under:</p>
           <h5>CENTRAL PUBLIC INFORMATION OFFICER</h5>
           <ul>
-            <li>SHRI A.K. RATH</li>
-            <li>SUPTDG. SURVEYOR (Adhoc)</li>
+            <p>SHRI A.K. RATH</p>
+            <p>SUPTDG. SURVEYOR (Adhoc)</p>
             <li>TEL NO. 040 – 27201507</li>
             <li>FAX NO. 040 – 27200286</li>
             <li>E-MAIL : iism.soi@gov.in</li>
@@ -51,9 +52,9 @@ function RightToInformation() {
           <p>In case, applicant is not satisfied with the response given by concerned Central Public Officer you may write to first appellate authority.</p>
           <p>The details of first appellate authority given as under :</p>
           <ul><br/>
-            <li>FIRST APPELLATE AUTHORITY</li>
-            <li>SHRI P.V. SRINIVAS</li>
-            <li>ADDL. SURVEYOR GENERAL</li>
+            <h5>FIRST APPELLATE AUTHORITY</h5>
+            <p>SHRI P.V. SRINIVAS</p>
+            <p>ADDL. SURVEYOR GENERAL</p>
             <li>TEL NO. 040 – 27201507</li>
             <li>FAX NO. 040 – 27200286</li>
             <li>E-MAIL : iism.soi@gov.in</li>

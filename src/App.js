@@ -21,6 +21,7 @@ import FacultyAdmin from './Dashboard/FacultyAdmin';
 import Signup from './Dashboard/Signup'
 import NigstCampus from './about/Nigst_campus';
 import Publicgrievance from './components/publicgrievances/Publicgrievance';
+import Websitepolicy from './components/Policies/Websitepolicy';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
            <Route path='/components/FAQ/faq' element={<Faq/>}/>t
            <Route path='/components/Policies/Privacypolicy' element={<Privacypolicy/>}/>
            <Route path='/components/publicgrievances/Publicgrievance' element={<Publicgrievance/>}/>
+           <Route path='/components/Policies/Websitepolicy' element={<Websitepolicy/>}/>
         </Routes>
         <Footer/>
         <Copyright/>
