@@ -42,27 +42,33 @@ const Header = () => {
 
 
 
-
-   
-  <div className="right-header hidden md:grid md:grid-cols-3 items-center ">
-    <section className="search-bar flex flex-col py-2 space-y-4 col-start-2 col-span-2 ">
-      <div className="survey-and-login flex flex-row items-center gap-4">
-        <Link to="https://www.surveyofindia.gov.in/" target="_blank">
-          <span className='text-blue-600 hover:bg-[#1050a2] hover:text-white hover:rounded-md hover:py-1.5 px-2.5 hover:translate-y-0'>
-            Survey of India Website
+    <div className=" ">
+      <div className="right-header hidden md:grid md:grid-cols-2 md:px-4 md:py-2 sm:py-4 items-center ">
+  
+        <section className="search-bar flex flex-col py-2 space-y-4 col-start-2 ">
+        <div className="survey-of-india flex flex-row gap-4">
+          <Link to="https://www.surveyofindia.gov.in/" target="_blank">
+          <span className=' text-blue-600 hover:bg-[#1050a2] hover:text-white hover:rounded-md hover:p-3'>
+          Survey of India Website
           </span>
-        </Link>
-        <button className="login-btn bg-[#1050a2] rounded-md p-1 ">
-          <Link to="/login" className='text-white p-5'>Login</Link>
-        </button>
+          
+          </Link>
+          <div className="login-btn">
+            <Link to="">Login</Link>
+          </div>
+          </div>
+          <div className='flex flex-row relative'>
+          <input
+            type="search"
+            name="search"
+            placeholder="Search here.."
+            className="py-2 px-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent w-full"
+          />
+          <AiOutlineSearch className="h-full absolute right-2" />
+          </div>
+        </section>
       </div>
-      <div className='flex flex-row relative px-3 py-1'>
-        <Searchbar />
-      </div>
-    </section>
-  </div>
-
-
+    </div>
   </div>
   <div className='bg-yellow-500 h-1.5 w-full'>
 

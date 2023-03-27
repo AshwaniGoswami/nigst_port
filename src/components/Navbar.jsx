@@ -77,6 +77,9 @@ const showSidePanel=()=>{
     <li>
       <Link to="#" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">Training</Link>
     </li>
+    <li>
+      <Link to="/components/RTI/rti" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">RTI</Link>
+    </li>
             </div>
   </ul>
 
@@ -159,7 +162,7 @@ const showSidePanel=()=>{
       </li>
       <li className='inline-block border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
         <Link to="/faculty/photogrammetry">
-          Faculty of P & RS
+          Faculty of Photogrammetry & RS
         </Link>
       </li>
       <li className='inline-block border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
@@ -203,7 +206,7 @@ const showSidePanel=()=>{
           <Link to="/contact" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Contact Us
           </Link>
-          <Link to="/faq" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <Link to="/components/FAQ/faq" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             FAQ
           </Link>
           {/* <DropdownMenu  /> */}
