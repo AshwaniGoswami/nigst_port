@@ -16,19 +16,19 @@ const headData = {
 
 const data = [
   {
-    name: 'K.V. Ramana Murthy',
+    name: 'R K DASH',
     designation: 'Superintending Surveyor',
-    position: 'Faculty'
+    position: '-'
   },
   {
-    name: 'Ch.V.S.S. Prasad',
-    designation: 'Superintending',
-    position: 'Faculty'
+    name: 'L V PRASAD',
+    designation: 'Officer Surveyor',
+    position: '-'
   },
   {
-    name: 'Samir-Ud-Din-Khan',
-    designation: 'Surveyor(Adhoc)',
-    position: 'Instructor'
+    name: 'P R K PRASAD',
+    designation: 'Officer Surveyor',
+    position: '-'
   }
 ];
 
@@ -83,18 +83,16 @@ const facultyPage={
     { path: require('../../assests/geodesy/Snapshot_1421.png') }
   ],
   
-  heading:'Faculty Photogrammetry & RS',
-  content:['Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, accusantium, recusandae suscipit minus mollitia tempore amet ducimus dolorum dicta quasi dignissimos voluptatibus. Doloremque quos, non omnis earum saepe placeat nulla necessitatibus fugit ex? Temporibus nisi cum tenetur in alias debitis corporis laborum numquam vel autem. Enim repellat nam doloremque dolorum quia, veritatis autem consequuntur.',' ipsum dolor sit amet consectetur adipisicing elit. Numquam, accusantium, recusandae suscipit minus mollitia tempore amet ducimus dolorum dicta quasi dignissimos voluptatibus. Doloremque quos, non omnis']
+  heading:'Faculty of Photogrammetry & Remote Sensing',
+  content:['The faculty offers fundamental and progressive level of training in the domain of Photogrammetry and Remote Sensing. The trainees are imparted with the core concepts in the theoretical sessions followed by the best-in-class live lab demonstrations. Participants are provided In-depth instruction and hands-on exercise using the latest software/s.',' The training programmes aim at inculcating and exposing the trainees with the industrial best practices and software/s thereby unleashing the full potential of the technological advancements.Both online as well as offline courses are undertaken to cater to the wide variety of participants from Departmental, private and other governmental agencies.','The courses in Digital Photogrammetry, Image Processing, Drone Survey / Drone Data processing and LiDAR data processing are designed to simulate the real world scenario and to provide solutions to the real world problems.','The faculty is equipped with well-trained faculty members with over all working experiences both in the conventional and modern technologies in the spheres of Photogrammetry and Remote Sensing.']
 }
 
 const FacultyPhotogrammetry = () => {
   return (
 <div className='m-2 md:m-4 p-2 md:p-6'>
     <DetilnImg heading={facultyPage.heading} text={facultyPage.content} images={facultyPage.images} />
-
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  m-4 md:m-6 lg:m-8 rounded-md gap-2 md:gap-4 lg:gap-6'>
-      {/* <LeftSection heading={heading} content={content} />
-      <RightSection images={images} /> */}
+    
       <LowerLeft Modata={Modata} headData={headData} />
       <LowerRight data={data} />
     </div>
