@@ -3,7 +3,7 @@ import './privacypolicy.css'
 
 const Privacypolicy = () => {
   return (
-    <div class="content-container">
+    <div class="policycontent-container">
     <div class="heading"><h2>Privacy Policy</h2></div>
 
    <p> Thanks for visiting website of Indian Institute of Surveying & Mapping, Survey of India and reviewing our privacy policy.

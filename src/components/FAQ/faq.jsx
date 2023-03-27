@@ -3,10 +3,9 @@ import './faq.css'
 
 const Faq = () => {
   return (
+    <div>
+    <h3>FAQ</h3>
     <div class="faq-content-wrapper">
-
-      <h3>FAQ</h3>
-
       <div class="faq">
         <h2>What should I do, if I want to visit your office to see activities?</h2>
         <p>
@@ -62,6 +61,7 @@ const Faq = () => {
           No.
         </p>
       </div>
+    </div>
     </div>
   )
 }

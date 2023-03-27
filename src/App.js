@@ -16,6 +16,7 @@ import LoginForm from './components/forms/Login';
 import Nigst_campus from './about/Nigst_campus';
 import Faq from './components/FAQ/faq';
 import Privacypolicy from './components/Policies/privacypolicy';
+import publicgrievance from './components/publicgrievances/publicgrievance';
 // import Announcements from './components/Announcements';
 import NIGSTAdmin from './Dashboard/NIGSTAdmin';
 import FacultyAdmin from './Dashboard/FacultyAdmin';
@@ -42,6 +43,7 @@ function App() {
            <Route path='/components/forms/Login' element={<LoginForm/>}/>
            <Route path='/components/FAQ/faq' element={<Faq/>}/>
            <Route path='/components/policies/privatepolicy' element={<Privacypolicy/>}/>
+           <Route path='/components/publicgrievances/publicgrievance' element={<publicgrievance/>}/>
         </Routes>
         <Footer/>
         <Copyright/>
