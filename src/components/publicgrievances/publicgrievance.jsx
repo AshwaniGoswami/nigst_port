@@ -1,6 +1,7 @@
 import React from 'react'
+import './Publicgrievance.css'
 
-const publicgrievance = () => {
+const Publicgrievance = () => {
     return (
         <div class="content-container">
             <div class="heading-container">
@@ -44,4 +45,4 @@ const publicgrievance = () => {
     )
 }
 
-export default publicgrievance
+export default Publicgrievance
