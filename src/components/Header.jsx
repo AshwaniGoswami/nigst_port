@@ -10,19 +10,25 @@ const Header = () => {
     <div className=" grid grid-cols-1 md:grid-cols-7  bg-white ">
 
     <div className='flex md:flex-row col-span-2 flex-col-reverse h-auto md:h-28'>
-    <div className="flex flex-col-reverse md:flex-row">
-    <div className="flex p-0 h-14 md:h-24 lg-28">
+    <div className="flex flex-col md:flex-row overflow-hidden">
+    <div className=' md:hidden'>
+    <img
+      src={require("../assests/Website Logo NIGST Small.png")}
+      alt="SOI_logo"
+      className="w-full h-full md:ml-24 object-contain"
+    />
+    </div>
+    <div className="flex p-0 md:p-5 md:mt-5 justify-center h-14 md:h-28 lg-32">
+  
     <div className='flex flex-row'>
     <img
     src={require("../assests/75 Yrs Aazadi ka Mahautsav Small.png")}
     alt="Azadi_ka_amrit_mahotsav"
-    className="w-[50%] md:h-full object-contain rounded-md"
-  />
+    className="w-1/2 h-auto object-contain rounded-md"  />
     <img
       src={require("../assests/G20Small.png")}
       alt="G-20"
-      className="w-[50%] md:h-full object-contain rounded-md "
-    />
+      className="w-1/2 h-auto object-contain rounded-md"    />
     </div>
 
 </div>
@@ -31,7 +37,7 @@ const Header = () => {
 
 
 
-<div className="flex md:w-full md:col-start-3 md:col-end-5 h-24 md:h-full">
+<div className="flex hidden md:block md:w-full md:col-start-3 md:col-end-5 h-24 md:h-full">
     <img
       src={require("../assests/Website Logo NIGST Small.png")}
       alt="SOI_logo"
