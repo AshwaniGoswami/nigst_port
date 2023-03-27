@@ -16,7 +16,7 @@
     /* padding: 50px; */
     background-color: #f5eeee76;
     border-radius: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 
 }
@@ -61,13 +61,16 @@
 }
 .rti-container li,p{
     font-size: 16px;
-    padding: 5px;
+    padding: 8px;
+    padding-left:10px;
     list-style-type:circle;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #publicvertical-line{
-    border-right: 5px solid #ffcb00;
-    height: 315px;
+    border-right: 6px solid #ffcb00;
+    height: auto;
+    /* box-shadow: 3px 2px #0059ff6d; */
     margin-top: 100px;
-
+    margin-bottom: 100px;
+    border-radius: 15px;
 }
