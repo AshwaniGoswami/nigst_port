@@ -162,7 +162,7 @@ const showSidePanel=()=>{
       </li>
       <li className='inline-block border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
         <Link to="/faculty/photogrammetry">
-          Faculty of P & RS
+          Faculty of Photogrammetry & RS
         </Link>
       </li>
       <li className='inline-block border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
