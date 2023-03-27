@@ -1,19 +1,14 @@
 import React from 'react'
+import './Websitepolicy.css'
 
 function Websitepolicy() {
     return (
         <div>
-            <div class="heading">
-                        <h3>Website Policy</h3><br/>
-                    </div>
-            <div id="websitepolicy" class="content-container"><br/>
+           
+                <h3>Website Policy</h3><br />
+            
+            <div id="websitepolicy" class="content-container"><br />
                 <div id="webpolicy">
-                    <div class="btn-container">
-                        <button class="btn" id="btn8" style="font-size: 12px;">हिंदी</button>
-                    </div>
-                    <div class="heading">
-                        <h3>Website Policy</h3><br/>
-                    </div>
                     <h5>Accessibility Statement</h5>
                     <p>We are committed to ensure that the NIGST website is accessible to all users irrespective of device in use,
                         technology, or ability. It has been built, with an aim, to provide maximum accessibility and usability to its

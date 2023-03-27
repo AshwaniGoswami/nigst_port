@@ -2,6 +2,7 @@ import React from 'react'
 import {AiOutlineSearch} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import FontSizer from './fontsize/FontSizer';
+import Searchbar from './Searchbar';
 const Header = () => {
   return (
     <>
