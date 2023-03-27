@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-.content-container{
+.policycontent-container{
     width: 80%;
     margin: 32px auto;
     padding: 0 100px;
@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 50px;
-    background-color: #f5eeee76;
+    /* background-color: #f5eeee76; */
     border-radius: 10px;
 }
 
