@@ -23,7 +23,7 @@ const Publicgrievance = () => {
 
 
                 </div>
-                <div id="vertical-line"></div>
+                <div id="publicvertical-line"></div>
                 <div class="english-rti">
 
                     <p>
