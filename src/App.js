@@ -50,8 +50,6 @@ function App() {
            <Route path='/about/nigst_campus' element={<NigstCampus/>}/>
            <Route path='/training/registration' element={<Signup/>}/>
            <Route path='/about/governance/board_of_governance' element={<Board_of_governance/>} />
-           <Route path='/about/governance/board_of_evaluation' element={<Board_of_evaluation/>} />
-           <Route path='/about/governance/board_of_studies' element={<Board_of_studies/>} />
            <Route path='/login' element={<LoginForm/>}/>
            <Route path='/components/FAQ/faq' element={<Faq/>}/>
            <Route path='/Policies/Privacypolicy' element={<Privacypolicy/>}/>
