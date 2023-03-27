@@ -103,10 +103,10 @@ useEffect(() => {
     <div className='mt-0'>
     <footer className="bg-[#262C31] text-gray-100">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-8 pl-4 md:pl-16 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 pl-4 md:pl-16 pt-20 pb-20">
   
-          <div className="flex flex-col font-sans md:col-span-2 md:col-start-2 mb-8 md:mb-0">
-            <h3 className="text-[#ffcb00] text-[20px] mb-2 font-bold ">Contact Us</h3>
+          <div className="flex flex-col font-sans md:ml-[40px]  mb-8 md:mb-0">
+            <h3 className="text-[#ffcb00] text-[20px] mb-10 font-bold ">Contact Us</h3>
             <div className="flex  items-center mb-2 ">
               <HiLocationMarker color='black' size="1.5em" className='rounded-full w-auto h-auto p-2  bg-[#ffcb00]'/> 
   {contactus.address.map((address, index) => (
@@ -134,35 +134,35 @@ useEffect(() => {
             </div>
             <div className='flex flex-wrap'>
               <Link to={contactus.ytLink} target="_blank">
-                <FaYoutube color='red' size="2.5em" className='p-5 w-auto h-auto'/>
+                <FaYoutube color='red' size="2.0em" className='p-5 w-auto h-auto'/>
               </Link>
               <Link to='https://www.facebook.com/' target="_blank">
-                <FaFacebookSquare color='#4267B2'  size="2.0em" className='p-5 w-auto h-auto'/>
+                <FaFacebookSquare color='#4267B2'  size="1.5em" className='p-5 w-auto h-auto'/>
               </Link>
               <Link to='https://twitter.com/' target="_blank">
-                <GrTwitter color='#1DA1F2'  size="2.0em" className='p-5 w-auto h-auto'/>
+                <GrTwitter color='#1DA1F2'  size="1.5em" className='p-5 w-auto h-auto'/>
               </Link>
               <Link to='https://in.linkedin.com/' target="_blank">
-                <FaLinkedin color='#0A66C2'  size="2.0em" className='p-5 w-auto h-auto'/>
+                <FaLinkedin color='#0A66C2'  size="1.5em" className='p-5 w-auto h-auto'/>
               </Link>
               
             </div>
           </div>
   
-          <div className="flex flex-col  md:col-start-4 md:col-end-5 md:items-center mb-8 ml-0 md:ml-[40%] md:mb-0">
-            <h3 className="text-lg text-[#ffcb00] text-[20px] font-bold mb-4">Quick Links</h3>
+          <div className="flex flex-col  md:ml-[100px]  ">
+            <h3 className="text-lg text-[#ffcb00] text-[20px] font-bold  mb-10">Quick Links</h3>
             <div className="flex flex-col   mb-2">
             {quicklinks.map((links,index)=>(
               <Link to={links.url} key={index} target="_blank" className="mr-2 mb-2 text-[17px]">{links.name}</Link>
             ))}
               
             </div>
-            <h3 className="text-lg text-[#ffcb00] text-[20px] font-bold mb-4">Visitors Count</h3>
+            <h3 className="text-lg text-[#ffcb00] text-[20px] font-bold mt-10 mb-4">Visitors Count</h3>
                <span>{visitor.total}</span>
           </div>
           
-        <div className="flex flex-col md:col-span-2  md:col-start-6">
-          <h3 className="text-[20px] text-[#ffcb00] mb-4 font-bold">Important Links</h3>
+        <div className="flex flex-col md:ml-10   ">
+          <h3 className="text-[20px] text-[#ffcb00]  mb-10 font-bold">Important Links</h3>
           <div className="flex flex-col">
 
 {importantLinks.map((impLinks,index)=>(

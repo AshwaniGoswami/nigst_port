@@ -42,10 +42,10 @@ const showSidePanel=()=>{
   }
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-4 w-full cursor-pointer">
+    <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer">
       <div className="block lg:hidden">
         <button className="flex items-center px-3 py-2  rounded text-white hover:text-yellow-300 hover:border-white" >
-          <GiHamburgerMenu onClick={toggle} />
+          <GiHamburgerMenu  onClick={toggle} />
         </button>
       </div>
        
@@ -64,8 +64,8 @@ const showSidePanel=()=>{
      
       <div className={`${isOpen ? "block" : "hidden"} w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
       <div className="text-sm lg:flex-grow relative md:flex lg:flex ">
-  <button className="hidden md:block lg:block px-3 py-2 text-white" onClick={showSidePanel}>
-    <GiHamburgerMenu />
+  <button className="hidden md:block mr-4 lg:block px-3 py-2 text-white" onClick={showSidePanel}>
+    <GiHamburgerMenu size='1.7em' />
   </button>
   <ul className={`bg-[#1050A2] py-0 ml-0 absolute top-full md:-ml-4 lg:-ml-4  mt-1 z-50
              ${ispanelopen ? "block" : "hidden"}
@@ -83,10 +83,10 @@ const showSidePanel=()=>{
             </div>
   </ul>
 
-          <Link to="/" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <Link to="/" className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Home
           </Link>
-          <div className="group block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <div className="group block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
   <span className="group-hover:text-yellow-300">About NIGST    
     <HiChevronRight className={`inline-block h-5 w-5 ml-1 md:hidden `}/>
   </span>
@@ -128,7 +128,7 @@ const showSidePanel=()=>{
 
 
 
-          <div className="group block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <div className="group block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             <span className="group-hover:text-yellow-300">Training</span>
             <div className="absolute z-10 hidden group-hover:block bg-[#1050A2] py-2">
 
@@ -191,22 +191,22 @@ const showSidePanel=()=>{
               <Link to="/training/fee_payment" className="block px-4 py-2 text-white hover:text-yellow-300">Fee and Payment</Link>
             </div>
           </div>
-          <Link to="/training/registration" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <Link to="/training/registration" className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Training Registration
           </Link>
-          <Link to="https://www.surveyofindia.gov.in/pages/nhp" target="_blank" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <Link to="https://www.surveyofindia.gov.in/pages/nhp" target="_blank" className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             SOI Projects
           </Link>
-          <Link to="/sitemap" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <Link to="/sitemap" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Site Map
           </Link>
-          <Link to="/gallery" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <Link to="/gallery" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Gallery
           </Link>
-          <Link to="/contact" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <Link to="/contact" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Contact Us
           </Link>
-          <Link to="/components/FAQ/faq" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <Link to="/components/FAQ/faq" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             FAQ
           </Link>
           {/* <DropdownMenu  /> */}
