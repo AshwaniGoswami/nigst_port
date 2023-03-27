@@ -42,6 +42,7 @@ function App() {
            <Route path='/components/FAQ/faq' element={<Faq/>}/>
            <Route path='/components/policies/privatepolicy' element={<Privacypolicy/>}/>
            <Route path='/components/publicgrievances/Publicgrievance' element={<Publicgrievance/>}/>
+           <Route path='/components/Policies/Websitepolicy' element={<Websitepolicy/>}/>
         </Routes>
         <Footer/>
         <Copyright/>
