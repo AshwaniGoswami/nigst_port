@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-
 import Training from './components/NavComponents/Training';
 import Footer from './components/Footer';
 import Copyright from './components/Copyright';
@@ -11,10 +10,11 @@ import About from './about/About';
 import Fixed from './components/Fixed';
 import FacultyGeodesy from './components/faculty/FacultyGeodesy';
 import FacultyPhotogrammetry from './components/faculty/FacultyPhotogrammetry';
+import RightToInformation from './components/RTI/rti'
+import LoginForm from './components/forms/Login';
 import Nigst_campus from './about/Nigst_campus';
 import Faq from './components/FAQ/faq';
 import Privacypolicy from './components/Policies/privacypolicy';
-import publicgrievance from './components/publicgrievances/publicgrievance';
 // import Announcements from './components/Announcements';
 import NIGSTAdmin from './Dashboard/NIGSTAdmin';
 import FacultyAdmin from './Dashboard/FacultyAdmin';
@@ -41,7 +41,7 @@ function App() {
            <Route path='/components/forms/Login' element={<LoginForm/>}/>
            <Route path='/components/FAQ/faq' element={<Faq/>}/>
            <Route path='/components/policies/privatepolicy' element={<Privacypolicy/>}/>
-           <Route path='/components/publicgrievances/publicgrievance' element={<publicgrievance/>}/>
+           <Route path='/components/publicgrievances/Publicgrievance' element={<Publicgrievance/>}/>
         </Routes>
         <Footer/>
         <Copyright/>
