@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { HiChevronRight } from "react-icons/hi"
-import {AiOutlineSearch} from 'react-icons/ai'
+import {AiOutlineSearch,AiOutlineLogin} from 'react-icons/ai'
+import {BsFillPersonFill} from 'react-icons/bs'
+import {MdOutlineAnnouncement} from 'react-icons/md'
+import Searchbar from './Searchbar';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +14,10 @@ const Navbar = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   }
-
+  const location = useLocation()
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
 
   const [ispanelopen, setIspanelopen] = useState(false)
 const showSidePanel=()=>{
@@ -37,22 +44,23 @@ const showSidePanel=()=>{
   return (
     <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-4 w-full cursor-pointer">
       <div className="block lg:hidden">
-        <button className="flex items-center px-3 py-2 border rounded text-white hover:text-yellow-300 hover:border-white" >
+        <button className="flex items-center px-3 py-2  rounded text-white hover:text-yellow-300 hover:border-white" >
           <GiHamburgerMenu onClick={toggle} />
         </button>
       </div>
        
-       <div className='md:hidden lg:hidden'>
-       <section className="flex items-center mr-5 relative">
-          <input
-            type="search"
-            name="search"
-            placeholder="Search here.."
-            className="py-1 px-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-transparent"
-          />
-          <AiOutlineSearch className="h-full right-2 absolute" />
-        </section>
-       </div>
+      <div className='md:hidden lg:hidden flex items-center'>
+<Searchbar/>
+  <div className="flex items-center ml-2">
+    <Link to='/login' className='flex items-center justify-center'>
+      <BsFillPersonFill size='1.5em' color='white' />
+    </Link>
+    <div className="ml-2">
+      <MdOutlineAnnouncement size='1.5em' color='white' />
+    </div>
+  </div>
+</div>
+
      
       <div className={`${isOpen ? "block" : "hidden"} w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
       <div className="text-sm lg:flex-grow relative md:flex lg:flex ">
@@ -106,7 +114,7 @@ const showSidePanel=()=>{
         } w-full border-b-2 border-white`}
         onMouseLeave={() => setIsGovernanceOpen(false)}
       >
-        <li className="block px-4 py-2 text-white hover:text-yellow-300">Board Of Governance</li>
+        <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance'>Board Of Governance</Link></li>
         <li className="block px-4 py-2 text-white hover:text-yellow-300">Board Of Evaluation</li>
         <li className="block px-4 py-2 text-white hover:text-yellow-300">Board Of Studies</li>
       </ul>
