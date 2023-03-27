@@ -3,11 +3,9 @@ import './Websitepolicy.css'
 
 function Websitepolicy() {
     return (
-        <div>
-           
-                <h3>Website Policy</h3><br />
-            
-            <div id="websitepolicy" class="content-container"><br />
+        <div>           
+                <h3 className='headingg'>Website Policy</h3>
+                        <div id="websitepolicy" class="content-container">
                 <div id="webpolicy">
                     <h5>Accessibility Statement</h5>
                     <p>We are committed to ensure that the NIGST website is accessible to all users irrespective of device in use,
