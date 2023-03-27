@@ -14,7 +14,7 @@ import RightToInformation from './components/RTI/rti'
 import LoginForm from './components/forms/Login';
 import Nigst_campus from './about/Nigst_campus';
 import Faq from './components/FAQ/faq';
-import Privacypolicy from './components/Policies/privacypolicy';
+import Privacypolicy from './components/Policies/Privacypolicy';
 // import Announcements from './components/Announcements';
 import NIGSTAdmin from './Dashboard/NIGSTAdmin';
 import FacultyAdmin from './Dashboard/FacultyAdmin';
@@ -22,6 +22,8 @@ import Signup from './Dashboard/Signup'
 import NigstCampus from './about/Nigst_campus';
 import OpenPageFromTop from './components/OpenPageFromTop';
 import Board_of_governance from './about/Board_of_governance';
+import Publicgrievance from './components/publicgrievances/Publicgrievance';
+import Websitepolicy from './components/Policies/Websitepolicy';
 
 function App() {
   return (
