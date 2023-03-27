@@ -96,7 +96,8 @@ const FacultyGeo = () => {
       <LowerLeft Modata={Modata} headData={headData} />
       <LowerRight data={data} />
     </div>
-    </div>  )
+    </div>
+      )
 }
 
 export default FacultyGeo
