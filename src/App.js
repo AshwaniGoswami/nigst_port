@@ -38,11 +38,9 @@ function App() {
            <Route path='/about/nigst_campus' element={<NigstCampus/>}/>
            <Route path='/components/RTI/rti' element={<RightToInformation/>}/>
            <Route path='/training/registration' element={<Signup/>}/>
-           <Route path='/components/forms/Login' element={<LoginForm/>}/>
-           <Route path='/components/FAQ/faq' element={<Faq/>}/>t
-           <Route path='/components/Policies/Privacypolicy' element={<Privacypolicy/>}/>
-           <Route path='/components/publicgrievances/Publicgrievance' element={<Publicgrievance/>}/>
-           <Route path='/components/Policies/Websitepolicy' element={<Websitepolicy/>}/>
+           <Route path='/publicgrievances' element={<Publicgrievance/>}/>
+           <Route path='/websitepolicy'  element={<Websitepolicy/>} />
+           <Route  path='login' element={<LoginForm/>} />
         </Routes>
         <Footer/>
         <Copyright/>
