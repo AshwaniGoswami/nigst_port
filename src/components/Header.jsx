@@ -50,14 +50,10 @@ const Header = () => {
           <span className=' text-blue-600 hover:bg-[#1050a2] hover:text-white hover:rounded-md hover:p-2'>
           Survey of India Website
           </span>
-          
-          </Link>
-          <div className="login-btn">
-            <Link to="./components/forms/Login">Login</Link>
-          </div>
-          </div>
-        <Searchbar/>
-        </section>
+        </Link>
+        <button className="login-btn bg-[#1050a2] rounded-md p-1 ">
+          <Link to="/login" className='text-white p-5'>Login</Link>
+        </button>
       </div>
       <div className='flex flex-row relative px-3 py-1'>
         <Searchbar />
