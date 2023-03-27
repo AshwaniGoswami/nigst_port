@@ -2,19 +2,19 @@
     padding: 0;
     margin: 0;
 }
-.content-container{
-    width: 80%;
-    margin: 32px auto;
-    padding: 0 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 50px;
+.policycontent-container{
+    width: 96%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #f5eeee76;
+    margin: 32px auto;
     border-radius: 10px;
+    padding-bottom: 20px;
+    padding: 15px;
+    text-align: justify;
+
 }
 
-.heading{
+/* .heading{
     width: 100%;
     padding: 1rem;
     text-align: center;
@@ -31,7 +31,10 @@
     color: #1b3058;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.policycontent{
+    padding: 10px 100px 10px 100px;
 
+}
 #note{
     font-size: 18px;
     font-weight: bold;
