@@ -42,6 +42,7 @@ import Captcha from './components/Captcha';
 import Board_of_evaluation from './about/Board_of_evaluation';
 import Board_of_studies from './about/Board_of_studies';
 
+import Gallery from './components/Gallery';
 
 function App() {
   return (
@@ -88,7 +89,7 @@ function App() {
            <Route path='/faq' element={<Faq/>}/>
            <Route path='/privacypolicy' element={<Privacypolicy/>}/>
            <Route path='/faq' element={<Faq/>}/>
-           <Route path='/rivatepolicy' element={<Privacypolicy/>}/>
+           <Route path='/privacypolicy' element={<Privacypolicy/>}/>
            <Route path='/publicgrievances' element={<Publicgrievance/>}/>
            <Route path='/websitepolicy' element={<Websitepolicy/>}/>
            <Route path='/faculty/cartography' element={<FacultyCarto/>}/>
@@ -98,6 +99,7 @@ function App() {
             <Route path='/location' element={<Location/>}/>
            <Route path='/captcha' element={<Captcha/>}/>
            <Route path='/faculty/geo_ict' element={<FacultyGeo/>}/>
+           {/* <Route path='/gallery' element={<Gallery/>}/> */}
         </Routes>
         <Footer/>
         <Copyright/>
