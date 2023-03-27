@@ -170,7 +170,6 @@ useEffect(() => {
           {impLinks.name}
         </Link>
 ))}
-
       </div>
     </div>
   </div>
