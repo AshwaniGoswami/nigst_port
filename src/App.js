@@ -35,6 +35,9 @@ import Hyperlinkpolicy from './components/Policies/Hyperlinkpolicy';
 import { Feesandpayment } from './components/NavComponents/Feesandpayment/Feesandpayment';
 import Location from './components/NavComponents/Location/Location';
 import Copyrightpolicy from './components/Policies/Copyrightpolicy';
+import FacultyCarto from './components/faculty/FacultyCarto';
+import FacultyTopo from './components/faculty/FacultyTopo';
+import FacultyGeo from './components/faculty/FacultyGeo';
 
 function App() {
   return (
@@ -78,6 +81,14 @@ function App() {
 
 
 
+           <Route path='/faq' element={<Faq/>}/>
+           <Route path='/rivatepolicy' element={<Privacypolicy/>}/>
+           <Route path='/publicgrievances' element={<Publicgrievance/>}/>
+           <Route path='/websitepolicy' element={<Websitepolicy/>}/>
+           <Route path='/faculty/cartography' element={<FacultyCarto/>}/>
+           <Route path='/faculty/photogrammetry' element={<FacultyPhotogrammetry/>}/>
+           <Route path='/faculty/topographical' element={<FacultyTopo/>}/>
+           <Route path='/faculty/geo_ict' element={<FacultyGeo/>}/>
         </Routes>
         <Footer/>
         <Copyright/>
