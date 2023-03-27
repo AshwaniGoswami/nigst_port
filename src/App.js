@@ -65,6 +65,7 @@ function App() {
             <Route path='/location' element={<Location/>}/>
            <Route path='/captcha' element={<Captcha/>}/>
            <Route path='/components/forms/Login' element={<LoginForm/>}/>
+           <Route path='/login' element={<LoginForm/>}/>
            <Route path='/components/FAQ/faq' element={<Faq/>}/>
            <Route path='/Policies/Privacypolicy' element={<Privacypolicy/>}/>
            <Route path='/components/publicgrievances/Publicgrievance' element={<Publicgrievance/>}/>
