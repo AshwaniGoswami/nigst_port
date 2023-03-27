@@ -34,6 +34,7 @@ function App() {
            <Route path='/about/nigst_campus' element={<NigstCampus/>}/>
            <Route path='/training/registration' element={<Signup/>}/>
            <Route path='/about/governance/board_of_governance' element={<Board_of_governance/>} />
+           <Route path='/board_of_evalution'/>
         </Routes>
         <Footer/>
         <Copyright/>
