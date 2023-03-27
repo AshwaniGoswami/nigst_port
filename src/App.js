@@ -44,7 +44,7 @@ function App() {
            <Route path='/about/nigst_campus' element={<NigstCampus/>}/>
            <Route path='/training/registration' element={<Signup/>}/>
            <Route path='/about/governance/board_of_governance' element={<Board_of_governance/>} />
-           <Route path='/components/forms/Login' element={<LoginForm/>}/>
+           <Route path='/login' element={<LoginForm/>}/>
            <Route path='/components/FAQ/faq' element={<Faq/>}/>
            <Route path='/Policies/Privacypolicy' element={<Privacypolicy/>}/>
            <Route path='/components/publicgrievances/Publicgrievance' element={<Publicgrievance/>}/>
