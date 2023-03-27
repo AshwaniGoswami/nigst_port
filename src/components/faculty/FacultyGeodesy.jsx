@@ -77,10 +77,12 @@ const Modata = {
 
 const facultyPage={
   images:[
-    { path: require('../../assests/geodesy/Image No. 5.jpg') },
-    { path: require('../../assests/geodesy/Image No. 7.jpg') },
     { path: require('../../assests/geodesy/Snapshot_1420.png') },
-    { path: require('../../assests/geodesy/Snapshot_1421.png') }
+    { path: require('../../assests/geodesy/Snapshot_1421.png') },
+    { path: require('../../assests/geodesy/Image No. 7.jpg') },
+        { path: require('../../assests/geodesy/Image No. 5.jpg') },
+
+    
   ],
   
   heading:'Faculty Geodesy',

@@ -10,7 +10,7 @@ const DetilnImg = ({heading,text,images}) => {
  <h1 className='text-center font-bold p-12 text-[24px]'>{heading}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 h-full">
         <div className="p-2 md:p-4">
-          <div className="rounded-lg overflow-hidden shadow-lg bg-white h-full">
+          <div className="rounded-lg overflow-hidden  bg-[#f5eeee76] shadow-sm h-full">
             <div className=" p-6 md:p-28 h-full flex flex-col">
               {text.map((detail,index)=>(
                 <p className="text-gray-800 text-justify" key={index}>{detail}</p>

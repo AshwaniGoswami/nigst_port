@@ -18,6 +18,7 @@ import FacultyAdmin from './Dashboard/FacultyAdmin';
 import Signup from './Dashboard/Signup'
 import NigstCampus from './about/Nigst_campus';
 import OpenPageFromTop from './components/OpenPageFromTop';
+import Board_of_governance from './about/Board_of_governance';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
            <Route path='/faculty/geodesy' element={<FacultyGeodesy/>}/>
            <Route path='/about/nigst_campus' element={<NigstCampus/>}/>
            <Route path='/training/registration' element={<Signup/>}/>
+           <Route path='/about/governance/board_of_governance' element={<Board_of_governance/>} />
         </Routes>
         <Footer/>
         <Copyright/>

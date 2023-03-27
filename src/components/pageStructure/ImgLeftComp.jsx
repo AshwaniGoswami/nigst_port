@@ -19,7 +19,7 @@ const ImgLeftComp = ({ heading, text, images }) => {
           </div>
         </div>
         <div className="p-2 md:p-4">
-          <div className="rounded-lg overflow-hidden shadow-lg bg-white h-full">
+          <div className="rounded-lg overflow-hidden bg-[#f5eeee76] shadow-sm h-full">
             <div className=" p-6 md:p-28 h-full flex flex-col">
               {text.map((detail, index) => (
                 <p className="text-gray-800 text-justify" key={index}>{detail}</p>
