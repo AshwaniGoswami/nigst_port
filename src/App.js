@@ -25,6 +25,8 @@ import Publicgrievance from './components/publicgrievances/Publicgrievance';
 import Websitepolicy from './components/Policies/Websitepolicy';
 import Privacypolicy from './components/Policies/Privacypolicy';
 import Hyperlinkpolicy from './components/Policies/Hyperlinkpolicy';
+import { Feesandpayment } from './components/NavComponents/Feesandpayment/Feesandpayment';
+import Location from './components/NavComponents/Location/Location';
 
 function App() {
   return (
@@ -48,6 +50,9 @@ function App() {
            <Route path='/components/Policies/Websitepolicy' element={<Websitepolicy/>}/>
            <Route path='/rti' element={<RightToInformation/>}/>
            <Route path='/Hyperlinkpolicy' element={<Hyperlinkpolicy/>}/>
+           <Route path='/Feesandpayment' element={<Feesandpayment/>}/>
+           <Route path='/Location' element={<Location/>}/>
+
 
         </Routes>
         <Footer/>
