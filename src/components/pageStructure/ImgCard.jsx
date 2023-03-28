@@ -2,11 +2,11 @@ import React from 'react'
 const ImgCard = ({ title, members }) => {
   return (
     <div className=''>
-    <h1 className='text-center font-bold text-[24px] m-5'>{title}</h1>
+    <h1 className='text-center font-bold text-2xl md:text-4xl m-5'>{title}</h1>
     <div className='container mx-auto'>
-      <div className='grid grid-cols-2 md:grid-cols-4 p-6 gap-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-6'>
         {members.map((member, index) => (
-          <div key={index} className='bg-gray-100  md:p-10 rounded-md p-4 text-center'>
+          <div key={index} className='bg-gray-100 md:p-10 p-4 rounded-md text-center'>
             <img src={member.image} alt='' className='mx-auto mb-4 rounded-full' />
             <div className='flex flex-col gap-2'>
               <div className='flex gap-2'>
@@ -27,6 +27,7 @@ const ImgCard = ({ title, members }) => {
       </div>
     </div>
   </div>
+  
   
     
   );
