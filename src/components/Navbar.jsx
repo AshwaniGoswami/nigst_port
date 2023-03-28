@@ -115,13 +115,13 @@ const showSidePanel=()=>{
         onMouseLeave={() => setIsGovernanceOpen(false)}
       >
         <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance'>Board Of Governance</Link></li>
-        <li className="block px-4 py-2 text-white hover:text-yellow-300">Board Of Evaluation</li>
-        <li className="block px-4 py-2 text-white hover:text-yellow-300">Board Of Studies</li>
+        <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation'>Board Of Evaluation</Link></li>
+        <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies'>Board Of Studies</Link></li>
       </ul>
     </div>
 
     <Link to="/about/nigst_campus" className="block px-4 py-2 text-white hover:text-yellow-300">NIGST Campus</Link>
-    <Link to="/about/location" className="block px-4 py-2 text-white hover:text-yellow-300">Location</Link>
+    <Link to="/location" className="block px-4 py-2 text-white hover:text-yellow-300">Location</Link>
   </div>
 </div>
 
