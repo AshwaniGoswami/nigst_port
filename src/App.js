@@ -31,9 +31,10 @@ import Copyrightpolicy from './components/Policies/Copyrightpolicy';
 import FacultyCarto from './components/faculty/FacultyCarto';
 import FacultyTopo from './components/faculty/FacultyTopo';
 import FacultyGeo from './components/faculty/FacultyGeo';
-import Gallery from './components/Gallery';
 import Captcha from './components/Captcha';
 import Location from './about/Location';
+import Board_of_evaluation from './about/Board_of_evaluation';
+import Board_of_studies from './about/Board_of_studies';
 
 function App() {
   return (
@@ -50,6 +51,8 @@ function App() {
            <Route path='/about/nigst_campus' element={<NigstCampus/>}/>
            <Route path='/training/registration' element={<Signup/>}/>
            <Route path='/about/governance/board_of_governance' element={<Board_of_governance/>} />
+           <Route path='/about/governance/board_of_evaluation' element={<Board_of_evaluation/>} />
+           <Route path='/about/governance/board_of_studies' element={<Board_of_studies/>} />
            <Route path='/login' element={<LoginForm/>}/>
            <Route path='/components/FAQ/faq' element={<Faq/>}/>
            <Route path='/Policies/Privacypolicy' element={<Privacypolicy/>}/>
@@ -72,7 +75,6 @@ function App() {
            <Route path='/faculty/topographical' element={<FacultyTopo/>}/>
             <Route path='/faculty/geo_ict' element={<FacultyGeo/>}/>
             <Route path='/location' element={<Location/>}/>
-           <Route path='/gallery' element={<Gallery/>}/>
            <Route path='/captcha' element={<Captcha/>}/>
         </Routes>
         <Footer/>
