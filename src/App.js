@@ -45,6 +45,8 @@ import Board_of_studies from './about/Board_of_studies';
 import Gallery from './components/Gallery';
 import Captcha from './components/Captcha';
 import Location from './about/Location';
+import Board_of_evaluation from './about/Board_of_evaluation';
+import Board_of_studies from './about/Board_of_studies';
 
 function App() {
   return (
