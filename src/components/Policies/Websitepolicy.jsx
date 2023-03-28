@@ -1,10 +1,10 @@
 import React from 'react'
-// import './Websitepolicy.css'
+import './Websitepolicy.css'
 
 function Websitepolicy() {
     return (
         <div>           
-                <p className='headingg'>Website Policy</p>
+                <h2 className='headingg'>Website Policy</h2>
                         <div id="websitepolicy" class="content-container">
                 <div id="webpolicy">
                     <h5>Accessibility Statement</h5>
