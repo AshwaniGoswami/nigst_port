@@ -32,6 +32,8 @@ import FacultyCarto from './components/faculty/FacultyCarto';
 import FacultyTopo from './components/faculty/FacultyTopo';
 import FacultyGeo from './components/faculty/FacultyGeo';
 import Gallery from './components/Gallery';
+import Captcha from './components/Captcha';
+import Location from './about/Location';
 
 function App() {
   return (
@@ -68,8 +70,10 @@ function App() {
            <Route path='/faculty/cartography' element={<FacultyCarto/>}/>
            <Route path='/faculty/photogrammetry' element={<FacultyPhotogrammetry/>}/>
            <Route path='/faculty/topographical' element={<FacultyTopo/>}/>
-           <Route path='/faculty/geo_ict' element={<FacultyGeo/>}/>
-           {/* <Route path='/gallery' element={<Gallery/>}/> */}
+            <Route path='/faculty/geo_ict' element={<FacultyGeo/>}/>
+            <Route path='/location' element={<Location/>}/>
+           <Route path='/gallery' element={<Gallery/>}/>
+           <Route path='/captcha' element={<Captcha/>}/>
         </Routes>
         <Footer/>
         <Copyright/>
