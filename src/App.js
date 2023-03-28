@@ -34,6 +34,7 @@ import Privacypolicy from './components/Policies/Privacypolicy';
 import Hyperlinkpolicy from './components/Policies/Hyperlinkpolicy';
 import { Feesandpayment } from './components/NavComponents/Feesandpayment/Feesandpayment';
 import Location from './components/NavComponents/Location/Location';
+import Copyrightpolicy from './components/Policies/Copyrightpolicy';
 
 function App() {
   return (
@@ -72,6 +73,8 @@ function App() {
            <Route path='/Hyperlinkpolicy' element={<Hyperlinkpolicy/>}/>
            <Route path='/Feesandpayment' element={<Feesandpayment/>}/>
            <Route path='/Location' element={<Location/>}/>
+           <Route path='/Copyrightpolicy' element={<Copyrightpolicy/>}/>
+
 
 
         </Routes>

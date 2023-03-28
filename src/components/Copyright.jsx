@@ -28,7 +28,7 @@ const Copyright = () => {
         Hyperlinking Policies
       </Link>
       <span >|</span>
-      <Link to="#" className='ml-2 md:ml-3'>
+      <Link to="/Copyrightpolicy" className='ml-2 md:ml-3'>
         Copyright Policies
       </Link>
     </div>
