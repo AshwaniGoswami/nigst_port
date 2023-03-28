@@ -82,9 +82,6 @@ const showSidePanel=()=>{
       <Link to="/soi_annual_reports" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">SOI Annual Reports</Link>
     </li>
     <li>
-<<<<<<< HEAD
-      <Link to="/rti" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">RTI</Link>
-=======
       <Link to="/raj_bhasha" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Raj Bhasha</Link>
     </li>
     <li>
@@ -92,7 +89,6 @@ const showSidePanel=()=>{
     </li>
     <li>
       <Link to="/public_grievances_office" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Public grievances Office</Link>
->>>>>>> 246602f31b54ae0ad75a3e7ece8701c9d0ae59ec
     </li>
             </div>
   </ul>
