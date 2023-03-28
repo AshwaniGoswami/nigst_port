@@ -45,6 +45,7 @@ function App() {
            <Route path='/Policies/Privacypolicy' element={<Privacypolicy/>}/>
            <Route path='/components/publicgrievances/Publicgrievance' element={<Publicgrievance/>}/>
            <Route path='/components/Policies/Websitepolicy' element={<Websitepolicy/>}/>
+           <Route path='/RTI/rti' element={<RightToInformation/>}/>
         </Routes>
         <Footer/>
         <Copyright/>
