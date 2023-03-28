@@ -24,6 +24,7 @@ import Board_of_governance from './about/Board_of_governance';
 import Publicgrievance from './components/publicgrievances/Publicgrievance';
 import Websitepolicy from './components/Policies/Websitepolicy';
 import Privacypolicy from './components/Policies/Privacypolicy';
+import Hyperlinkpolicy from './components/Policies/Hyperlinkpolicy';
 
 function App() {
   return (
@@ -46,6 +47,8 @@ function App() {
            <Route path='/components/publicgrievances/Publicgrievance' element={<Publicgrievance/>}/>
            <Route path='/components/Policies/Websitepolicy' element={<Websitepolicy/>}/>
            <Route path='/rti' element={<RightToInformation/>}/>
+           <Route path='/Hyperlinkpolicy' element={<Hyperlinkpolicy/>}/>
+
         </Routes>
         <Footer/>
         <Copyright/>
