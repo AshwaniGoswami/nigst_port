@@ -82,8 +82,11 @@ const Modata = {
 
 const facultyPage={
   images:[
+    { path: require('../../assests/tslis/TSLIS 1.png') },
+    { path: require('../../assests/tslis/TSLIS 2.png') },
 
-
+    { path: require('../../assests/tslis/TSLIS 3.png') },
+    { path: require('../../assests/tslis/TSLIS 4.png') },
     
   ],
   

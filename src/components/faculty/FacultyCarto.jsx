@@ -78,8 +78,11 @@ const headData = {
   
   const facultyPage={
     images:[
+      { path: require('../../assests/cartodmphotos/carto1.jpeg') },
+      { path: require('../../assests/cartodmphotos/carto2.jpeg') },
   
-  
+      { path: require('../../assests/cartodmphotos/carto3.jpeg') },
+      { path: require('../../assests/cartodmphotos/carto1.jpeg') },
       
     ],
     
