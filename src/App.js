@@ -27,7 +27,6 @@ import FacultyCarto from './components/faculty/FacultyCarto';
 import FacultyTopo from './components/faculty/FacultyTopo';
 import FacultyGeo from './components/faculty/FacultyGeo';
 import Captcha from './components/Captcha';
-import Location from './about/Location';
 import Board_of_evaluation from './about/Board_of_evaluation';
 import Board_of_studies from './about/Board_of_studies';
 import Privacypolicy from './components/Policies/Privacypolicy';
@@ -35,18 +34,7 @@ import Hyperlinkpolicy from './components/Policies/Hyperlinkpolicy';
 import { Feesandpayment } from './components/NavComponents/Feesandpayment/Feesandpayment';
 import Location from './components/NavComponents/Location/Location';
 import Copyrightpolicy from './components/Policies/Copyrightpolicy';
-import FacultyCarto from './components/faculty/FacultyCarto';
-import FacultyTopo from './components/faculty/FacultyTopo';
-import FacultyGeo from './components/faculty/FacultyGeo';
-import Captcha from './components/Captcha';
-import Board_of_evaluation from './about/Board_of_evaluation';
-import Board_of_studies from './about/Board_of_studies';
 
-import Gallery from './components/Gallery';
-import Captcha from './components/Captcha';
-import Location from './about/Location';
-import Board_of_evaluation from './about/Board_of_evaluation';
-import Board_of_studies from './about/Board_of_studies';
 
 function App() {
   return (
@@ -104,7 +92,6 @@ function App() {
            <Route path='/captcha' element={<Captcha/>}/>
            <Route path='/faculty/geo_ict' element={<FacultyGeo/>}/>
            {/* <Route path='/gallery' element={<Gallery/>}/> */}
-           <Route path='/gallery' element={<Gallery/>}/>
            <Route path='/captcha' element={<Captcha/>}/>
         </Routes>
         <Footer/>
