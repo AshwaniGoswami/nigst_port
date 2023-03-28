@@ -4,7 +4,7 @@ import React from 'react'
 function Websitepolicy() {
     return (
         <div>           
-                <h3 className='headingg'>Website Policy</h3>
+                <p className='headingg'>Website Policy</p>
                         <div id="websitepolicy" class="content-container">
                 <div id="webpolicy">
                     <h5>Accessibility Statement</h5>
