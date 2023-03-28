@@ -39,7 +39,6 @@ import FacultyCarto from './components/faculty/FacultyCarto';
 import FacultyTopo from './components/faculty/FacultyTopo';
 import FacultyGeo from './components/faculty/FacultyGeo';
 import Captcha from './components/Captcha';
-import Location from './about/Location';
 import Board_of_evaluation from './about/Board_of_evaluation';
 import Board_of_studies from './about/Board_of_studies';
 
