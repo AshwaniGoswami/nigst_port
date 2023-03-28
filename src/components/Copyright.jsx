@@ -24,7 +24,7 @@ const Copyright = () => {
         Website Policies
       </Link>
       <span >|</span>
-      <Link to="#" className='ml-2 md:ml-3 mr-2 md:mr-4'>
+      <Link to="/Hyperlinkpolicy" className='ml-2 md:ml-3 mr-2 md:mr-4'>
         Hyperlinking Policies
       </Link>
       <span >|</span>
