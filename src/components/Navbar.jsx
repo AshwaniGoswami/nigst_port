@@ -78,7 +78,7 @@ const showSidePanel=()=>{
       <Link to="#" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">Training</Link>
     </li>
     <li>
-      <Link to="/components/RTI/rti" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">RTI</Link>
+      <Link to="/rti" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">RTI</Link>
     </li>
             </div>
   </ul>
@@ -188,7 +188,7 @@ const showSidePanel=()=>{
 
               <Link to="/training/courses" className="block px-4 py-2 text-white hover:text-yellow-300">Courses</Link>
               <Link to="/training/course_enrollment" className="block px-4 py-2 text-white hover:text-yellow-300">Course Enrollment</Link>
-              <Link to="/training/fee_payment" className="block px-4 py-2 text-white hover:text-yellow-300">Fee and Payment</Link>
+              <Link to="/feesandpayment" className="block px-4 py-2 text-white hover:text-yellow-300">Fee and Payment</Link>
             </div>
           </div>
           <Link to="/training/registration" className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">

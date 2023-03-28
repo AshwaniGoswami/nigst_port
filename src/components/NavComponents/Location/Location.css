@@ -1,0 +1,13 @@
+.Map{
+    width: 96%;
+  height: 650px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+}
+.address{
+    font-weight: 600;
+    font-size: 24px;
+    padding: 20px;
+    text-align: justify;
+    text-align: center;
+}
