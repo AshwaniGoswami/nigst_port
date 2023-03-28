@@ -121,7 +121,7 @@ const showSidePanel=()=>{
     </div>
 
     <Link to="/about/nigst_campus" className="block px-4 py-2 text-white hover:text-yellow-300">NIGST Campus</Link>
-    <Link to="/about/location" className="block px-4 py-2 text-white hover:text-yellow-300">Location</Link>
+    <Link to="/location" className="block px-4 py-2 text-white hover:text-yellow-300">Location</Link>
   </div>
 </div>
 
