@@ -23,17 +23,29 @@ import OpenPageFromTop from './components/OpenPageFromTop';
 import Board_of_governance from './about/Board_of_governance';
 import Publicgrievance from './components/publicgrievances/Publicgrievance';
 import Websitepolicy from './components/Policies/Websitepolicy';
+<<<<<<< HEAD
 import Privacypolicy from './components/Policies/Privacypolicy';
 import Hyperlinkpolicy from './components/Policies/Hyperlinkpolicy';
 import { Feesandpayment } from './components/NavComponents/Feesandpayment/Feesandpayment';
 import Location from './components/NavComponents/Location/Location';
 import Copyrightpolicy from './components/Policies/Copyrightpolicy';
+=======
+>>>>>>> 246602f31b54ae0ad75a3e7ece8701c9d0ae59ec
 import FacultyCarto from './components/faculty/FacultyCarto';
 import FacultyTopo from './components/faculty/FacultyTopo';
 import FacultyGeo from './components/faculty/FacultyGeo';
 import Captcha from './components/Captcha';
 import Board_of_evaluation from './about/Board_of_evaluation';
 import Board_of_studies from './about/Board_of_studies';
+<<<<<<< HEAD
+=======
+import Privacypolicy from './components/Policies/Privacypolicy';
+import Hyperlinkpolicy from './components/Policies/Hyperlinkpolicy';
+import { Feesandpayment } from './components/NavComponents/Feesandpayment/Feesandpayment';
+import Location from './components/NavComponents/Location/Location';
+import Copyrightpolicy from './components/Policies/Copyrightpolicy';
+
+>>>>>>> 246602f31b54ae0ad75a3e7ece8701c9d0ae59ec
 
 function App() {
   return (
@@ -53,6 +65,20 @@ function App() {
            <Route path='/about/governance/board_of_evaluation' element={<Board_of_evaluation/>} />
            <Route path='/about/governance/board_of_studies' element={<Board_of_studies/>} />
            <Route path='/login' element={<LoginForm/>}/>
+<<<<<<< HEAD
+=======
+           <Route path='/faq' element={<Faq/>}/>
+           <Route path='/privacypolicy' element={<Privacypolicy/>}/>
+           <Route path='/publicgrievances' element={<Publicgrievance/>}/>
+           <Route path='/websitepolicy' element={<Websitepolicy/>}/>
+           <Route path='/faculty/cartography' element={<FacultyCarto/>}/>
+           <Route path='/faculty/photogrammetry' element={<FacultyPhotogrammetry/>}/>
+           <Route path='/faculty/topographical' element={<FacultyTopo/>}/>
+            <Route path='/faculty/geo_ict' element={<FacultyGeo/>}/>
+            <Route path='/location' element={<Location/>}/>
+           <Route path='/captcha' element={<Captcha/>}/>
+           <Route path='/login' element={<LoginForm/>}/>
+>>>>>>> 246602f31b54ae0ad75a3e7ece8701c9d0ae59ec
            <Route path='/components/FAQ/faq' element={<Faq/>}/>
            <Route path='/Policies/Privacypolicy' element={<Privacypolicy/>}/>
            <Route path='/components/publicgrievances/Publicgrievance' element={<Publicgrievance/>}/>
@@ -65,6 +91,7 @@ function App() {
 
 
 
+<<<<<<< HEAD
            <Route path='/faq' element={<Faq/>}/>
            <Route path='/privacypolicy' element={<Privacypolicy/>}/>
            <Route path='/publicgrievances' element={<Publicgrievance/>}/>
@@ -75,6 +102,9 @@ function App() {
             <Route path='/faculty/geo_ict' element={<FacultyGeo/>}/>
             <Route path='/location' element={<Location/>}/>
            <Route path='/captcha' element={<Captcha/>}/>
+=======
+          
+>>>>>>> 246602f31b54ae0ad75a3e7ece8701c9d0ae59ec
         </Routes>
         <Footer/>
         <Copyright/>
