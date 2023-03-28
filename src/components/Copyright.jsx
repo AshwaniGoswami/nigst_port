@@ -34,7 +34,7 @@ const Copyright = () => {
     </div>
     <div className='flex  md:justify-end  md:items-center text-[12px]'>
       <Link to="https://ks-tech.in/" target="_blank" >
-        Develop and Designed By- KRITASUTRA PRIVATE LIMITED
+         Designed and Developed By- KRITASUTRA
       </Link>
     </div>
   </div>
