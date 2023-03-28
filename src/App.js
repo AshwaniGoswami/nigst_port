@@ -64,7 +64,6 @@ function App() {
             <Route path='/faculty/geo_ict' element={<FacultyGeo/>}/>
             <Route path='/location' element={<Location/>}/>
            <Route path='/captcha' element={<Captcha/>}/>
-           <Route path='/components/forms/Login' element={<LoginForm/>}/>
            <Route path='/login' element={<LoginForm/>}/>
            <Route path='/components/FAQ/faq' element={<Faq/>}/>
            <Route path='/Policies/Privacypolicy' element={<Privacypolicy/>}/>
@@ -78,21 +77,7 @@ function App() {
 
 
 
-           <Route path='/faq' element={<Faq/>}/>
-           <Route path='/privacypolicy' element={<Privacypolicy/>}/>
-           <Route path='/faq' element={<Faq/>}/>
-           <Route path='/privacypolicy' element={<Privacypolicy/>}/>
-           <Route path='/publicgrievances' element={<Publicgrievance/>}/>
-           <Route path='/websitepolicy' element={<Websitepolicy/>}/>
-           <Route path='/faculty/cartography' element={<FacultyCarto/>}/>
-           <Route path='/faculty/photogrammetry' element={<FacultyPhotogrammetry/>}/>
-           <Route path='/faculty/topographical' element={<FacultyTopo/>}/>
-            <Route path='/faculty/geo_ict' element={<FacultyGeo/>}/>
-            <Route path='/location' element={<Location/>}/>
-           <Route path='/captcha' element={<Captcha/>}/>
-           <Route path='/faculty/geo_ict' element={<FacultyGeo/>}/>
-           {/* <Route path='/gallery' element={<Gallery/>}/> */}
-           <Route path='/captcha' element={<Captcha/>}/>
+          
         </Routes>
         <Footer/>
         <Copyright/>
