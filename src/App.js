@@ -74,10 +74,6 @@ function App() {
            <Route path='/Feesandpayment' element={<Feesandpayment/>}/>
            <Route path='/Location' element={<Location/>}/>
            <Route path='/Copyrightpolicy' element={<Copyrightpolicy/>}/>
-
-
-
-          
         </Routes>
         <Footer/>
         <Copyright/>
