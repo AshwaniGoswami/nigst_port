@@ -31,6 +31,7 @@ import Location from './about/Location';
 import Board_of_evaluation from './about/Board_of_evaluation';
 import Board_of_studies from './about/Board_of_studies';
 import Privacypolicy from './components/Policies/Privacypolicy';
+import Hyperlinkpolicy from './components/Policies/Hyperlinkpolicy';
 
 function App() {
   return (
@@ -66,6 +67,8 @@ function App() {
            <Route path='/components/publicgrievances/Publicgrievance' element={<Publicgrievance/>}/>
            <Route path='/components/Policies/Websitepolicy' element={<Websitepolicy/>}/>
            <Route path='/rti' element={<RightToInformation/>}/>
+           <Route path='/Hyperlinkpolicy' element={<Hyperlinkpolicy/>}/>
+
         </Routes>
         <Footer/>
         <Copyright/>
