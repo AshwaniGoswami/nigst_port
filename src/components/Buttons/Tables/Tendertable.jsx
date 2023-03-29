@@ -11,12 +11,35 @@ function Tendertable() {
     setShowDiv2(!showDiv2);
     setButtonText(showDiv1 ? "Latest Tenders" : "Archived Tenders");
   };
-  const [searchDate, setSearchDate] = useState("");
+  const [searchDate1, setSearchDate1] = useState("");
+  const [searchDate2, setSearchDate2] = useState("");
 
-  const handleInputChange = (event) => {
-    setSearchDate(event.target.value);
+  const handleInputChange1 = (event) => {
+    setSearchDate1(event.target.value);
     const input = event.target.value.toLowerCase();
-    const rows = document.querySelectorAll("#Names #names tr");
+    const rows = document.querySelectorAll("#Names tr");
+
+    rows.forEach((row) => {
+      const cells = row.querySelectorAll("td");
+      let shouldHide = true;
+
+      cells.forEach((cell) => {
+        if (cell.textContent.toLowerCase().includes(input)) {
+          shouldHide = false;
+        }
+      });
+
+      if (shouldHide) {
+        row.classList.add("hidden");
+      } else {
+        row.classList.remove("hidden");
+      }
+    });
+  };
+  const handleInputChange2 = (event) => {
+    setSearchDate2(event.target.value);
+    const input = event.target.value.toLowerCase();
+    const rows = document.querySelectorAll("#names tr");
 
     rows.forEach((row) => {
       const cells = row.querySelectorAll("td");
@@ -42,7 +65,7 @@ function Tendertable() {
       <button className="togglebtn" onClick={handleButtonClick}>{buttonText}</button>
       {showDiv1 && <div>
         <div id="postedNotices" style={{ height: "600px", overflowY: "scroll" }}>
-          <input type="text" id="SearchInput" placeholder="Enter date YYYY-MM-DD" value={searchDate} onChange={handleInputChange} />
+          <input type="text" id="SearchInput" placeholder="Enter date YYYY-MM-DD" value={searchDate1} onChange={handleInputChange1} />
 
           <table>
             <thead>
@@ -85,8 +108,9 @@ function Tendertable() {
             </tbody>
           </table>
         </div></div>}
-      {showDiv2 && <div><div id="postedNotices" style={{ height: "600px", overflowY: "scroll" }}>
-          <input type="text" id="searchInput" placeholder="Enter date YYYY-MM-DD" value={searchDate} onChange={handleInputChange} />
+      {showDiv2 && <div>
+        <div id="postedNotices" style={{ height: "600px", overflowY: "scroll" }}>
+          <input type="text" id="searchInput" placeholder="Enter date YYYY-MM-DD" value={searchDate2} onChange={handleInputChange2} />
 
           <table>
             <thead>
@@ -128,7 +152,8 @@ function Tendertable() {
           </tr>
             </tbody>
           </table>
-        </div></div>}
+        </div>
+        </div>}
     </div>
   );
 }
