@@ -16,7 +16,7 @@ const contactus={
 }
 
 const quicklinks=[
-  { name: "Tender", url: "https://www.surveyofindia.gov.in/tenders" },
+  { name: "Tender", url: "/tenders" },
   { name: "Sitemap", url: "#" },
   { name: "Grievances", url: "/components/publicgrievances/Publicgrievance" },
   { name: "Citizen Charter", url: "#" },
