@@ -28,13 +28,9 @@ const ImgCard = ({ title, members }) => {
   </div>
 </div>
 
-  
 
-  
-  
-    
-  );
-};
 
+  )
+}
 
 export default ImgCard

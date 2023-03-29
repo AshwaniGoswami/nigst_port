@@ -72,23 +72,13 @@ const showSidePanel=()=>{
             `}>
             <div className='w-40  flex flex-col h-screen'>
             <li>
-      <Link to="/tenders" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Tenders</Link>
-    </li>
-  
-    <li>
-      <Link to="/rti" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">RTI</Link>
+      <Link to="#" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">Faculty</Link>
     </li>
     <li>
-      <Link to="/soi_annual_reports" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">SOI Annual Reports</Link>
+      <Link to="#" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">Training</Link>
     </li>
     <li>
-      <Link to="/raj_bhasha" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Raj Bhasha</Link>
-    </li>
-    <li>
-      <Link to="/geo_spatial_policies" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Geo Spatial Policies</Link>
-    </li>
-    <li>
-      <Link to="/public_grievances_office" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Public grievances Office</Link>
+      <Link to="/rti" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">RTI</Link>
     </li>
             </div>
   </ul>

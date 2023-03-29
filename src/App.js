@@ -34,6 +34,7 @@ import Hyperlinkpolicy from './components/Policies/Hyperlinkpolicy';
 import { Feesandpayment } from './components/NavComponents/Feesandpayment/Feesandpayment';
 import Location from './components/NavComponents/Location/Location';
 import Copyrightpolicy from './components/Policies/Copyrightpolicy';
+import Tendertable from './components/Buttons/Tables/Tendertable';
 
 
 function App() {
@@ -74,10 +75,7 @@ function App() {
            <Route path='/Feesandpayment' element={<Feesandpayment/>}/>
            <Route path='/Location' element={<Location/>}/>
            <Route path='/Copyrightpolicy' element={<Copyrightpolicy/>}/>
-
-
-
-          
+           <Route path='/Tendertable' element={<Tendertable/>}/>
         </Routes>
         <Footer/>
         <Copyright/>

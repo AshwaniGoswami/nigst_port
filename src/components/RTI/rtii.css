@@ -10,9 +10,7 @@
     /* padding: 50px; */
     background-color: #f5eeee76;
     border-radius: 10px;
-   
-
-
+    overflow: auto;
 }
 .heading-container h4{
     text-align: center;
@@ -81,3 +79,12 @@
     border-radius: 15px;
 
 }
+@media only screen and (max-width: 600px) {
+    .rti-container {
+      width: 90%;
+      margin: 16px auto;
+      padding: 16px auto;
+    }
+    
+  }
+  
