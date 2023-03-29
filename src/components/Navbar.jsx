@@ -212,6 +212,32 @@ const showSidePanel=()=>{
           {/* <DropdownMenu  /> */}
 
         </div>
+        <ul className={`block md:hidden bg-[#1050A2] py-0 ml-0   
+             
+            `}>
+            <div className='  flex flex-col'>
+            <li>
+      <Link to="/tenders" className="block py-2 text-white  hover:font-semibold">Tenders</Link>
+    </li>
+  
+    <li>
+      <Link to="/rti" className="block  py-2 text-white  hover:font-semibold">RTI</Link>
+    </li>
+    <li>
+      <Link to="/soi_annual_reports" className="block  py-2 text-white  hover:font-semibold">SOI Annual Reports</Link>
+    </li>
+    <li>
+      <Link to="/raj_bhasha" className="block  py-2 text-white  hover:font-semibold">Raj Bhasha</Link>
+    </li>
+    <li>
+      <Link to="/geo_spatial_policies" className="block py-2 text-white  hover:font-semibold">Geo Spatial Policies</Link>
+    </li>
+    <li>
+      <Link to="/public_grievances_office" className="block  py-2 text-white  hover:font-semibold">Public grievances Office</Link>
+    </li>
+            </div>
+  </ul>
+
       </div>
       
     </nav>
