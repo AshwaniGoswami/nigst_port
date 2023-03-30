@@ -109,8 +109,8 @@ const About = () => {
             <div className=' bg-[#f5eeee76] p-6 rounded-md leading-normal md:col-span-2 '>
                 <button onClick={handleTranslate} className='bg-blue-900 rounded-md p-2 text-white float-right   hover:bg-blue-700' >{isEnglish ? 'हिंदी' : 'English'}</button>
                 {isEnglish ? (
-                    <div className='english text-justify p-6 md:p-16 lg:p-24'>
-                        <h1 className='font-bold text-lg pt-6 mt-10 mb-4'>{InformationDiv.headingEnglish}</h1>
+                    <div className='english text-justify p-0 md:p-0 lg:p-24'>
+                        <h1 className='font-bold text-lg pt-0 mt-0 mb-4'>{InformationDiv.headingEnglish}</h1>
 
                         {
                             InformationDiv.englishPara.map((para, index) => (
@@ -121,8 +121,8 @@ const About = () => {
                         <button className=' bg-blue-500 p-2 m-3 rounded-md'>Click to View Structure of NIGST</button>
                     </div>
                 ) : (
-                    <div className='hindi leading-relaxed text-justify p-6 md:p-16 lg:p-24'>
-                        <h1 className='font-bold text-lg pt-6 mt-10 mb-4'>{InformationDiv.headingHindi}</h1>
+                    <div className='hindi leading-relaxed text-justify p-0 md:p-0 lg:p-24'>
+                        <h1 className='font-bold text-lg pt-0 mt-0 mb-3'>{InformationDiv.headingHindi}</h1>
                         {
                             InformationDiv.contentHindi.map((para, index) => (
                                 <p key={index}>{para}</p>
