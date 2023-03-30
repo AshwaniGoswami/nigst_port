@@ -107,6 +107,9 @@ const About = () => {
         const handleClick = () => {
             setShowImage(true);
         }
+        const handleClose = () => {
+            setShowImage(false);
+          };
 
         return (
             <div className='grid grid-cols-1 md:grid-cols-4 gap-8 m-0 md:m-8 '>
@@ -139,7 +142,14 @@ const About = () => {
                                 ))
                             }
                             <button className='bg-blue-500 p-2 m-3 rounded-md' onClick={handleClick} >Click to View Structure of NIGST</button>
-                            {showImage && <img src={nigstStructure} alt='NIGST Structure' />}
+                            {showImage &&
+        <div className='overlay'>
+          <div className='popup'>
+            <img src={nigstStructure} alt='NIGST Structure' />
+            <button onClick={handleClose}>Close</button>
+          </div>
+        </div>
+      }
                         </div>
                     )}
 
