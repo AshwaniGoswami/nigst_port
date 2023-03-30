@@ -3,9 +3,11 @@ import React, { useEffect, useState } from 'react'
 import image1 from '../assests/Home Banner NIGST.png';
 import image2 from '../assests/IMG-20230225-WA0070.jpg';
 import image3 from '../assests/Home Banner NIGST.png';
-import nigstStructure from '../assests/NIGST Org Chart.svg'
 import imageHead from '../assests/Dr. Srivari Chandrasekhar.jpg'
-
+import NIGST from '../assests/NIGST Org Chart.svg'
+import NIGST1 from '../assests/NIGST Org Chart.svg'
+import Modal from 'react-modal';
+import { FaTimes } from 'react-icons/fa';
 
 
 //static for showing in page
@@ -100,74 +102,124 @@ const About = () => {
         }
         setIsEnglish(!isEnglish);
     };
-    
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [modalIsOpen1, setModalIsOpen1] = useState(false);
+    const modalStyle = {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        zIndex: 78, 
+    };
+    const closeButtonStyle = {
+        position: 'absolute',
+        top: '110px',
+        right: '200px',
+        padding: '5px',
+        backgroundColor: 'transparent',
+        border: 'none',
+        
+        cursor: 'pointer',
+        color: '#fff',
+      };
+      const modalStyle1 = {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        zIndex: 78, 
+    };
+    const closeButtonStyle1 = {
+        position: 'absolute',
+        top: '110px',
+        right: '200px',
+        padding: '5px',
+        backgroundColor: 'transparent',
+        border: 'none',
+        
+        cursor: 'pointer',
+        color: '#fff',
+      };
 
-    const [showImage, setShowImage] = useState(false);
+    return (
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-8 m-0 md:m-8 '>
+            <div className='bg-[#f5eeee76] p-8 rounded-md  leading-normal'>
+                <h1 className='font-bold text-lg pt-6 mt-10 mb-4'>Message From Head</h1>
+                <img src={MessageFromHead.image} alt="Head" className='rounded-md ' />
+                <span className='font-semibold'>{MessageFromHead.name}</span>
+                <p className='text-justify '>{MessageFromHead.description}</p>
+            </div>
+            <div className=' bg-[#f5eeee76] p-6 rounded-md leading-normal md:col-span-2 '>
+                <button onClick={handleTranslate} className='bg-blue-900 rounded-md p-2 text-white float-right   hover:bg-blue-700' >{isEnglish ? 'हिंदी' : 'English'}</button>
+                {isEnglish ? (
+                    <div className='english text-justify p-0 md:p-0 lg:p-24'>
+                        <h1 className='font-bold text-lg pt-0 mt-0 mb-4'>{InformationDiv.headingEnglish}</h1>
 
-        const handleClick = () => {
-            setShowImage(true);
-        }
-        const handleClose = () => {
-            setShowImage(false);
-          };
+                        {
+                            InformationDiv.englishPara.map((para, index) => (
+                                <p key={index}>{para}</p>
+                            ))
+                        }
 
-        return (
-            <div className='grid grid-cols-1 md:grid-cols-4 gap-8 m-0 md:m-8 '>
-                <div className='bg-[#f5eeee76] p-8 rounded-md  leading-normal'>
-                    <h1 className='font-bold text-lg pt-6 mt-10 mb-4'>Message From Head</h1>
-                    <img src={MessageFromHead.image} alt="Head" className='rounded-md ' />
-                    <span className='font-semibold'>{MessageFromHead.name}</span>
-                    <p className='text-justify '>{MessageFromHead.description}</p>
-                </div>
-                <div className=' bg-[#f5eeee76] p-6 rounded-md leading-normal md:col-span-2 '>
-                    <button onClick={handleTranslate} className='bg-blue-900 rounded-md p-2 text-white float-right   hover:bg-blue-700' >{isEnglish ? 'हिंदी' : 'English'}</button>
-                    {isEnglish ? (
-                        <div className='english text-justify p-0 md:p-0 lg:p-24'>
-                            <h1 className='font-bold text-lg pt-0 mt-0 mb-4'>{InformationDiv.headingEnglish}</h1>
-
-                            {
-                                InformationDiv.englishPara.map((para, index) => (
-                                    <p key={index}>{para}</p>
-                                ))
-                            }
-
-                            <button className=' bg-blue-500 p-2 m-3 rounded-md'>Click to View Structure of NIGST</button>
+                        <div><button className=' bg-blue-500 p-2 m-3 rounded-md' onClick={() => setModalIsOpen1(true)}>Click to View Structure of NIGST</button>
+                        {modalIsOpen1 && (
+                                <div style={modalStyle1}>
+                                    <div>
+                                        <img src={NIGST1} alt="NIGST Structure"  style={{width:'1200px',height:'auto'}}/>
+                                        <button style={closeButtonStyle1} onClick={() => setModalIsOpen1(false)}> <FaTimes size={30} /></button>
+                                    </div>
+                                </div>
+                            )}
                         </div>
-                    ) : (
-                        <div className='hindi leading-relaxed text-justify p-0 md:p-0 lg:p-24'>
-                            <h1 className='font-bold text-lg pt-0 mt-0 mb-3'>{InformationDiv.headingHindi}</h1>
-                            {
-                                InformationDiv.contentHindi.map((para, index) => (
-                                    <p key={index}>{para}</p>
-                                ))
-                            }
-                            <button className='bg-blue-500 p-2 m-3 rounded-md' onClick={handleClick} >Click to View Structure of NIGST</button>
-                            {showImage &&
-        <div className='overlay'>
-          <div className='popup'>
-            <img src={nigstStructure} alt='NIGST Structure' />
-            <button onClick={handleClose}>Close</button>
-          </div>
-        </div>
-      }
-                        </div>
-                    )}
-
-
-                </div>
-                <div className='  rounded-md'>
-                    <div className='flex flex-col gap-3'>
-                        {StaticImages.map((image, index) => (
-                            <div key={index}>
-                                <img src={image.path} alt={image.title} className='w-full h-[250px] object-cover rounded-md' />
-                            </div>
-                        ))}
 
                     </div>
+                ) : (
+                    <div className='hindi leading-relaxed text-justify p-0 md:p-0 lg:p-24'>
+                        <h1 className='font-bold text-lg pt-0 mt-0 mb-3'>{InformationDiv.headingHindi}</h1>
+                        {
+                            InformationDiv.contentHindi.map((para, index) => (
+                                <p key={index}>{para}</p>
+                            ))
+                        }
+                        <div><button className='bg-blue-500 p-2 m-3 rounded-md' onClick={() => setModalIsOpen(true)}>Click to View Structure of NIGST</button>
+                            {modalIsOpen && (
+                                <div style={modalStyle}>
+                                    <div>
+                                        <img src={NIGST} alt="NIGST Structure"  style={{width:'1200px',height:'auto'}}/>
+                                        <button style={closeButtonStyle} onClick={() => setModalIsOpen(false)}> <FaTimes size={30} /></button>
+                                    </div>
+                                </div>
+                            )}
+
+                        </div>
+                    </div>
+                )}
+
+
+            </div>
+            <div className='  rounded-md'>
+                <div className='flex flex-col gap-3'>
+                    {StaticImages.map((image, index) => (
+                        <div key={index}>
+                            <img src={image.path} alt={image.title} className='w-full h-[250px] object-cover rounded-md' />
+                        </div>
+                    ))}
 
                 </div>
-            </div>
-        )
-    }
 
-    export default About
+            </div>
+        </div>
+    )
+}
+
+export default About
