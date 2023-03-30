@@ -3,7 +3,10 @@ import React, { useEffect, useState } from 'react'
 import image1 from '../assests/Home Banner NIGST.png';
 import image2 from '../assests/IMG-20230225-WA0070.jpg';
 import image3 from '../assests/Home Banner NIGST.png';
+import nigstStructure from '../assests/NIGST Org Chart.svg'
 import imageHead from '../assests/Dr. Srivari Chandrasekhar.jpg'
+
+
 
 //static for showing in page
 const StaticImages = [
@@ -97,56 +100,64 @@ const About = () => {
         }
         setIsEnglish(!isEnglish);
     };
+    
 
-    return (
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-8 m-0 md:m-8 '>
-            <div className='bg-[#f5eeee76] p-8 rounded-md  leading-normal'>
-                <h1 className='font-bold text-lg pt-6 mt-10 mb-4'>Message From Head</h1>
-                <img src={MessageFromHead.image} alt="Head" className='rounded-md ' />
-                <span className='font-semibold'>{MessageFromHead.name}</span>
-                <p className='text-justify '>{MessageFromHead.description}</p>
-            </div>
-            <div className=' bg-[#f5eeee76] p-6 rounded-md leading-normal md:col-span-2 '>
-                <button onClick={handleTranslate} className='bg-blue-900 rounded-md p-2 text-white float-right   hover:bg-blue-700' >{isEnglish ? 'हिंदी' : 'English'}</button>
-                {isEnglish ? (
-                    <div className='english text-justify p-0 md:p-0 lg:p-24'>
-                        <h1 className='font-bold text-lg pt-0 mt-0 mb-4'>{InformationDiv.headingEnglish}</h1>
+    const [showImage, setShowImage] = useState(false);
 
-                        {
-                            InformationDiv.englishPara.map((para, index) => (
-                                <p key={index}>{para}</p>
-                            ))
-                        }
+        const handleClick = () => {
+            setShowImage(true);
+        }
 
-                        <button className=' bg-blue-500 p-2 m-3 rounded-md'>Click to View Structure of NIGST</button>
-                    </div>
-                ) : (
-                    <div className='hindi leading-relaxed text-justify p-0 md:p-0 lg:p-24'>
-                        <h1 className='font-bold text-lg pt-0 mt-0 mb-3'>{InformationDiv.headingHindi}</h1>
-                        {
-                            InformationDiv.contentHindi.map((para, index) => (
-                                <p key={index}>{para}</p>
-                            ))
-                        }
-                        <button className='bg-blue-500 p-2 m-3 rounded-md' >Click to View Structure of NIGST</button>
-                    </div>
-                )}
+        return (
+            <div className='grid grid-cols-1 md:grid-cols-4 gap-8 m-0 md:m-8 '>
+                <div className='bg-[#f5eeee76] p-8 rounded-md  leading-normal'>
+                    <h1 className='font-bold text-lg pt-6 mt-10 mb-4'>Message From Head</h1>
+                    <img src={MessageFromHead.image} alt="Head" className='rounded-md ' />
+                    <span className='font-semibold'>{MessageFromHead.name}</span>
+                    <p className='text-justify '>{MessageFromHead.description}</p>
+                </div>
+                <div className=' bg-[#f5eeee76] p-6 rounded-md leading-normal md:col-span-2 '>
+                    <button onClick={handleTranslate} className='bg-blue-900 rounded-md p-2 text-white float-right   hover:bg-blue-700' >{isEnglish ? 'हिंदी' : 'English'}</button>
+                    {isEnglish ? (
+                        <div className='english text-justify p-0 md:p-0 lg:p-24'>
+                            <h1 className='font-bold text-lg pt-0 mt-0 mb-4'>{InformationDiv.headingEnglish}</h1>
 
+                            {
+                                InformationDiv.englishPara.map((para, index) => (
+                                    <p key={index}>{para}</p>
+                                ))
+                            }
 
-            </div>
-            <div className='  rounded-md'>
-                <div className='flex flex-col gap-3'>
-                    {StaticImages.map((image, index) => (
-                        <div key={index}>
-                            <img src={image.path} alt={image.title} className='w-full h-[250px] object-cover rounded-md' />
+                            <button className=' bg-blue-500 p-2 m-3 rounded-md'>Click to View Structure of NIGST</button>
                         </div>
-                    ))}
+                    ) : (
+                        <div className='hindi leading-relaxed text-justify p-0 md:p-0 lg:p-24'>
+                            <h1 className='font-bold text-lg pt-0 mt-0 mb-3'>{InformationDiv.headingHindi}</h1>
+                            {
+                                InformationDiv.contentHindi.map((para, index) => (
+                                    <p key={index}>{para}</p>
+                                ))
+                            }
+                            <button className='bg-blue-500 p-2 m-3 rounded-md' onClick={handleClick} >Click to View Structure of NIGST</button>
+                            {showImage && <img src={nigstStructure} alt='NIGST Structure' />}
+                        </div>
+                    )}
+
 
                 </div>
+                <div className='  rounded-md'>
+                    <div className='flex flex-col gap-3'>
+                        {StaticImages.map((image, index) => (
+                            <div key={index}>
+                                <img src={image.path} alt={image.title} className='w-full h-[250px] object-cover rounded-md' />
+                            </div>
+                        ))}
 
+                    </div>
+
+                </div>
             </div>
-        </div>
-    )
-}
+        )
+    }
 
-export default About
+    export default About
