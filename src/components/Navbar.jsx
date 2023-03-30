@@ -6,7 +6,8 @@ import { AiOutlineSearch, AiOutlineLogin } from 'react-icons/ai'
 import { BsFillPersonFill } from 'react-icons/bs'
 import { MdOutlineAnnouncement } from 'react-icons/md'
 import Searchbar from './Searchbar';
-
+import { positional } from 'yargs';
+import { positions } from '@mui/system';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,6 +56,11 @@ const Navbar = () => {
 
 
 
+  const [showDiv, setShowDiv] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowDiv(!showDiv);
+  };
 
   return (
     <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer">
@@ -72,9 +78,12 @@ const Navbar = () => {
           </Link>
           <div className="ml-2" >
             <MdOutlineAnnouncement size='1.5em' color='white'  />
+          <div className="ml-2">
+            <MdOutlineAnnouncement size='1.5em' color='white' />
           </div>
         </div>
       </div>
+
 
 
       <div className={`${isOpen ? "block" : "hidden"} w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
@@ -104,6 +113,23 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to="/publicgrievances" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Public grievances Office</Link>
+                <Link to="/tenders" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Tenders</Link>
+              </li>
+
+              <li>
+                <Link to="/rti" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">RTI</Link>
+              </li>
+              <li>
+                <Link to="/soi_annual_reports" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">SOI Annual Reports</Link>
+              </li>
+              <li>
+                <Link to="/raj_bhasha" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Raj Bhasha</Link>
+              </li>
+              <li>
+                <Link to="/geo_spatial_policies" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Geo Spatial Policies</Link>
+              </li>
+              <li>
+                <Link to="/public_grievances_office" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Public grievances Office</Link>
               </li>
             </div>
           </ul>
@@ -134,6 +160,15 @@ const Navbar = () => {
                   <HiChevronRight
                     className={`inline-block h-5 w-5 ml-1 ${isGovernanceOpen ? "transform rotate-90" : ""} `}
                     onClick={handleGovernanceToggle}
+              <div className="relative flex flex-col">
+                <div
+                  className="flex items-center text-white hover:text-yellow-300 mr-4 text-base cursor-pointer"
+                  onMouseEnter={() => setIsGovernanceOpen(true)}
+                  onClick={() => setIsGovernanceOpen(!isGovernanceOpen)}
+                >
+                  <span className="block px-4 py-2">Governance Structure</span>
+                  <HiChevronRight
+                    className={`inline-block h-5 w-5 ml-1 ${isGovernanceOpen ? "transform rotate-90" : ""}`}
                   />
                 </div>
 
@@ -145,6 +180,13 @@ const Navbar = () => {
                   <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance' onClick={handleGovernanceToggle}>Board Of Governance</Link></li>
                   <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation' onClick={handleGovernanceToggle}>Board Of Evaluation</Link></li>
                   <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies' onClick={handleGovernanceToggle}>Board Of Studies</Link></li>
+                  className={`absolute bg-[#1050A2] py-2 top-9 md:top-0 md:left-full ${isGovernanceOpen ? "block order-last" : "hidden"
+                    } w-full border-b-2 border-white`}
+                  onMouseLeave={() => setIsGovernanceOpen(false)}
+                >
+                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance'>Board Of Governance</Link></li>
+                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation'>Board Of Evaluation</Link></li>
+                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies'>Board Of Studies</Link></li>
                 </ul>
               </div>
 
@@ -237,6 +279,19 @@ const Navbar = () => {
             FAQ
           </Link>
         
+          <div className="absolute top-0 right-0">
+          <div className="flex items-center">
+            <button onClick={handleButtonClick} className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-lg">
+              <span>Announcements</span>
+            </button>
+          </div>
+          </div>
+          {showDiv && (
+        <div style={{ width: '450px',position: "sticky",top: "0",zIndex: "9999"}}>
+          This is the div that will be shown when the button is clicked.
+        </div>
+      )}
+
           {/* <DropdownMenu  /> */}
 
         </div>
@@ -262,6 +317,10 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/publicgrievances" className="block  py-2 text-white  hover:font-semibold">Public grievances Office</Link>
+              <Link to="/geo_spatial_policies" className="block py-2 text-white  hover:font-semibold">Geo Spatial Policies</Link>
+            </li>
+            <li>
+              <Link to="/public_grievances_office" className="block  py-2 text-white  hover:font-semibold">Public grievances Office</Link>
             </li>
           </div>
         </ul>
