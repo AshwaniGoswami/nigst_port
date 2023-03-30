@@ -93,7 +93,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com" target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com" target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -103,7 +103,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -113,7 +113,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -123,7 +123,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -133,7 +133,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -143,7 +143,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -153,7 +153,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -163,7 +163,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -173,7 +173,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -183,7 +183,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -193,7 +193,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
             </tbody>
           </table>
@@ -228,7 +228,7 @@ function Tendertable() {
                         <td>lonec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-25</td>
                         <td>2023-03-27</td>
-                        <td><a href="https://www.google.com" target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com" target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -238,7 +238,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -248,7 +248,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -258,7 +258,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -268,7 +268,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -278,7 +278,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -288,7 +288,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -298,7 +298,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -308,7 +308,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -318,7 +318,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -328,7 +328,7 @@ function Tendertable() {
                         <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
-                        <td><a href="https://www.google.com"target="_blank">google.com</a></td>
+                        <td><a href="https://www.google.com"target="_blank"rel="noreferrer">google.com</a></td>
                     </tr>
             </tbody>
           </table>
