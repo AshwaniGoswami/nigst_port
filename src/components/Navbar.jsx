@@ -6,6 +6,7 @@ import {AiOutlineSearch,AiOutlineLogin} from 'react-icons/ai'
 import {BsFillPersonFill} from 'react-icons/bs'
 import {MdOutlineAnnouncement} from 'react-icons/md'
 
+
 import Searchbar from './Searchbar';
 
 
@@ -144,7 +145,7 @@ const showSidePanel=()=>{
   </span>
 
   <div className="absolute z-10 hidden group-hover:block bg-[#1050A2] py-2">
-    <Link to="/about/introduction" className="block px-4 py-2 text-white hover:text-yellow-300">
+    <Link to="hash-scroll#hash-section-1" className="block px-4 py-2 text-white hover:text-yellow-300">
       Introduction
     </Link>
               
