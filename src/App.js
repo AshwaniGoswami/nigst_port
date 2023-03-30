@@ -75,7 +75,7 @@ function App() {
            <Route path='/Feesandpayment' element={<Feesandpayment/>}/>
            <Route path='/Location' element={<Location/>}/>
            <Route path='/Copyrightpolicy' element={<Copyrightpolicy/>}/>
-           <Route path='/Tendertable' element={<Tendertable/>}/>
+           <Route path='/tenders' element={<Tendertable/>}/>
         </Routes>
         <Footer/>
         <Copyright/>
