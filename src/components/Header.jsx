@@ -18,7 +18,7 @@ const Header = () => {
       className="w-full h-full md:ml-24 object-contain"
     />
     </div>
-    <div className="flex p-0 md:p-5 md:mt-5 justify-center h-14 md:h-28 lg-32">
+    <div className="flex p-0 md:p-5 md:mt-auto justify-center h-14 md:h-28 lg-32">
   
     <div className='flex flex-row'>
     <img
