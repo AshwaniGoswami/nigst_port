@@ -4,6 +4,8 @@ import About from '../about/About'
 import Carousel from '../carousel/Carousel'
 import banner1 from '../assests/Mann ki Baat.jfif'
 import banner2 from '../assests/g20 Banner.jpg'
+// import { HashScroll } from "react-hash-scroll";
+
 
 const Banner = [banner1, banner2]
 
@@ -27,7 +29,9 @@ const Home = () => {
           ))}
         </div>
       </div>
+      {/* <HashScroll hash="#hash-section-1"> */}
       <About />
+      {/* </HashScroll> */}
     </>
   )
 }
