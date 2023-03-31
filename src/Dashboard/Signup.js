@@ -4,7 +4,7 @@ import Button from '../components/Buttons/Button';
 
 export default function Signup() {
   return (
-    <div className="department-creation-wrapper ">  
+    <div className="department-creation-wrapper " style={{margin:'20px auto'}}>  
       <h3>Sign Up</h3>
       <Inputs type={"text"} placeholder={"First Name"}/>
       <Inputs type={"text"} placeholder={"Middle Name"}/>
