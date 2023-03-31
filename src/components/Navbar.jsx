@@ -215,12 +215,15 @@ const showSidePanel=()=>{
           <Link to="/gallery" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Gallery
           </Link>
-          <Link to="/contact" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <Link to="/Contactus" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Contact Us
           </Link>
           <Link to="/components/FAQ/faq" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             FAQ
           </Link>
+          <button to="" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+            Announcement
+          </button>
           {/* <DropdownMenu  /> */}
 
         </div>
