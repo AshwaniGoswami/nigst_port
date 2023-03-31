@@ -35,6 +35,7 @@ import { Feesandpayment } from './components/NavComponents/Feesandpayment/Feesan
 import Location from './components/NavComponents/Location/Location';
 import Copyrightpolicy from './components/Policies/Copyrightpolicy';
 import Tendertable from './components/Buttons/Tables/Tendertable';
+import ContactForm from './components/forms/Contactus';
 
 
 function App() {
@@ -76,6 +77,7 @@ function App() {
            <Route path='/Location' element={<Location/>}/>
            <Route path='/Copyrightpolicy' element={<Copyrightpolicy/>}/>
            <Route path='/tenders' element={<Tendertable/>}/>
+           <Route path='/Contactus' element={<ContactForm/>}/>
         </Routes>
         <Footer/>
         <Copyright/>

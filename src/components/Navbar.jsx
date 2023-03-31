@@ -319,6 +319,9 @@ const showSidePanel=()=>{
         </div>
       )}
 
+          <button to="" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+            Announcement
+          </button>
           {/* <DropdownMenu  /> */}
 
         </div>
