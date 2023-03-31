@@ -132,7 +132,7 @@ const Navbar = () => {
             </span>
 
             <div className="absolute z-10 hidden group-hover:block bg-[#1050A2] py-2">
-              <Link to="hash-scroll#hash-section-1" className="block px-4 py-2 text-white hover:text-yellow-300">
+              <Link to="/about/introduction" className="block px-4 py-2 text-white hover:text-yellow-300">
                 Introduction
               </Link>
 
@@ -225,7 +225,7 @@ const Navbar = () => {
 
 
               <Link to="/training/courses" className="block px-4 py-2 text-white hover:text-yellow-300">Courses</Link>
-              <Link to="/training/course_enrollment" className="block px-4 py-2 text-white hover:text-yellow-300">Course Enrollment</Link>
+              <Link to="/training/registration" className="block px-4 py-2 text-white hover:text-yellow-300">Course Enrollment</Link>
               <Link to="/feesandpayment" className="block px-4 py-2 text-white hover:text-yellow-300">Fee and Payment</Link>
             </div>
           </div>
