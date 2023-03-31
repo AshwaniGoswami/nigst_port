@@ -36,6 +36,7 @@ import Location from './components/NavComponents/Location/Location';
 import Copyrightpolicy from './components/Policies/Copyrightpolicy';
 import Tendertable from './components/Buttons/Tables/Tendertable';
 import ContactForm from './components/forms/Contactus';
+import ForgotPasswordForm from './components/forms/forgetpass';
 
 
 function App() {
@@ -78,6 +79,7 @@ function App() {
            <Route path='/Copyrightpolicy' element={<Copyrightpolicy/>}/>
            <Route path='/tenders' element={<Tendertable/>}/>
            <Route path='/Contactus' element={<ContactForm/>}/>
+           <Route path='/forgetpassword' element={<ForgotPasswordForm/>}/>
         </Routes>
         <Footer/>
         <Copyright/>

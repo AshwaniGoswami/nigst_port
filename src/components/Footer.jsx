@@ -130,11 +130,11 @@ useEffect(() => {
 
             <div className="flex items-center mb-2">
               <GrMail color='black' size="1.5em" className='rounded-full w-auto h-auto p-2  bg-[#ffcb00]'/>
-              <Link to={contactus.mailLink} className="text-[17px] px-3">{contactus.mail}</Link>
+              <Link to={contactus.mailLink} className="text-[17px] px-5">{contactus.mail}</Link>
             </div>
             <div className='flex flex-wrap'>
               <Link to={contactus.ytLink} target="_blank">
-                <FaYoutube color='red' size="2.0em" className='p-5 w-auto h-auto'/>
+                <FaYoutube color='red' size="2.0em" className='p-5 pt-3.5 w-auto h-auto'/>
               </Link>
               <Link to='https://www.facebook.com/' target="_blank">
                 <FaFacebookSquare color='#4267B2'  size="1.5em" className='p-5 w-auto h-auto'/>
