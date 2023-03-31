@@ -52,7 +52,7 @@ function LoginForm() {
           <p id="signup-link">
             Don't have an account?<a href="/training/registration">SignUp</a>
           </p>
-          <a href="/forgetpassword" style={{marginLeft: 0}} onClick={route}>Forgot Password?</a>
+          <a href="/forms/forgetpassword" style={{marginLeft: 0}} onClick={route}>Forgot Password?</a>
         </div>
       </form>
     </div>
