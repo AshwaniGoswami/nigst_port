@@ -201,7 +201,7 @@ const Navbar = () => {
 
 
               <Link to="/training/courses" className="block px-4 py-2 text-white hover:text-yellow-300">Courses</Link>
-              <Link to="/training/course_enrollment" className="block px-4 py-2 text-white hover:text-yellow-300">Course Enrollment</Link>
+              <Link to="/training/registration" className="block px-4 py-2 text-white hover:text-yellow-300">Course Enrollment</Link>
               <Link to="/feesandpayment" className="block px-4 py-2 text-white hover:text-yellow-300">Fee and Payment</Link>
             </div>
           </div>
