@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Link, HashRouter } from 'react-router-dom'
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
@@ -43,7 +43,8 @@ import Announcementtable from './components/Buttons/Tables/Announcementtable';
 function App() {
   return (
     <>
-      <Router>
+    <HashRouter>
+      
       <OpenPageFromTop/>
       <Fixed/>
         <Routes>
@@ -85,7 +86,8 @@ function App() {
         </Routes>
         <Footer/>
         <Copyright/>
-      </Router>
+      
+      </HashRouter>
     </>
   );
 }
