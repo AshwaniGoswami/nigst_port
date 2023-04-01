@@ -234,9 +234,9 @@ const Navbar = () => {
       <div id="ann-close-icon">
         <i className="fa fa-close close-icon"></i>
       </div>
-      <a href="/Tables/Announcementtable">
+      <Link to="/Tables/Announcementtable">
         <h3 id="announcemnt-heading">Announcement</h3>
-      </a>
+      </Link>
       <div className="Acarousel-container">
         <div className="Acarousel-wrapper">
           {announcements.map((announcement, index) => (

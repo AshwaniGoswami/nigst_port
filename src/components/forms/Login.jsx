@@ -19,7 +19,7 @@ function LoginForm() {
     <div className="login-container">
       <h2 id="heading">Login</h2>
       <p id="signup-link">
-        Don't have an account?<a href="/training/registration">SignUp</a>
+        Don't have an account?<Link to="/training/registration">SignUp</Link>
       </p>
       <form className="login-form">
         <div className="input">
@@ -51,7 +51,7 @@ function LoginForm() {
         <div className="error-div"></div>
         <div className="signUp-div">
           <p id="signup-link">
-            Don't have an account?<a href="/training/registration">SignUp</a>
+            Don't have an account?<Link to="/training/registration">SignUp</Link>
           </p>
           <Link to="/components/forms/forgetpassword"style={{marginLeft: '11px'}} onClick={route}>Forgot Password?</Link>
         </div>
