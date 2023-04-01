@@ -9,7 +9,7 @@ const Header = () => {
     <FontSizer/>
     <div className=" grid grid-cols-1 md:grid-cols-7  bg-white ">
 
-    <div className='flex md:flex-row col-span-2 flex-col-reverse h-auto md:h-28'>
+    <div className='flex md:flex-row col-span-2 self-center flex-col-reverse h-auto md:h-28'>
     <div className="flex flex-col md:flex-row overflow-hidden">
     <div className=' md:hidden'>
     <img
@@ -18,7 +18,7 @@ const Header = () => {
       className="w-full h-full md:ml-24 object-contain"
     />
     </div>
-    <div className="flex p-0 md:p-5 md:mt-auto justify-center h-14 md:h-28 lg-32">
+    <div className="flex p-0 md:p-5 md:mt-auto justify-center  h-14 md:h-28 lg-32">
   
     <div className='flex flex-row'>
     <img
