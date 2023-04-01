@@ -72,7 +72,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer">
+    <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer relative" >
       <div className="block lg:hidden">
         <button className="flex items-center px-3 py-2  rounded text-white hover:text-yellow-300 hover:border-white" >
           <GiHamburgerMenu onClick={toggle} />
@@ -251,7 +251,7 @@ const Navbar = () => {
             onClick={handleAnnouncementClick}>Announcement</button>
             {showAnnouncement && (
         <div
-          className="sticky z-50 bg-white p-4"
+          className="sticky z-50 bg-white p-4 absolute"
           style={{ top: 0, left: 0, right: 0 }}
         >
            <div className="announcement-container">

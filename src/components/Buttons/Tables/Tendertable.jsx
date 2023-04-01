@@ -75,7 +75,7 @@ function Tendertable() {
               <tr>
               <th>Serial no.</th>
                         <th>Title</th>
-                        <th>Tendor ref. no.</th>
+                        <th>Tendor No.</th>
                         <th>Description</th>
                         <th>Corrigendom</th>
                         <th>Start Date</th>
@@ -90,7 +90,7 @@ function Tendertable() {
                         <td>Notice 3</td>
                         <td>98163134</td>
                         <td>Lorem ipsum dolor sit.</td>
-                        <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
+                        <td>Donec varius justo sit amet sapien lobortis consectetur ehfeifuewbfwekfhwef wefgwbfiwebfkf fkwegfwebfkv.</td>
                         <td>2023-02-26</td>
                         <td>2023-03-28</td>
                         <td><a href="https://www.google.com" target="_blank"rel="noreferrer">google.com</a></td>
