@@ -47,7 +47,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer">
+    <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer relative" >
       <div className="block lg:hidden">
         <button className="flex items-center px-3 py-2  rounded text-white hover:text-yellow-300 hover:border-white" >
           <GiHamburgerMenu onClick={toggle} />
@@ -223,9 +223,45 @@ const Navbar = () => {
           <Link to="/components/FAQ/faq" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             FAQ
           </Link>
-          <button to="" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
-            Announcement
-          </button>
+          <button className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base"
+            onClick={handleAnnouncementClick}>Announcement</button>
+            {showAnnouncement && (
+        <div
+          className="sticky z-50 bg-white p-4 absolute"
+          style={{ top: 0, left: 0, right: 0 }}
+        >
+           <div className="announcement-container">
+      <div id="ann-close-icon">
+        <i className="fa fa-close close-icon"></i>
+      </div>
+      <a href="Announcements/Announcements.html">
+        <h3 id="announcemnt-heading">Announcement</h3>
+      </a>
+      <div className="Acarousel-container">
+        <div className="Acarousel-wrapper">
+          {announcements.map((announcement, index) => (
+            <div key={index} className={`Acarousel-card ${activeIndex === index ? 'active' : ''}`}>
+              <h4>Posted on: {announcement.date}</h4>
+              <p><span>Call for Proposal:</span> {announcement.text}</p>
+            </div>
+          ))}
+        </div>
+        <div className="Acarousel-indicators">
+          {announcements.map((_, index) => (
+            <div
+              key={index}
+              className={`Acarousel-indicator ${activeIndex === index ? 'active' : ''}`}
+              onClick={() => setActiveIndex(index)}
+            ></div>
+          ))}
+        </div>
+        <button className="prev-btn" onClick={handlePrevClick}>❮</button>
+        <button className="next-btn" onClick={handleNextClick}>❯</button>
+      </div>
+    </div>
+        </div>
+      )}
+          
           {/* <DropdownMenu  /> */}
 
         </div>
