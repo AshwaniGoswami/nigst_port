@@ -110,46 +110,46 @@ const About = () => {
         left: 0,
         width: '100%',
         height: '100%',
-        backgroundColor: 'rgba(0, 0, 0, 0.9)',
+        backgroundColor: 'rgb(255,255,255)',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        zIndex: 78, 
+        zIndex: 78,
     };
     const closeButtonStyle = {
         position: 'absolute',
-        top: '110px',
-        right: '200px',
+        top: '10px',
+        right: '10px',
         padding: '5px',
         backgroundColor: 'transparent',
         border: 'none',
-        
+
         cursor: 'pointer',
-        color: '#fff',
-      };
-      const modalStyle1 = {
+        color: '#000000',
+    };
+    const modalStyle1 = {
         position: 'fixed',
         top: 0,
         left: 0,
         width: '100%',
         height: '100%',
-        backgroundColor: 'rgba(0, 0, 0, .9)',
+        backgroundColor: 'rgb(255,255,255)',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        zIndex: 78, 
+        zIndex: 78,
     };
     const closeButtonStyle1 = {
         position: 'absolute',
-        top: '110px',
-        right: '200px',
+        top: '10px',
+        right: '10px',
         padding: '5px',
         backgroundColor: 'transparent',
         border: 'none',
-        
+
         cursor: 'pointer',
-        color: '#fff',
-      };
+        color: '#000000',
+    };
 
     return (
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8 m-0 md:m-8 '>
@@ -172,10 +172,10 @@ const About = () => {
                         }
 
                         <div><button className=' bg-blue-500 p-2 m-3 rounded-md' onClick={() => setModalIsOpen1(true)}>Click to View Structure of NIGST</button>
-                        {modalIsOpen1 && (
+                            {modalIsOpen1 && (
                                 <div style={modalStyle1}>
-                                    <div>
-                                        <img src={NIGST1} alt="NIGST Structure"  style={{width:'1200px',height:'auto'}}/>
+                                    <div style={{ width: '100%', height: '100%' }} >
+                                        <img src={NIGST1} alt="NIGST Structure" style={{ width: '2200px', height: '100%' }} />
                                         <button style={closeButtonStyle1} onClick={() => setModalIsOpen1(false)}> <FaTimes size={30} /></button>
                                     </div>
                                 </div>
@@ -194,8 +194,8 @@ const About = () => {
                         <div><button className='bg-blue-500 p-2 m-3 rounded-md' onClick={() => setModalIsOpen(true)}>Click to View Structure of NIGST</button>
                             {modalIsOpen && (
                                 <div style={modalStyle}>
-                                    <div>
-                                        <img src={NIGST} alt="NIGST Structure"  style={{width:'1200px',height:'auto'}}/>
+                                    <div style={{ width: '100%', height: '100%' }}>
+                                        <img src={NIGST} alt="NIGST Structure" style={{ width: '100%', height: '100%' }} />
                                         <button style={closeButtonStyle} onClick={() => setModalIsOpen(false)}> <FaTimes size={30} /></button>
                                     </div>
                                 </div>
