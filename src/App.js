@@ -37,6 +37,7 @@ import Copyrightpolicy from './components/Policies/Copyrightpolicy';
 import Tendertable from './components/Buttons/Tables/Tendertable';
 import ContactForm from './components/forms/Contactus';
 import ForgotPasswordForm from './components/forms/forgetpassword';
+import Announcementtable from './components/Buttons/Tables/Announcementtable';
 
 
 function App() {
@@ -80,6 +81,7 @@ function App() {
            <Route path='/tenders' element={<Tendertable/>}/>
            <Route path='/Contactus' element={<ContactForm/>}/>
            <Route path='/forms/forgetpassword' element={<ForgotPasswordForm/>}/>
+           <Route path='/Tables/Announcementtable' element={<Announcementtable/>}/>
         </Routes>
         <Footer/>
         <Copyright/>
