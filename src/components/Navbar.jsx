@@ -5,6 +5,7 @@ import { HiChevronRight } from "react-icons/hi"
 import { AiOutlineSearch, AiOutlineLogin } from 'react-icons/ai'
 import { BsFillPersonFill } from 'react-icons/bs'
 import { MdOutlineAnnouncement } from 'react-icons/md'
+import './announcement.css'
 
 
 import Searchbar from './Searchbar';
@@ -106,34 +107,33 @@ const Navbar = () => {
               <HiChevronRight className={`inline-block h-5 w-5 ml-1 md:hidden `} />
             </span>
 
-  <div className="absolute z-10 hidden group-hover:block bg-[#1050A2] py-2">
-    <Link to="hash-scroll#hash-section-1" className="block px-4 py-2 text-white hover:text-yellow-300">
-      Introduction
-    </Link>
-              
-    <div className="relative flex flex-col">
-      <div
-        className="flex items-center text-white hover:text-yellow-300 mr-4 text-base cursor-pointer"
-        onMouseEnter={() => setIsGovernanceOpen(true)}
-        onClick={() => setIsGovernanceOpen(!isGovernanceOpen)}
-      >
-        <span className="block px-4 py-2">Governance Structure</span>
-        <HiChevronRight
-          className={`inline-block h-5 w-5 ml-1 ${isGovernanceOpen ? "transform rotate-90" : ""}`}
-        />
-      </div>
- 
-      <ul
-        className={`absolute bg-[#1050A2] py-2 top-9 md:top-0 md:left-full ${
-          isGovernanceOpen ? "block order-last" : "hidden"
-        } w-full border-b-2 border-white`}
-        onMouseLeave={() => setIsGovernanceOpen(false)}
-      >
-        <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance'>Board Of Governance</Link></li>
-        <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation'>Board Of Evaluation</Link></li>
-        <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies'>Board Of Studies</Link></li>
-      </ul>
-    </div>
+            <div className="absolute z-10 hidden group-hover:block bg-[#1050A2] py-2">
+              <Link to="/about/introduction" className="block px-4 py-2 text-white hover:text-yellow-300">
+                Introduction
+              </Link>
+
+              <div className="relative flex flex-col">
+                <div
+                  className="flex items-center text-white hover:text-yellow-300 mr-4 text-base cursor-pointer"
+                  onMouseEnter={() => setIsGovernanceOpen(true)}
+                  onClick={() => setIsGovernanceOpen(!isGovernanceOpen)}
+                >
+                  <span className="block px-4 py-2">Governance Structure</span>
+                  <HiChevronRight
+                    className={`inline-block h-5 w-5 ml-1 ${isGovernanceOpen ? "transform rotate-90" : ""}`}
+                  />
+                </div>
+
+                <ul
+                  className={`absolute bg-[#1050A2] py-2 top-9 md:top-0 md:left-full ${isGovernanceOpen ? "block order-last" : "hidden"
+                    } w-full border-b-2 border-white`}
+                  onMouseLeave={() => setIsGovernanceOpen(false)}
+                >
+                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance'onMouseLeave={() => setIsGovernanceOpen(true)}>Board Of Governance</Link></li>
+                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation'>Board Of Evaluation</Link></li>
+                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies'>Board Of Studies</Link></li>
+                </ul>
+              </div>
 
               <Link to="/about/nigst_campus" className="block px-4 py-2 text-white hover:text-yellow-300">NIGST Campus</Link>
               <Link to="/location" className="block px-4 py-2 text-white hover:text-yellow-300">Location</Link>
@@ -190,7 +190,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li className='inline-block border-b-2 px-4 py-2 text-white hover:text-yellow-300'>
-                      <Link to="/faculty/geo_ict">
+                      <Link to="/faculty/geo_ict" >
                         Faculty of GEO-ICT
                       </Link>
                     </li>
@@ -223,12 +223,12 @@ const Navbar = () => {
           <Link to="/components/FAQ/faq" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             FAQ
           </Link>
-          <button className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base"
-            onClick={handleAnnouncementClick}>Announcement</button>
+          <button className="block md:py-2 ml-0 mt-3 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-lg font-medium float-right absolute top-0 right-0"
+            onClick={handleAnnouncementClick}>Announcements</button>
             {showAnnouncement && (
         <div
-          className="sticky z-50 bg-white p-4 absolute"
-          style={{ top: 0, left: 0, right: 0 }}
+          // className=" z-50 bg-transparent p-4 absolute"
+          // style={{ top: 0, left: 0, right: 0 }}
         >
            <div className="announcement-container">
       <div id="ann-close-icon">
