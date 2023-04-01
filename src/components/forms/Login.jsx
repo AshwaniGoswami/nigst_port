@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './login.css';
 
 function LoginForm() {
@@ -52,7 +53,7 @@ function LoginForm() {
           <p id="signup-link">
             Don't have an account?<a href="/training/registration">SignUp</a>
           </p>
-          <a href="/forms/forgetpassword" style={{marginLeft: 0}} onClick={route}>Forgot Password?</a>
+          <Link to="/components/forms/forgetpassword"style={{marginLeft: '11px'}} onClick={route}>Forgot Password?</Link>
         </div>
       </form>
     </div>

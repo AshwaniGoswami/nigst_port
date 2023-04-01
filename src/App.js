@@ -81,7 +81,7 @@ function App() {
            <Route path='/Copyrightpolicy' element={<Copyrightpolicy/>}/>
            <Route path='/tenders' element={<Tendertable/>}/>
            <Route path='/Contactus' element={<ContactForm/>}/>
-           <Route path='/forms/forgetpassword' element={<ForgotPasswordForm/>}/>
+           <Route path='/components/forms/forgetpassword' element={<ForgotPasswordForm/>}/>
            <Route path='/Tables/Announcementtable' element={<Announcementtable/>}/>
         </Routes>
         <Footer/>
