@@ -76,25 +76,25 @@ const Navbar = () => {
              ${ispanelopen ? "block" : "hidden"}
             `} style={{ maxHeight: "80vh", overflowY: "auto" }}>
             <div className='w-40  flex flex-col h-screen'>
-            <li>
-      <Link to="/tenders" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Tenders</Link>
-    </li>
-  
-    <li>
-      <Link to="/rti" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">RTI</Link>
-    </li>
-    <li>
-      <Link to="/soi_annual_reports" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">SOI Annual Reports</Link>
-    </li>
-    <li>
-      <Link to="/raj_bhasha" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Raj Bhasha</Link>
-    </li>
-    <li>
-      <Link to="/geo_spatial_policies" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Geo Spatial Policies</Link>
-    </li>
-    <li>
-      <Link to="/public_grievances_office" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Public grievances Office</Link>
-    </li>
+              <li>
+                <Link to="/tenders" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Tenders</Link>
+              </li>
+
+              <li>
+                <Link to="/rti" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>RTI</Link>
+              </li>
+              <li>
+                <Link to="/soi_annual_reports" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>SOI Annual Reports</Link>
+              </li>
+              <li>
+                <Link to="/raj_bhasha" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Raj Bhasha</Link>
+              </li>
+              <li>
+                <Link to="/geo_spatial_policies" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Geo Spatial Policies</Link>
+              </li>
+              <li>
+                <Link to="/public_grievances_office" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Public grievances Office</Link>
+              </li>
             </div>
           </ul>
 
@@ -234,7 +234,7 @@ const Navbar = () => {
       <div id="ann-close-icon">
         <i className="fa fa-close close-icon"></i>
       </div>
-      <a href="Announcements/Announcements.html">
+      <a href="/Tables/Announcementtable">
         <h3 id="announcemnt-heading">Announcement</h3>
       </a>
       <div className="Acarousel-container">
