@@ -5,6 +5,7 @@ import { HiChevronRight } from "react-icons/hi"
 import { AiOutlineSearch, AiOutlineLogin } from 'react-icons/ai'
 import { BsFillPersonFill } from 'react-icons/bs'
 import { MdOutlineAnnouncement } from 'react-icons/md'
+import { FaTimes } from 'react-icons/fa';
 import './announcement.css'
 
 
@@ -223,44 +224,44 @@ const Navbar = () => {
           <Link to="/components/FAQ/faq" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             FAQ
           </Link>
-          <button className="block md:py-2 ml-0 mt-3 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-lg font-medium float-right absolute top-0 right-0"
-            onClick={handleAnnouncementClick}>Announcements</button>
-            {showAnnouncement && (
-        <div
-          // className=" z-50 bg-transparent p-4 absolute"
-          // style={{ top: 0, left: 0, right: 0 }}
-        >
-           <div className="announcement-container">
-      <div id="ann-close-icon">
-        <i className="fa fa-close close-icon"></i>
+            <button className="block md:py-2 ml-0 mt-3 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-lg font-medium float-right absolute top-0 right-0"
+              onClick={handleAnnouncementClick}>Announcements</button>
+              {showAnnouncement && (
+          <div
+            // className=" z-50 bg-transparent p-4 absolute"
+            // style={{ top: 0, left: 0, right: 0 }}
+          >
+            <div className="announcement-container">
+        <div id="ann-close-icon">
+          <button onClick={handleAnnouncementClick} > <FaTimes size={20} /></button>
+        </div>
+        <Link to="/Tables/Announcementtable">
+          <h3 id="announcemnt-heading">Announcement</h3>
+        </Link>
+        <div className="Acarousel-container">
+          <div className="Acarousel-wrapper">
+            {announcements.map((announcement, index) => (
+              <div key={index} className={`Acarousel-card ${activeIndex === index ? 'active' : ''}`}>
+                <h4>Posted on: {announcement.date}</h4>
+                <p><span>Call for Proposal:</span> {announcement.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="Acarousel-indicators">
+            {announcements.map((_, index) => (
+              <div
+                key={index}
+                className={`Acarousel-indicator ${activeIndex === index ? 'active' : ''}`}
+                onClick={() => setActiveIndex(index)}
+              ></div>
+            ))}
+          </div>
+          <button className="prev-btn" onClick={handlePrevClick}>❮</button>
+          <button className="next-btn" onClick={handleNextClick}>❯</button>
+        </div>
       </div>
-      <Link to="/Tables/Announcementtable">
-        <h3 id="announcemnt-heading">Announcement</h3>
-      </Link>
-      <div className="Acarousel-container">
-        <div className="Acarousel-wrapper">
-          {announcements.map((announcement, index) => (
-            <div key={index} className={`Acarousel-card ${activeIndex === index ? 'active' : ''}`}>
-              <h4>Posted on: {announcement.date}</h4>
-              <p><span>Call for Proposal:</span> {announcement.text}</p>
-            </div>
-          ))}
-        </div>
-        <div className="Acarousel-indicators">
-          {announcements.map((_, index) => (
-            <div
-              key={index}
-              className={`Acarousel-indicator ${activeIndex === index ? 'active' : ''}`}
-              onClick={() => setActiveIndex(index)}
-            ></div>
-          ))}
-        </div>
-        <button className="prev-btn" onClick={handlePrevClick}>❮</button>
-        <button className="next-btn" onClick={handleNextClick}>❯</button>
-      </div>
-    </div>
-        </div>
-      )}
+          </div>
+        )}
           
           {/* <DropdownMenu  /> */}
 
