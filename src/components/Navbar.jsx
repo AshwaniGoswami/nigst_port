@@ -129,7 +129,7 @@ const Navbar = () => {
             Home
           </Link>
           <div className="group block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
-            <span className="group-hover:text-yellow-300">About NIGST
+            <span className="group-hover:text-yellow-300" >About NIGST
               <HiChevronRight className={`inline-block h-5 w-5 ml-1 md:hidden `} />
             </span>
 
@@ -141,27 +141,34 @@ const Navbar = () => {
               <div className="relative flex flex-col">
                 <div
                   className="flex items-center text-white hover:text-yellow-300 mr-4 text-base cursor-pointer"
-                  onMouseEnter={() => setIsGovernanceOpen(true)}
-                  onClick={() => setIsGovernanceOpen(!isGovernanceOpen)}
+                  onMouseEnter={() => setIsGovernanceOpen(!isGovernanceOpen)}
+                  onMouseLeave={() => setIsGovernanceOpen(!isGovernanceOpen)}
+                  
+                  
                 >
                   <span className="block px-4 py-2">Governance Structure</span>
                   <HiChevronRight
                     className={`inline-block h-5 w-5 ml-1 ${isGovernanceOpen ? "transform rotate-90" : ""}`}
+                    onMouseEnter={() => setIsGovernanceOpen(!isGovernanceOpen)}
+                   
                   />
                 </div>
 
                 <ul
                   className={`absolute bg-[#1050A2] py-2 top-9 md:top-0 md:left-full ${isGovernanceOpen ? "block order-last" : "hidden"
                     } w-full border-b-2 border-white`}
-                  onMouseLeave={() => setIsGovernanceOpen(false)}
+                    onClick={() => setIsGovernanceOpen(!isGovernanceOpen)}
+                    onMouseLeave={() => setIsGovernanceOpen(!isGovernanceOpen)}
+                    
+                    
                 >
-                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance'onMouseLeave={() => setIsGovernanceOpen(true)}>Board Of Governance</Link></li>
-                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation'>Board Of Evaluation</Link></li>
-                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies'>Board Of Studies</Link></li>
+                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance' onClick={() => setIsGovernanceOpen(!isGovernanceOpen)}>Board Of Governance</Link></li>
+                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation'onClick={() => setIsGovernanceOpen(!isGovernanceOpen)}>Board Of Evaluation</Link></li>
+                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies'onClick={() => setIsGovernanceOpen(!isGovernanceOpen)}>Board Of Studies</Link></li>
                 </ul>
               </div>
 
-              <Link to="/about/nigst_campus" className="block px-4 py-2 text-white hover:text-yellow-300">NIGST Campus</Link>
+              <Link to="/about/nigst_campus" className="block px-4 py-2 text-white hover:text-yellow-300" onClick={() => setIsOpen(isOpen)} >NIGST Campus</Link>
               <Link to="/location" className="block px-4 py-2 text-white hover:text-yellow-300">Location</Link>
             </div>
           </div>
