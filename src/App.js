@@ -86,7 +86,7 @@ function App() {
            <Route path='/components/forms/forgetpassword' element={<ForgotPasswordForm/>}/>
            <Route path='/Tables/Announcementtable' element={<Announcementtable/>}/>
            <Route path='/gallery' element={<Carousel/>}/>
-           <Route path='/component/geospatial' element={<geospatialpolicy/>}/>
+           <Route path='/geospatialpolicy' element={<geospatialpolicy/>}/>
 
         </Routes>
         <Footer/>
