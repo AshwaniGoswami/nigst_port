@@ -1,0 +1,18 @@
+.geo-special-container {
+    padding: 30px 0 30px 30px;
+  }
+  
+  .geo-special-main-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .geo-special-main-wrapper h3 {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+  
+  .geo-special-main-wrapper a {
+    text-decoration: none;
+    color: black;
+  }
