@@ -110,23 +110,23 @@ const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
             `}>
             <div className='w-40  flex flex-col h-screen'>
             <li>
-      <Link to="/tenders" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Tenders</Link>
+      <Link to="/tenders" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Tenders</Link>
     </li>
   
     <li>
-      <Link to="/rti" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">RTI</Link>
+      <Link to="/rti" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>RTI</Link>
     </li>
     <li>
-      <Link to="/soi_annual_reports" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">SOI Annual Reports</Link>
+      <Link to="/soi_annual_reports" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>SOI Annual Reports</Link>
     </li>
     <li>
-      <Link to="/raj_bhasha" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Raj Bhasha</Link>
+      <Link to="/raj_bhasha" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Raj Bhasha</Link>
     </li>
     <li>
-      <Link to="/geo_spatial_policies" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Geo Spatial Policies</Link>
+      <Link to="/components/geospatial" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Geo Spatial Policies</Link>
     </li>
     <li>
-      <Link to="/public_grievances_office" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Public grievances Office</Link>
+      <Link to="/public_grievances_office" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Public grievances Office</Link>
     </li>
             </div>
   </ul>
@@ -331,7 +331,7 @@ const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
       <Link to="/raj_bhasha" className="block  py-2 text-white  hover:font-semibold">Raj Bhasha</Link>
     </li>
     <li>
-      <Link to="/geo_spatial_policies" className="block py-2 text-white  hover:font-semibold">Geo Spatial Policies</Link>
+      <Link to="/components/geospatial" className="block py-2 text-white  hover:font-semibold">Geo Spatial Policies</Link>
     </li>
     <li>
       <Link to="/public_grievances_office" className="block  py-2 text-white  hover:font-semibold">Public grievances Office</Link>
