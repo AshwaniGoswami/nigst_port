@@ -6,6 +6,9 @@ import {AiOutlineSearch,AiOutlineLogin} from 'react-icons/ai'
 import {BsFillPersonFill} from 'react-icons/bs'
 import {MdOutlineAnnouncement} from 'react-icons/md'
 import Searchbar from './Searchbar';
+import { FaTimes } from 'react-icons/fa';
+import './announcement.css'
+import { style } from '@mui/system';
 
 
 const Navbar = () => {
@@ -49,6 +52,32 @@ const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
     setIsGovernanceOpen(false)
     setIsfacultyOpen(false)
   }, [location]);
+
+  const [showAnnouncement, setShowAnnouncement] = useState(true);
+  const handleAnnouncementClick = () => {
+    setShowAnnouncement(!showAnnouncement);
+  };
+  const [activeIndex, setActiveIndex] = useState(0);
+  const announcements = [
+    {
+      date: 'Aug 22, 2022',
+      text: 'Call for Proposal: Announcement of Opportunity (AO) for Capacity Building in Space Based Disaster Management Support'
+    },
+    {
+      date: 'Sep 22, 2022',
+      text: 'Call for Proposal: Announcement of Opportunity (AO) for Capacity Building in Space Based Disaster Management Support'
+    },
+    {
+      date: 'Sep 22, 2022',
+      text: 'Call for Proposal: Announcement of Opportunity (AO) for Capacity Building in Space Based Disaster Management Support'
+    }
+  ];
+  const handlePrevClick = () => {
+    setActiveIndex(activeIndex === 0 ? announcements.length - 1 : activeIndex - 1);
+  };
+  const handleNextClick = () => {
+    setActiveIndex(activeIndex === announcements.length - 1 ? 0 : activeIndex + 1);
+  };
 
   return (
     <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer">
@@ -232,6 +261,55 @@ const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
           <Link to="/components/FAQ/faq" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             FAQ
           </Link>
+          <button className="block md:py-2 ml-0 mt-3 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4  text-base  float-right absolute top-0 right-0"
+              onClick={handleAnnouncementClick}>Announcements</button>
+              {showAnnouncement && (
+          <div
+            // className=" z-50 bg-transparent p-4 absolute"
+            // style={{ top: 0, left: 0, right: 0 }}
+          >
+            <div className="announcement-container">
+        <div id="ann-close-icon">
+          <button onClick={handleAnnouncementClick} > <FaTimes size={20} /></button>
+        </div>
+        <Link to="/Tables/Announcementtable">
+          <h3 id="announcemnt-heading">Announcement</h3>
+        </Link>
+        <div className="Acarousel-container">
+          <div className="Acarousel-wrapper">
+          {announcements.reduce((accumulator, announcement, index) => {
+    if (index % 2 === 0) {
+      accumulator.push(
+        <div key={index} className={`Acarousel-card ${activeIndex === index ? 'active' : ''}`}>
+          <h4>Posted on: {announcement.date}</h4>
+          <p><span>Call for Proposal:</span> {announcement.text}</p>
+          {announcements[index + 1] && (
+            <>
+              <h4>Posted on: {announcements[index + 1].date}</h4>
+              <p><span>Call for Proposal:</span> {announcements[index + 1].text}</p>
+            </>
+          )}
+        </div>
+      );
+    }
+    return accumulator;
+  }, [])}
+          </div>
+          <div className="Acarousel-indicators">
+            {announcements.map((_, index) => (
+              <div
+                key={index}
+                className={`Acarousel-indicator ${activeIndex === index ? 'active' : ''}`}
+                onClick={() => setActiveIndex(index)}
+              ></div>
+            ))}
+          </div>
+          <button className="prev-btn" onClick={handlePrevClick}>❮</button>
+          <button className="next-btn" onClick={handleNextClick}>❯</button>
+        </div>
+      </div>
+          </div>
+        )}
           {/* <DropdownMenu  /> */}
 
         </div>
