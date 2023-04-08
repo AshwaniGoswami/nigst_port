@@ -39,7 +39,7 @@ import ContactForm from './components/forms/Contactus';
 import ForgotPasswordForm from './components/forms/forgetpassword';
 import Announcementtable from './components/Buttons/Tables/Announcementtable';
 import Carousel from './components/Gallery/gallery';
-import geospatialpolicy from './components/geospatial';
+import Geospatialpolicy from './components/geospatial';
 
 
 function App() {
@@ -86,7 +86,8 @@ function App() {
            <Route path='/components/forms/forgetpassword' element={<ForgotPasswordForm/>}/>
            <Route path='/Tables/Announcementtable' element={<Announcementtable/>}/>
            <Route path='/gallery' element={<Carousel/>}/>
-           <Route path='/geospatialpolicy' element={<geospatialpolicy/>}/>
+           <Route path='/components/geospatial' element={<Geospatialpolicy/>}/>
+           
 
         </Routes>
         <Footer/>
