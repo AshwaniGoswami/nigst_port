@@ -79,12 +79,55 @@
     border-radius: 15px;
 
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .rti-container {
       width: 90%;
       margin: 16px auto;
-      padding: 16px auto;
+      padding: 5px auto;
     }
+    
+  } */
+  .content-container {
+    
+    margin: 0 auto;
+  }
+  
+  .heading-container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .rti-container {
+    display: flex; /* Set display to flex */
+  }
+  
+  .hindi-rti {
+    flex: 1; /* Take up 1/2 of the available space */
     
   }
   
+  .english-rti {
+    flex: 1; /* Take up 1/2 of the available space */
+    
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    .rti-container {
+      flex-direction: column; /* Set flex-direction to column */
+    }
+  
+    div.hindi-rti {
+      order: 2; /* Change the order of the Hindi div */
+      padding: 10px;
+      margin:5px auto;
+      width:80%
+    }
+  
+    div.english-rti {
+      order: 1; /* Change the order of the English div */
+      padding: 10px;
+      margin:5px auto ;
+      width:80%
+    }
+  }
