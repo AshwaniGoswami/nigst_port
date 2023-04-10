@@ -246,7 +246,7 @@ const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
           <Link to="/training/registration" className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Training Registration
           </Link>
-          <Link to="https://www.surveyofindia.gov.in/pages/nhp" target="_blank" className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <Link to="/components/SOI project/soiprojects" target="_blank" className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             SOI Projects
           </Link>
           <Link to="/sitemap" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">

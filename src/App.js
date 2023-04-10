@@ -40,6 +40,7 @@ import ForgotPasswordForm from './components/forms/forgetpassword';
 import Announcementtable from './components/Buttons/Tables/Announcementtable';
 import Carousel from './components/Gallery/gallery';
 import Geospatialpolicy from './components/geospatial';
+import SimpleSlider from './components/SOI project/soiprojects';
 
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
            <Route path='/Tables/Announcementtable' element={<Announcementtable/>}/>
            <Route path='/gallery' element={<Carousel/>}/>
            <Route path='/components/geospatial' element={<Geospatialpolicy/>}/>
+           <Route path='/components/SOI project/soiprojects' element={<SimpleSlider/>}/>
            
 
         </Routes>
