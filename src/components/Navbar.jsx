@@ -124,7 +124,7 @@ const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
   </button>
   <ul className={`bg-[#1050A2] py-0 ml-0 absolute top-full md:-ml-4 lg:-ml-4  mt-1 z-50
              ${ispanelopen ? "block" : "hidden"}
-            `}>
+            `}style={{maxHeight: "80vh", overflowY: "auto"}}>
             <div className='w-40  flex flex-col h-screen'>
             <li>
       <Link to="/tenders" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Tenders</Link>
