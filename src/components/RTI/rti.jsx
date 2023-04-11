@@ -2,6 +2,7 @@ import React from 'react';
 import './rtii.css'
 
 function RightToInformation() {
+ 
   return (
     <div className="content-container">
       <div className="heading-container">
@@ -36,6 +37,7 @@ function RightToInformation() {
                     </ul>
 
                 </div>
+               
         <div id="vertical-line"></div>
         <div className="english-rti">
 
