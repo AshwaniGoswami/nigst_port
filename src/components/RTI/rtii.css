@@ -127,7 +127,7 @@
     div.english-rti {
       order: 1; /* Change the order of the English div */
       padding: 10px;
-      margin:5px auto ;
+      margin:5px auto ;        
       width:80%
     }
   }
