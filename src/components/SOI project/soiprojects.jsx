@@ -82,7 +82,7 @@ function SCarousel () {
         {hotelCards.map((card, index) => (
           <div key={index}>
             <h2>{card.title}</h2>
-            <img alt={card.title} src={card.imageSrc} width="100" height="100"  />
+            <img alt={card.title} src={card.imageSrc} width="400" height="400"  />
             <p>{card.description}</p>
             <ul>
               {card.features.map((feature, index) => (
