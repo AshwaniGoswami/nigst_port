@@ -1,7 +1,13 @@
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import "./soiproject.css"
 import Slider from 'react-slick'
 import {useState} from 'react'
+import img1 from './soiproject/01.jpg';
+import img2 from './soiproject/coastal.jpg';
+import img3 from './soiproject/nhp.jpg';
+import img4 from './soiproject/vertical-datum.jpg';
+import img5 from './soiproject/web-gis.jpg';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 
@@ -24,49 +30,45 @@ function SCarousel () {
         lazyLoad: true,
         autoplaySpeed: 3000,
     }
-  const hotelCards = [
-    {
-      imageSrc:
-        './soiproject/01.jpg',
-      title: '',
-      description: 'Lorem ipsum dolor sit amet, consectur dolori',
-      pricingText: '',
-      features: [''],
-    },
-    {
-      imageSrc:
-        './soiproject/coastal.jpg',
-      title: '',
-      description: 'Lorem ipsum dolor sit amet, consectur dolori',
-      pricingText: '',
-      features: [''],
-    },
-    {
-        imageSrc:
-          './soiproject/nhp.jpg',
+
+    
+    const hotelCards = [
+      {
+        imageSrc: img1,
+        title: '',
+        description: 'Lorem ipsum dolor sit amet, consectur dolori',
+        pricingText: '',
+        features: [''],
+      },
+      {
+        imageSrc: img2,
+        title: '',
+        description: 'Lorem ipsum dolor sit amet, consectur dolori',
+        pricingText: '',
+        features: [''],
+      },
+      {
+        imageSrc: img3,
         title: '',
         description: 'Lorem ipsum dolor sit amet, consectur dolori',
         pricingText: '',
         features: [],
       },
-    {
-      imageSrc:
-        './soiproject/vertical-datum.jpg',
-      title: '',
-      description: '',
-      pricingText: '',
-      features: [''],
-    },
-    {
-      imageSrc:
-        './soiproject/web-gis.jpg',
-      title: '',
-      description: 'Lorem ipsum dolor sit amet, consectur dolori',
-      pricingText: '',
-      features: [
-         ],
-    },
-  ]
+      {
+        imageSrc: img4,
+        title: '',
+        description: '',
+        pricingText: '',
+        features: [''],
+      },
+      {
+        imageSrc: img5,
+        title: '',
+        description: 'Lorem ipsum dolor sit amet, consectur dolori',
+        pricingText: '',
+        features: [],
+      },
+    ];
 
   return (
          <div className='content'>
