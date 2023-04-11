@@ -78,7 +78,23 @@ const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
   const handleNextClick = () => {
     setActiveIndex(activeIndex === announcements.length - 1 ? 0 : activeIndex + 1);
   };
-  const isSmallScreen = window.innerWidth <= 640;
+
+
+    const [showButton, setShowButton] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowButton(window.innerWidth > 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
 
   return (
     <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer">
@@ -94,8 +110,8 @@ const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
     <Link to='/login' className='flex items-center justify-center'>
       <BsFillPersonFill size='1.5em' color='white' />
     </Link>
-    <div className="ml-2">
-      <MdOutlineAnnouncement size='1.5em' color='white' />
+    <div className="ml-2" >
+      <MdOutlineAnnouncement size='1.5em' color='white' onClick={handleAnnouncementClick}/>
     </div>
   </div>
 </div>
@@ -262,15 +278,15 @@ const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
           <Link to="/components/FAQ/faq" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             FAQ
           </Link>
-          {isSmallScreen ? null : (
-          <button className="block md:py-2 ml-0 mt-3 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4  text-base  float-right absolute top-0 right-0 hide-on-small-screen"
-              onClick={handleAnnouncementClick } >Announcements</button>   )}
+          {showButton && (
+          <button className="block md:py-2 ml-0 mt-3 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4  text-base  float-right absolute top-0 right-0"
+              onClick={handleAnnouncementClick}>Announcements</button>)}
               {showAnnouncement && (
           <div
             // className=" z-50 bg-transparent p-4 absolute"
             // style={{ top: 0, left: 0, right: 0 }}
           >
-            <div className="announcement-container">
+            <div className="announcement-container" >
         <div id="ann-close-icon">
           <button onClick={handleAnnouncementClick} > <FaTimes size={20} /></button>
         </div>
