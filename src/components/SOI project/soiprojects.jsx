@@ -91,7 +91,7 @@ function SCarousel() {
   ];
 
   return (
-    <div className='content py-10 '>
+    <div className='content py-5 w-full'>
     <div className="mx-3 flex justify-between">
       <button className="bg-gray-200 text-gray-600 hover:bg-gray-300 rounded-full p-2" onClick={sliderRef?.slickPrev}>
         <FaArrowLeft />
@@ -100,7 +100,7 @@ function SCarousel() {
         <FaArrowRight />
       </button>
     </div>
-    <Slider className="mt-4 mx-0 grid gap-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 " ref={setSliderRef} {...sliderSettings}>
+    <Slider className="mt-4 mx-0 grid gap-0 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 " ref={setSliderRef} {...sliderSettings}>
       {hotelCards.map((card, index) => (
         <div key={index} className="p-6 bg-white shadow-md h-full flex flex-col slider">
           <h2 className="text-2xl font-bold mb-2">{card.title}</h2>
