@@ -23,7 +23,7 @@ function SCarousel() {
   slidesToScroll: 1,
   infinite: true,
   fade: false,
-  speed: 500,
+  speed: 1000,
   autoplay: true,
   initialSlide: 2,
   lazyLoad: true,
@@ -57,36 +57,36 @@ function SCarousel() {
       imageSrc: img1,
       title: '',
       description: 'Lorem ipsum dolor sit amet, consectur dolori',
-      pricingText: '',
+      pricingText: 'SVAMITA',
       features: [''],
     },
     {
       imageSrc: img2,
       title: '',
       description: 'Lorem ipsum dolor sit amet, consectur dolori',
-      pricingText: '',
+      pricingText: 'Integrated Costal Hazard Zone Mapping',
       features: [''],
     },
     {
       imageSrc: img3,
       title: '',
       description: 'Lorem ipsum dolor sit amet, consectur dolori',
-      pricingText: '',
-      features: [],
+      pricingText: 'National Hydrology Project',
+      features: [''],
     },
     {
       imageSrc: img4,
       title: '',
       description: 'Lorem ipsum dolor sit amet, consectur dolori',
-      pricingText: '',
+      pricingText: 'Redefinition of Indian Vertical Application',
       features: [''],
     },
     {
       imageSrc: img5,
       title: '',
       description: 'Lorem ipsum dolor sit amet, consectur dolori',
-      pricingText: '',
-      features: [],
+      pricingText: 'Web Gis based Governance Application',
+      features: [''],
     },
   ];
 
@@ -106,10 +106,10 @@ function SCarousel() {
           <h2 className="text-2xl font-bold mb-2">{card.title}</h2>
           <img alt={card.title} src={card.imageSrc} className="w-full h-64 object-cover mb-4 rounded-lg" />
           <p className="text-gray-700 mb-4 flex-grow">{card.description}</p>
+          <div className="bg-[#1050a2] hover:bg-[#ffcb00] text-white font-bold py-2 px-4 rounded-sm inline-block mb-4 flex justify-center items-center">{card.pricingText}</div>
+
           
-          <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full inline-block">
-            Visit Site
-          </a>
+          
         </div>
       ))}
     </Slider>
