@@ -86,7 +86,7 @@
     }
 
     div.hindi-rti {
-        order: 3;
+        order: 1;
         /* Change the order of the Hindi div */
         padding: 10px;
         margin: 5px auto;
@@ -94,7 +94,7 @@
     }
 
     div.english-rti {
-        order: 1;
+        order: 3;
         /* Change the order of the English div */
         padding: 10px;
         margin: 5px auto;

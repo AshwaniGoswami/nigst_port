@@ -2,98 +2,120 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import "./soiproject/soiproject.css"
 import Slider from 'react-slick'
-import {useState} from 'react'
+import { useState } from 'react'
 import img1 from './soiproject/01.jpg';
 import img2 from './soiproject/coastal.jpg';
 import img3 from './soiproject/nhp.jpg';
 import img4 from './soiproject/vertical-datum.jpg';
 import img5 from './soiproject/web-gis.jpg';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { FaCheck } from 'react-icons/fa';
 
 
-function SCarousel () {
 
-    const [sliderRef, setSliderRef] = useState(null)
+function SCarousel() {
 
-    const sliderSettings = {
-        // removes default buttons
-        arrows: false,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        infinite: true,
-      }
-      const settings = { 
-        fade: true ,
-        speed: 500, // ms
-        autoplay: false,
-        initialSlide: 2,
-        lazyLoad: true,
-        autoplaySpeed: 3000,
-    }
+  const [sliderRef, setSliderRef] = useState(null)
 
-    
-    const hotelCards = [
-      {
-        imageSrc: img1,
-        title: '',
-        description: 'Lorem ipsum dolor sit amet, consectur dolori',
-        pricingText: '',
-        features: [''],
+  const sliderSettings = {
+  arrows: false,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  infinite: true,
+  fade: false,
+  speed: 500,
+  autoplay: false,
+  initialSlide: 2,
+  lazyLoad: true,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
       },
-      {
-        imageSrc: img2,
-        title: '',
-        description: 'Lorem ipsum dolor sit amet, consectur dolori',
-        pricingText: '',
-        features: [''],
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
       },
-      {
-        imageSrc: img3,
-        title: '',
-        description: 'Lorem ipsum dolor sit amet, consectur dolori',
-        pricingText: '',
-        features: [],
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
       },
-      {
-        imageSrc: img4,
-        title: '',
-        description: '',
-        pricingText: '',
-        features: [''],
-      },
-      {
-        imageSrc: img5,
-        title: '',
-        description: 'Lorem ipsum dolor sit amet, consectur dolori',
-        pricingText: '',
-        features: [],
-      },
-    ];
+    },
+  ],
+};
+
+  
+  
+   const hotelCards = [
+    {
+      imageSrc: img1,
+      title: '',
+      description: 'Lorem ipsum dolor sit amet, consectur dolori',
+      pricingText: '',
+      features: [''],
+    },
+    {
+      imageSrc: img2,
+      title: '',
+      description: 'Lorem ipsum dolor sit amet, consectur dolori',
+      pricingText: '',
+      features: [''],
+    },
+    {
+      imageSrc: img3,
+      title: '',
+      description: 'Lorem ipsum dolor sit amet, consectur dolori',
+      pricingText: '',
+      features: [],
+    },
+    {
+      imageSrc: img4,
+      title: '',
+      description: 'Lorem ipsum dolor sit amet, consectur dolori',
+      pricingText: '',
+      features: [''],
+    },
+    {
+      imageSrc: img5,
+      title: '',
+      description: 'Lorem ipsum dolor sit amet, consectur dolori',
+      pricingText: '',
+      features: [],
+    },
+  ];
 
   return (
-         <div className='content'>
-             <button onClick={sliderRef?.slickPrev}>
-        <FaArrowLeft />
-      </button>
-      <button onClick={sliderRef?.slickNext}>
-        <FaArrowRight />
-      </button>
-      <Slider  ref={setSliderRef} {...sliderSettings}>
-        {hotelCards.map((card, index) => (
-          <div key={index}>
-            <h2>{card.title}</h2>
-            <img alt={card.title} src={card.imageSrc} width="400" height="400"  />
-            <p>{card.description}</p>
-            <ul>
-              {card.features.map((feature, index) => (
-                <li key={index}>{feature}</li>
-              ))}
-            </ul>
-            <button className='btn'>visit site</button>
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <div className='content'>
+    <button className="bg-gray-200 text-gray-600 hover:bg-gray-300 rounded-full p-2" onClick={sliderRef?.slickPrev}>
+      <FaArrowLeft />
+    </button>
+    <button className="bg-gray-200 text-gray-600 hover:bg-gray-300 rounded-full p-2" onClick={sliderRef?.slickNext}>
+      <FaArrowRight />
+    </button>
+    <Slider className="mt-4 grid gap-20 grid-cols-1 h-100 sm:grid-cols-2 lg:grid-cols-3" ref={setSliderRef} {...sliderSettings}>
+      {hotelCards.map((card, index) => (
+        <div key={index} className="p-6 bg-white rounded-lg shadow-md h-full flex flex-col">
+          <h2 className="text-2xl font-bold mb-2">{card.title}</h2>
+          <img alt={card.title} src={card.imageSrc} className="w-full h-64 object-cover mb-4 rounded-lg" />
+          <p className="text-gray-700 mb-4 flex-grow">{card.description}</p>
+          
+          <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full inline-block">
+            Visit Site
+          </a>
+        </div>
+      ))}
+    </Slider>
+  </div>
+  
+
+  
+
   )
 }
-export default  SCarousel;
+export default SCarousel;
