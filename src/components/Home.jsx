@@ -5,6 +5,8 @@ import Carousel from '../carousel/Carousel'
 import banner1 from '../assests/Mann ki Baat.jfif'
 import banner2 from '../assests/g20 Banner.jpg'
 // import { HashScroll } from "react-hash-scroll";
+import SCarousel from '../components/SOI project/soiprojects';
+
 
 
 const Banner = [banner1, banner2]
@@ -19,6 +21,41 @@ const Home = () => {
     fetchBannerImages();
   }, [])
 
+
+  const [sliderRef, setSliderRef] = useState(null)
+
+  const sliderSettings = {
+  arrows: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  infinite: true,
+  fade: false,
+  speed: 500,
+  autoplay: true,
+  initialSlide: 2,
+  lazyLoad: true,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+  ],
+};
   return (
     <>
       <div className=''>
@@ -32,6 +69,7 @@ const Home = () => {
       {/* <HashScroll hash="#hash-section-1"> */}
       <About />
       {/* </HashScroll> */}
+      <SCarousel />
     </>
   )
 }
