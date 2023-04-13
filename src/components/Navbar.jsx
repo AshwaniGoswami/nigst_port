@@ -46,11 +46,23 @@ const Navbar = () => {
   const handleFacultyToggle = () => {
     setIsfacultyOpen(!isfacultyOpen)
   }
+  
+const [isaboutOpen, setIsaboutOpen] = useState(false)
+
+const handleAboutOpen = () => {
+  setIsaboutOpen(!isaboutOpen);
+};
+const [istrainingOpen, setIstrainingOpen] = useState(false)
+const handletrainingToggle=()=>{
+  setIstrainingOpen(!istrainingOpen)
+}
   const location = useLocation()
   useEffect(() => {
     setIsOpen(false);
     setIsGovernanceOpen(false)
     setIsfacultyOpen(false)
+    setIsaboutOpen(false)
+    setIstrainingOpen(false)
   }, [location]);
 
   const [showAnnouncement, setShowAnnouncement] = useState(true);
@@ -97,7 +109,6 @@ const Navbar = () => {
 
 
 
-  // const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -107,11 +118,8 @@ const Navbar = () => {
     return () => clearInterval(intervalId);
   }, [activeIndex, announcements.length]);
 
-
-
-
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2 w-full cursor-pointer">
+    <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer">
       <div className="block lg:hidden">
         <button className="flex items-center px-3 py-2  rounded text-white hover:text-yellow-300 hover:border-white" >
           <GiHamburgerMenu onClick={toggle} />
@@ -125,7 +133,7 @@ const Navbar = () => {
             <BsFillPersonFill size='1.5em' color='white' />
           </Link>
           <div className="ml-2" >
-            <MdOutlineAnnouncement size='1.5em' color='white' onClick={handleAnnouncementClick} />
+            <MdOutlineAnnouncement size='1.5em' color='white'  />
           </div>
         </div>
       </div>
@@ -138,27 +146,27 @@ const Navbar = () => {
           </button>
           <ul className={`bg-[#1050A2] py-0 ml-0 absolute top-full md:-ml-4 lg:-ml-4  mt-1 z-50
              ${ispanelopen ? "block" : "hidden"}
-            `} style={{ maxHeight: "80vh", overflowY: "auto" }}>
+            `} style={{  overflowY: "auto" }}>
             <div className='w-40  flex flex-col h-screen'>
-              <li>
-                <Link to="/tenders" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Tenders</Link>
-              </li>
-
-              <li>
-                <Link to="/rti" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>RTI</Link>
-              </li>
-              <li>
-                <Link to="https://www.surveyofindia.gov.in/pages/annual-reports" target='blank' className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>SOI Annual Reports</Link>
-              </li>
-              <li>
-                <Link to="./components/rajbhasha/rajbhasha" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Raj Bhasha</Link>
-              </li>
-              <li>
-                <Link to="/components/geospatial" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Geo Spatial Policies</Link>
-              </li>
-              <li>
-                <Link to="/publicgrievances" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Public grievances Office</Link>
-              </li>
+            <li>
+      <Link to="/tenders" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Tenders</Link>
+    </li>
+  
+    <li>
+      <Link to="/rti" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">RTI</Link>
+    </li>
+    <li>
+      <Link to="https://www.surveyofindia.gov.in/pages/annual-reports" target='blank' className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">SOI Annual Reports</Link>
+    </li>
+    <li>
+      <Link to="./components/rajbhasha/rajbhasha" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Raj Bhasha</Link>
+    </li>
+    <li>
+      <Link to="/components/geospatial" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Geo Spatial Policies</Link>
+    </li>
+    <li>
+      <Link to="/components/publicgrievances/Publicgrievance" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Public grievances Office</Link>
+    </li>
             </div>
           </ul>
 
@@ -166,11 +174,12 @@ const Navbar = () => {
             Home
           </Link>
           <div className="group block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
-            <span className="group-hover:text-yellow-300">About NIGST
-              <HiChevronRight className={`inline-block h-5 w-5 ml-1 md:hidden `} />
-            </span>
+            <span className="group-hover:text-yellow-300"   onClick={handleAboutOpen}>About NIGST
+            <HiChevronRight className={`inline-block h-5 w-5 ml-1 md:hidden  ${!isaboutOpen ? "transform rotate-90" : ""} `}  />            </span>
+{ 
 
-            <div className="absolute z-10 hidden group-hover:block bg-[#1050A2] py-2">
+}
+            <div className={`absolute ${isaboutOpen? "group-hover:hidden":"group-hover:block"} z-10 hidden group-hover:block bg-[#1050A2] py-2`}  >
               <Link to="/about/introduction" className="block px-4 py-2 text-white hover:text-yellow-300">
                 Introduction
               </Link>
@@ -184,21 +193,26 @@ const Navbar = () => {
                   className="flex items-center text-white hover:text-yellow-300 mr-4 text-base cursor-pointer"
 
                 >
-                  <span className="block px-4 py-2">Governance Structure</span>
+                <div className='flex flex-row items-center ' onClick={handleGovernanceHoverEnd}>
+                <span className="block px-4 py-2">Governance Structure</span>
                   <HiChevronRight
                     className={`inline-block h-5 w-5 ml-1 ${isGovernanceOpen ? "transform rotate-90" : ""} `}
-                    onClick={handleGovernanceToggle}
                   />
+                </div>
+                 
                 </div>
 
                 <ul
                   className={`absolute bg-[#1050A2] py-2 top-9 md:top-0 md:left-full ${isGovernanceOpen || isGovernanceHovered ? "block order-last" : "hidden"
                     } w-full border-b-2 border-white`}
                   onMouseEnter={handleGovernanceHover}
-                  onMouseLeave={handleGovernanceHoverEnd}      >
-                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance' onClick={handleGovernanceToggle}>Board Of Governance</Link></li>
-                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation' onClick={handleGovernanceToggle}>Board Of Evaluation</Link></li>
-                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies' onClick={handleGovernanceToggle}>Board Of Studies</Link></li>
+                  onMouseLeave={handleGovernanceHoverEnd} 
+                 
+
+                       >
+                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance'>Board Of Governance</Link></li>
+                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation' >Board Of Evaluation</Link></li>
+                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies' >Board Of Studies</Link></li>
                 </ul>
               </div>
 
@@ -211,8 +225,10 @@ const Navbar = () => {
 
 
           <div className="group block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
-            <span className="group-hover:text-yellow-300">Training</span>
-            <div className="absolute z-10 hidden group-hover:block bg-[#1050A2] py-2">
+            <span className="group-hover:text-yellow-300" onClick={handletrainingToggle}>Training
+            <HiChevronRight className={`inline-block h-5 w-5 ml-1 md:hidden  ${!istrainingOpen ? "transform rotate-90" : ""} `}  />
+</span>
+            <div className={`absolute ${istrainingOpen? "group-hover:hidden":"group-hover:block"} z-10 hidden group-hover:block bg-[#1050A2] py-2`}>
 
 
 
@@ -222,11 +238,11 @@ const Navbar = () => {
                 onMouseLeave={handleFacultyHoverEnd}
                 className="relative"
               >
-                <div className="flex items-center w-full text-white hover:text-yellow-300 mr-4 text-base cursor-pointer">
+                <div className="flex items-center w-full text-white hover:text-yellow-300 mr-4 text-base cursor-pointer"   onClick={handleFacultyHoverEnd}
+>
                   <span className="block px-4 py-2">Faculty</span>
                   <HiChevronRight
                     className={`inline-block h-5 w-5 ml-1 ${isfacultyOpen ? "transform rotate-90" : ""}`}
-                    onClick={handleFacultyToggle}
                   />
                 </div>
                 <div
@@ -236,27 +252,27 @@ const Navbar = () => {
                   onMouseLeave={handleFacultyHoverEnd}
                 >
                   <ul className="bg-[#1050A2] w-full flex flex-col justify-center py-0  ml-0 md:relative md:left-full lg:absolute lg:left-full">
-                    <li className='inline-block border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
+                    <li className='inline-block md:border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
                       <Link to="/faculty/geodesy">
                         Faculty of Geodesy
                       </Link>
                     </li>
-                    <li className='inline-block border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
+                    <li className='inline-block md:border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
                       <Link to="/faculty/photogrammetry">
                         Faculty of Photogrammetry & RS
                       </Link>
                     </li>
-                    <li className='inline-block border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
+                    <li className='inline-block md:border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
                       <Link to="/faculty/cartography">
                         Faculty of Carto, DM & GIS
                       </Link>
                     </li>
-                    <li className='inline-block border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
+                    <li className='inline-block md:border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
                       <Link to="/faculty/topographical">
                         Faculty of TS & LIS
                       </Link>
                     </li>
-                    <li className='inline-block border-b-2 px-4 py-2 text-white hover:text-yellow-300'>
+                    <li className='inline-block md:border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
                       <Link to="/faculty/geo_ict">
                         Faculty of GEO-ICT
                       </Link>
@@ -295,8 +311,7 @@ const Navbar = () => {
               onClick={handleAnnouncementClick}>Announcements</button>)}
           {showAnnouncement && (
             <div
-            // className=" z-50 bg-transparent p-4 absolute"
-            // style={{ top: 0, left: 0, right: 0 }}
+          
             >
               <div className="announcement-container" >
                 <div id="ann-close-icon">
@@ -340,34 +355,33 @@ const Navbar = () => {
               </div>
             </div>
           )}
-          {/* <DropdownMenu  /> */}
 
         </div>
         <ul className={`block md:hidden bg-[#1050A2] py-0 ml-0   
              
             `}>
-          <div className='  flex flex-col'>
+            <div className='  flex flex-col'>
             <li>
-              <Link to="/tenders" className="block py-2 text-white  hover:font-semibold">Tenders</Link>
-            </li>
-
-            <li>
-              <Link to="/rti" className="block  py-2 text-white  hover:font-semibold">RTI</Link>
-            </li>
-            <li>
-              <Link to="https://www.surveyofindia.gov.in/pages/annual-reports"  target='blank' className="block  py-2 text-white  hover:font-semibold">SOI Annual Reports</Link>
-            </li>
-            <li>
-              <Link to="./components/rajbhasha/rajbhasha" className="block  py-2 text-white  hover:font-semibold">Raj Bhasha</Link>
-            </li>
-            <li>
-              <Link to="/components/geospatial" className="block py-2 text-white  hover:font-semibold">Geo Spatial Policies</Link>
-            </li>
-            <li>
-              <Link to="/publicgrievances" className="block  py-2 text-white  hover:font-semibold">Public grievances Office</Link>
-            </li>
-          </div>
-        </ul>
+      <Link to="/tenders" className="block py-2 text-white  hover:font-semibold">Tenders</Link>
+    </li>
+  
+    <li>
+      <Link to="/rti" className="block  py-2 text-white  hover:font-semibold">RTI</Link>
+    </li>
+    <li>
+      <Link to="https://www.surveyofindia.gov.in/pages/annual-reports"  target='blank' className="block  py-2 text-white  hover:font-semibold">SOI Annual Reports</Link>
+    </li>
+    <li>
+      <Link to="./components/rajbhasha/rajbhasha" className="block  py-2 text-white  hover:font-semibold">Raj Bhasha</Link>
+    </li>
+    <li>
+      <Link to="/components/geospatial" className="block py-2 text-white  hover:font-semibold">Geo Spatial Policies</Link>
+    </li>
+    <li>
+      <Link to="/publicgrievances" className="block  py-2 text-white  hover:font-semibold">Public grievances Office</Link>
+    </li>
+            </div>
+  </ul>
 
       </div>
 
@@ -435,4 +449,4 @@ const Navbar = () => {
 
 
 
-export default Navbar
+export default Navbar
