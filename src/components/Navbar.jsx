@@ -24,9 +24,16 @@ const showSidePanel=()=>{
   setIspanelopen(!ispanelopen)
 }
   const [isGovernanceOpen, setIsGovernanceOpen] = useState(false);
-
+const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
   const handleGovernanceToggle = () => {
     setIsGovernanceOpen(!isGovernanceOpen);
+  };
+  
+  const handleGovernanceHover = () => {
+    setIsGovernanceHovered(true);
+  };
+  const handleGovernanceHoverEnd = () => {
+    setIsGovernanceHovered(false);
   };
   const [isfacultyOpen, setIsfacultyOpen] = useState(false)
   const [isFacultyHovered, setIsFacultyHovered] = useState(false);
@@ -106,24 +113,28 @@ const showSidePanel=()=>{
       Introduction
     </Link>
               
-    <div className="relative flex flex-col">
+    <div className="relative flex flex-col "
+    onClick={handleGovernanceToggle}
+  onMouseEnter={handleGovernanceHover}
+  onMouseLeave={handleGovernanceHoverEnd}
+    >
       <div
         className="flex items-center text-white hover:text-yellow-300 mr-4 text-base cursor-pointer"
-        onMouseEnter={() => setIsGovernanceOpen(true)}
-        onClick={() => setIsGovernanceOpen(!isGovernanceOpen)}
+       
       >
         <span className="block px-4 py-2">Governance Structure</span>
         <HiChevronRight
           className={`inline-block h-5 w-5 ml-1 ${isGovernanceOpen ? "transform rotate-90" : ""}`}
+          onClick={handleGovernanceToggle}
         />
       </div>
  
       <ul
         className={`absolute bg-[#1050A2] py-2 top-9 md:top-0 md:left-full ${
-          isGovernanceOpen ? "block order-last" : "hidden"
+          isGovernanceOpen || isGovernanceHovered ? "block order-last" : "hidden"
         } w-full border-b-2 border-white`}
-        onMouseLeave={() => setIsGovernanceOpen(false)}
-      >
+        onMouseEnter={handleGovernanceHover}
+    onMouseLeave={handleGovernanceHoverEnd}      >
         <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance'>Board Of Governance</Link></li>
         <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation'>Board Of Evaluation</Link></li>
         <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies'>Board Of Studies</Link></li>
