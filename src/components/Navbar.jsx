@@ -149,23 +149,23 @@ const handletrainingToggle=()=>{
             `} style={{  overflowY: "auto" }}>
             <div className='w-40  flex flex-col h-screen'>
             <li>
-      <Link to="/tenders" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Tenders</Link>
+      <Link to="/tenders" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">Tenders</Link>
     </li>
   
     <li>
-      <Link to="/rti" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">RTI</Link>
+      <Link to="/rti" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">RTI</Link>
     </li>
     <li>
-      <Link to="/soi_annual_reports" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">SOI Annual Reports</Link>
+      <Link to="/soi_annual_reports" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">SOI Annual Reports</Link>
     </li>
     <li>
-      <Link to="/raj_bhasha" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Raj Bhasha</Link>
+      <Link to="/raj_bhasha" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">Raj Bhasha</Link>
     </li>
     <li>
-      <Link to="/components/geospatial" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Geo Spatial Policies</Link>
+      <Link to="/components/geospatial" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">Geo Spatial Policies</Link>
     </li>
     <li>
-      <Link to="/components/publicgrievances/Publicgrievance" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Public grievances Office</Link>
+      <Link to="/components/publicgrievances/Publicgrievance" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">Public grievances Office</Link>
     </li>
             </div>
           </ul>
@@ -210,9 +210,9 @@ const handletrainingToggle=()=>{
                  
 
                        >
-                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance'>Board Of Governance</Link></li>
-                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation' >Board Of Evaluation</Link></li>
-                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies' >Board Of Studies</Link></li>
+                  <li className="block px-4 py-2 text-white md:border-b-[0.5px] hover:text-yellow-300"><Link to='/about/governance/board_of_governance'>Board Of Governance</Link></li>
+                  <li className="block px-4 py-2 text-white md:border-b-[0.5px] hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation' >Board Of Evaluation</Link></li>
+                  <li className="block px-4 py-2 text-white  hover:text-yellow-300"><Link to='/about/governance/board_of_studies' >Board Of Studies</Link></li>
                 </ul>
               </div>
 
