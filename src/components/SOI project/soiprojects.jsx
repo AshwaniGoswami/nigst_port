@@ -91,7 +91,7 @@ function SCarousel() {
   ];
 
   return (
-    <div className='content py-5 w-full'>
+    <div className='content p-[25px] md:p-[30] m-auto xl:p-8 w-full'>
     <div className="mx-3 flex justify-between">
       <button className="bg-gray-200 text-gray-600 hover:bg-gray-300 rounded-full p-2" onClick={sliderRef?.slickPrev}>
         <FaArrowLeft />
