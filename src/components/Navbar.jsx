@@ -132,8 +132,9 @@ const handletrainingToggle=()=>{
           <Link to='/login' className='flex items-center justify-center'>
             <BsFillPersonFill size='1.5em' color='white' />
           </Link>
-          <div className="ml-2" >
-            <MdOutlineAnnouncement size='1.5em' color='white'  />
+          <div className="ml-2" onClick={handleAnnouncementClick} >
+            
+            <MdOutlineAnnouncement size='1.5em' color='white'   />
           </div>
         </div>
       </div>
