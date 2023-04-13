@@ -71,7 +71,7 @@ const Navbar = () => {
             <BsFillPersonFill size='1.5em' color='white' />
           </Link>
           <div className="ml-2" >
-            <MdOutlineAnnouncement size='1.5em' color='white' onClick={handleAnnouncementClick} />
+            <MdOutlineAnnouncement size='1.5em' color='white'  />
           </div>
         </div>
       </div>
