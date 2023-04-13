@@ -4,12 +4,12 @@ import './Tendertable.css'
 function Announcementtable() {
   const [showDiv1, setShowDiv1] = useState(true);
   const [showDiv2, setShowDiv2] = useState(false);
-  const [buttonText, setButtonText] = useState("Archived Tenders");
+  const [buttonText, setButtonText] = useState("Archived Announcements");
 
   const handleButtonClick = () => {
     setShowDiv1(!showDiv1);
     setShowDiv2(!showDiv2);
-    setButtonText(showDiv1 ? "Latest Tenders" : "Archived Tenders");
+    setButtonText(showDiv1 ? "Latest Announcements" : "Archived Announcements");
   };
   const [searchDate1, setSearchDate1] = useState("");
   const [searchDate2, setSearchDate2] = useState("");
@@ -70,7 +70,7 @@ function Announcementtable() {
           <table>
             <thead>
               <tr>
-                <th colspan="3" style={{ textAlign: "center", backgroundColor: "#ffcb00" }}>Latest Tenders</th>
+                <th colspan="3" style={{ textAlign: "center", backgroundColor: "#ffcb00" }}>Latest Announcements</th>
               </tr>
               <tr>
               
@@ -121,7 +121,7 @@ function Announcementtable() {
           <table>
             <thead>
               <tr>
-                <th colspan="4" style={{ textAlign: "center", backgroundColor: "#ffcb00" }}>Archived Tenders</th>
+                <th colspan="4" style={{ textAlign: "center", backgroundColor: "#ffcb00" }}>Archived Announcements</th>
               </tr>
               <tr>
               

@@ -30,9 +30,9 @@ function Geospatialpolicy() {
         </td>
         <td className="color-td">
           <h3>
-            <Link to="../assests/document-49301-New Guidelines on Geospatial Data (1).pdf" target="_blank" rel="noreferrer">
+            <a href="../assests/document-49301-New Guidelines on Geospatial Data (1).pdf" target="_blank" rel="noreferrer">
             <AiOutlineFilePdf style={{ fontSize: 20, color: 'red', marginLeft: 5 }} />
-            </Link>
+            </a>
           </h3>
         </td>
       </tr>

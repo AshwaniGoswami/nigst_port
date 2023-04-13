@@ -11,10 +11,10 @@ class Carousel extends Component {
           <i className="fa fa-angle-left leftImage" aria-hidden="true"></i>
           <i className="fa fa-angle-right" aria-hidden="true"></i>
           <div id="imagessss">
-            <img src="./Images/backgroundImage.jpg" alt=" 1" />
-            <img src="" alt="Image 2" />
-            <img src="" alt="Image 3" />
-            <img src="" alt="Image 4" />
+            <img src={require("./Images/backgroundImage.jpg")} alt=" 1" />
+            <img src={require("./Images/backgroundImage.jpg")} alt="Image 2" />
+            <img src={require("./Images/backgroundImage.jpg")} alt="Image 3" />
+            <img src={require("./Images/backgroundImage.jpg")} alt="Image 4" />
           </div>
           <div className="btn-container">
             <button className="speed-control-stop"><i className="fa fa-stop-circle"></i></button>

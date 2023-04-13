@@ -68,7 +68,7 @@ const Navbar = () => {
       text: 'Call for Proposal: Announcement of Opportunity (AO) for Capacity Building in Space Based Disaster Management Support'
     },
     {
-      date: 'Sep 22, 2022',
+      date: 'Sep 23, 2022',
       text: 'Call for Proposal: Announcement of Opportunity (AO) for Capacity Building in Space Based Disaster Management Support'
     },
   ];
