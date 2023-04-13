@@ -14,19 +14,22 @@ const Navbar = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   }
-  const location = useLocation()
-  useEffect(() => {
-    setIsOpen(false);
-  }, [location]);
 
   const [ispanelopen, setIspanelopen] = useState(false)
-const showSidePanel=()=>{
-  setIspanelopen(!ispanelopen)
-}
+  const showSidePanel = () => {
+    setIspanelopen(!ispanelopen)
+  }
   const [isGovernanceOpen, setIsGovernanceOpen] = useState(false);
-
+  const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
   const handleGovernanceToggle = () => {
     setIsGovernanceOpen(!isGovernanceOpen);
+  };
+
+  const handleGovernanceHover = () => {
+    setIsGovernanceHovered(true);
+  };
+  const handleGovernanceHoverEnd = () => {
+    setIsGovernanceHovered(false);
   };
   const [isfacultyOpen, setIsfacultyOpen] = useState(false)
   const [isFacultyHovered, setIsFacultyHovered] = useState(false);
@@ -40,6 +43,13 @@ const showSidePanel=()=>{
   const handleFacultyToggle = () => {
     setIsfacultyOpen(!isfacultyOpen)
   }
+  const location = useLocation()
+  useEffect(() => {
+    setIsOpen(false);
+    setIsGovernanceOpen(false)
+    setIsfacultyOpen(false)
+  }, [location]);
+
 
   return (
     <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer">
