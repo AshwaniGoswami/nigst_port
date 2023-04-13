@@ -41,6 +41,7 @@ import Announcementtable from './components/Buttons/Tables/Announcementtable';
 import Carousel from './components/Gallery/gallery';
 import Geospatialpolicy from './components/Geospatial/geospatial';
 import SimpleSlider from './components/SOI project/soiprojects';
+import RajBhasha from './components/rajbhasha/rajbhasha';
 
 
 function App() {
@@ -89,6 +90,7 @@ function App() {
            <Route path='/gallery' element={<Carousel/>}/>
            <Route path='/components/geospatial' element={<Geospatialpolicy/>}/>
            <Route path='/components/SOI project/soiprojects' element={<SimpleSlider/>}/>
+           <Route path='./components/rajbhasha/rajbhasha' element={<RajBhasha/>}/>
            
 
         </Routes>

@@ -148,10 +148,10 @@ const Navbar = () => {
                 <Link to="/rti" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>RTI</Link>
               </li>
               <li>
-                <Link to="/soi_annual_reports" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>SOI Annual Reports</Link>
+                <Link to="https://www.surveyofindia.gov.in/pages/annual-reports" target='blank' className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>SOI Annual Reports</Link>
               </li>
               <li>
-                <Link to="/raj_bhasha" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Raj Bhasha</Link>
+                <Link to="./components/rajbhasha/rajbhasha" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Raj Bhasha</Link>
               </li>
               <li>
                 <Link to="/components/geospatial" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Geo Spatial Policies</Link>
@@ -355,10 +355,10 @@ const Navbar = () => {
               <Link to="/rti" className="block  py-2 text-white  hover:font-semibold">RTI</Link>
             </li>
             <li>
-              <Link to="/soi_annual_reports" className="block  py-2 text-white  hover:font-semibold">SOI Annual Reports</Link>
+              <Link to="https://www.surveyofindia.gov.in/pages/annual-reports"  target='blank' className="block  py-2 text-white  hover:font-semibold">SOI Annual Reports</Link>
             </li>
             <li>
-              <Link to="/raj_bhasha" className="block  py-2 text-white  hover:font-semibold">Raj Bhasha</Link>
+              <Link to="./components/rajbhasha/rajbhasha" className="block  py-2 text-white  hover:font-semibold">Raj Bhasha</Link>
             </li>
             <li>
               <Link to="/components/geospatial" className="block py-2 text-white  hover:font-semibold">Geo Spatial Policies</Link>
