@@ -204,7 +204,7 @@ const handletrainingToggle=()=>{
 
                 <ul
                   className={`absolute bg-[#1050A2] py-2 top-9 md:top-0 md:left-full ${isGovernanceOpen || isGovernanceHovered ? "block order-last" : "hidden"
-                    } w-full border-b-2 border-white`}
+                    } w-full  border-white`}
                   onMouseEnter={handleGovernanceHover}
                   onMouseLeave={handleGovernanceHoverEnd} 
                  
