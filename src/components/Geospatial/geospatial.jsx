@@ -1,6 +1,7 @@
 import { AiOutlineFilePdf } from 'react-icons/ai';
 import { Link, useLocation } from 'react-router-dom';
 import './geospatial.css'
+import pdf1 from './document-49301-New Guidelines on Geospatial Data (1).pdf'
 
 function Geospatialpolicy() {
   return (
@@ -18,9 +19,9 @@ function Geospatialpolicy() {
         <td><h3>National Geo-Spatial Policy 2022</h3></td>
         <td>
           <h3>
-            <Link to="../assests/National Geospatial Policy.pdf" target="_blank" rel="noreferrer">
+          <a href={require("./National Geospatial Policy.pdf")} target="_blank" rel="noreferrer">
             <AiOutlineFilePdf style={{ fontSize: 20, color: 'red', marginLeft: 5 }} />
-            </Link>
+            </a>
           </h3>
         </td>
       </tr>
@@ -30,7 +31,7 @@ function Geospatialpolicy() {
         </td>
         <td className="color-td">
           <h3>
-            <a href="../assests/document-49301-New Guidelines on Geospatial Data (1).pdf" target="_blank" rel="noreferrer">
+            <a href={require("./document-49301-New Guidelines on Geospatial Data (1).pdf")} target="_blank" rel="noreferrer">
             <AiOutlineFilePdf style={{ fontSize: 20, color: 'red', marginLeft: 5 }} />
             </a>
           </h3>

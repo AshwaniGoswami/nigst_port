@@ -39,7 +39,7 @@ import ContactForm from './components/forms/Contactus';
 import ForgotPasswordForm from './components/forms/forgetpassword';
 import Announcementtable from './components/Buttons/Tables/Announcementtable';
 import Carousel from './components/Gallery/gallery';
-import Geospatialpolicy from './components/geospatial';
+import Geospatialpolicy from './components/Geospatial/geospatial';
 import SimpleSlider from './components/SOI project/soiprojects';
 
 
