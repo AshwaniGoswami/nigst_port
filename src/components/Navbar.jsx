@@ -110,6 +110,11 @@ const Navbar = () => {
 
 
 
+
+
+
+
+
   return (
     <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer">
       <div className="block lg:hidden">
@@ -170,34 +175,10 @@ const Navbar = () => {
               <HiChevronRight className={`inline-block h-5 w-5 ml-1 md:hidden `} />
             </span>
 
-  <div className="absolute z-10 hidden group-hover:block bg-[#1050A2] py-2">
-    <Link to="/about/introduction" className="block px-4 py-2 text-white hover:text-yellow-300">
-      Introduction
-    </Link>
-              
-    <div className="relative flex flex-col">
-      <div
-        className="flex items-center text-white hover:text-yellow-300 mr-4 text-base cursor-pointer"
-        onMouseEnter={() => setIsGovernanceOpen(true)}
-        onClick={() => setIsGovernanceOpen(!isGovernanceOpen)}
-      >
-        <span className="block px-4 py-2">Governance Structure</span>
-        <HiChevronRight
-          className={`inline-block h-5 w-5 ml-1 ${isGovernanceOpen ? "transform rotate-90" : ""}`}
-        />
-      </div>
- 
-      <ul
-        className={`absolute bg-[#1050A2] py-2 top-9 md:top-0 md:left-full ${
-          isGovernanceOpen ? "block order-last" : "hidden"
-        } w-full border-b-2 border-white`}
-        onMouseLeave={() => setIsGovernanceOpen(false)}
-      >
-        <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance'>Board Of Governance</Link></li>
-        <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation'>Board Of Evaluation</Link></li>
-        <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies'>Board Of Studies</Link></li>
-      </ul>
-    </div>
+            <div className="absolute z-10 hidden group-hover:block bg-[#1050A2] py-2">
+              <Link to="/about/introduction" className="block px-4 py-2 text-white hover:text-yellow-300">
+                Introduction
+              </Link>
 
               <div className="relative flex flex-col "
                 onClick={handleGovernanceToggle}
