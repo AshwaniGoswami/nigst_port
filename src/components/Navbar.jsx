@@ -23,9 +23,16 @@ const Navbar = () => {
     setIspanelopen(!ispanelopen)
   }
   const [isGovernanceOpen, setIsGovernanceOpen] = useState(false);
-
+  const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
   const handleGovernanceToggle = () => {
     setIsGovernanceOpen(!isGovernanceOpen);
+  };
+
+  const handleGovernanceHover = () => {
+    setIsGovernanceHovered(true);
+  };
+  const handleGovernanceHoverEnd = () => {
+    setIsGovernanceHovered(false);
   };
   const [isfacultyOpen, setIsfacultyOpen] = useState(false)
   const [isFacultyHovered, setIsFacultyHovered] = useState(false);
