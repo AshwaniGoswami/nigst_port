@@ -24,16 +24,9 @@ const showSidePanel=()=>{
   setIspanelopen(!ispanelopen)
 }
   const [isGovernanceOpen, setIsGovernanceOpen] = useState(false);
-const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
+
   const handleGovernanceToggle = () => {
     setIsGovernanceOpen(!isGovernanceOpen);
-  };
-  
-  const handleGovernanceHover = () => {
-    setIsGovernanceHovered(true);
-  };
-  const handleGovernanceHoverEnd = () => {
-    setIsGovernanceHovered(false);
   };
   const [isfacultyOpen, setIsfacultyOpen] = useState(false)
   const [isFacultyHovered, setIsFacultyHovered] = useState(false);
@@ -79,23 +72,13 @@ const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
             `}>
             <div className='w-40  flex flex-col h-screen'>
             <li>
-      <Link to="/tenders" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Tenders</Link>
-    </li>
-  
-    <li>
-      <Link to="/rti" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">RTI</Link>
+      <Link to="#" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">Faculty</Link>
     </li>
     <li>
-      <Link to="/soi_annual_reports" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">SOI Annual Reports</Link>
+      <Link to="#" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">Training</Link>
     </li>
     <li>
-      <Link to="/raj_bhasha" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Raj Bhasha</Link>
-    </li>
-    <li>
-      <Link to="/geo_spatial_policies" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Geo Spatial Policies</Link>
-    </li>
-    <li>
-      <Link to="/public_grievances_office" className="block px-4 py-2 text-white border-b-[1px] hover:font-semibold">Public grievances Office</Link>
+      <Link to="/rti" className="block px-4 py-2 text-white hover:bg-yellow-300 hover:font-semibold">RTI</Link>
     </li>
             </div>
   </ul>
@@ -113,28 +96,24 @@ const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
       Introduction
     </Link>
               
-    <div className="relative flex flex-col "
-    onClick={handleGovernanceToggle}
-  onMouseEnter={handleGovernanceHover}
-  onMouseLeave={handleGovernanceHoverEnd}
-    >
+    <div className="relative flex flex-col">
       <div
         className="flex items-center text-white hover:text-yellow-300 mr-4 text-base cursor-pointer"
-       
+        onMouseEnter={() => setIsGovernanceOpen(true)}
+        onClick={() => setIsGovernanceOpen(!isGovernanceOpen)}
       >
         <span className="block px-4 py-2">Governance Structure</span>
         <HiChevronRight
           className={`inline-block h-5 w-5 ml-1 ${isGovernanceOpen ? "transform rotate-90" : ""}`}
-          onClick={handleGovernanceToggle}
         />
       </div>
  
       <ul
         className={`absolute bg-[#1050A2] py-2 top-9 md:top-0 md:left-full ${
-          isGovernanceOpen || isGovernanceHovered ? "block order-last" : "hidden"
+          isGovernanceOpen ? "block order-last" : "hidden"
         } w-full border-b-2 border-white`}
-        onMouseEnter={handleGovernanceHover}
-    onMouseLeave={handleGovernanceHoverEnd}      >
+        onMouseLeave={() => setIsGovernanceOpen(false)}
+      >
         <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance'>Board Of Governance</Link></li>
         <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation'>Board Of Evaluation</Link></li>
         <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies'>Board Of Studies</Link></li>
@@ -233,32 +212,6 @@ const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
           {/* <DropdownMenu  /> */}
 
         </div>
-        <ul className={`block md:hidden bg-[#1050A2] py-0 ml-0   
-             
-            `}>
-            <div className='  flex flex-col'>
-            <li>
-      <Link to="/tenders" className="block py-2 text-white  hover:font-semibold">Tenders</Link>
-    </li>
-  
-    <li>
-      <Link to="/rti" className="block  py-2 text-white  hover:font-semibold">RTI</Link>
-    </li>
-    <li>
-      <Link to="/soi_annual_reports" className="block  py-2 text-white  hover:font-semibold">SOI Annual Reports</Link>
-    </li>
-    <li>
-      <Link to="/raj_bhasha" className="block  py-2 text-white  hover:font-semibold">Raj Bhasha</Link>
-    </li>
-    <li>
-      <Link to="/geo_spatial_policies" className="block py-2 text-white  hover:font-semibold">Geo Spatial Policies</Link>
-    </li>
-    <li>
-      <Link to="/public_grievances_office" className="block  py-2 text-white  hover:font-semibold">Public grievances Office</Link>
-    </li>
-            </div>
-  </ul>
-
       </div>
       
     </nav>
