@@ -4,9 +4,10 @@ import './rtii.css'
 function RightToInformation() {
  
   return (
+    <div className="heading-container"><h4>Right To Information</h4>
     <div className="content-container">
-      <div className="heading-container">
-        <h4>Right To Information</h4>
+      <div >
+        
       </div>
 
       <div className="rti-container">
@@ -63,6 +64,7 @@ function RightToInformation() {
           </ul>
         </div>
       </div>
+    </div>
     </div>
   );
 }

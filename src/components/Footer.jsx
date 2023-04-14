@@ -19,7 +19,7 @@ const quicklinks=[
   { name: "Tender", url: "/tenders" },
   { name: "Sitemap", url: "#" },
   { name: "Grievances", url: "/components/publicgrievances/Publicgrievance" },
-  { name: "Citizen Charter", url: "#" },
+  { name: "Citizen Charter", url: "/citizen" },
   { name: "FAQ", url: "#" }
 
 ]

@@ -150,23 +150,23 @@ const handletrainingToggle=()=>{
             `} style={{  overflowY: "auto" }}>
             <div className='w-40  flex flex-col h-screen'>
             <li>
-      <Link to="/tenders" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">Tenders</Link>
+      <Link to="/tenders" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Tenders</Link>
     </li>
   
     <li>
-      <Link to="/rti" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">RTI</Link>
+      <Link to="/rti" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={showSidePanel}>RTI</Link>
     </li>
     <li>
-      <Link to="https://www.surveyofindia.gov.in/pages/annual-reports" target='blank' className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">SOI Annual Reports</Link>
+      <Link to="https://www.surveyofindia.gov.in/pages/annual-reports" target='blank' onClick={showSidePanel} className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">SOI Annual Reports</Link>
     </li>
     <li>
-      <Link to="./components/rajbhasha/rajbhasha" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">Raj Bhasha</Link>
+      <Link to="./components/rajbhasha/rajbhasha" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Raj Bhasha</Link>
     </li>
     <li>
-      <Link to="/components/geospatial" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">Geo Spatial Policies</Link>
+      <Link to="/components/geospatial" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Geo Spatial Policies</Link>
     </li>
     <li>
-      <Link to="/components/publicgrievances/Publicgrievance" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">Public grievances Office</Link>
+      <Link to="/components/publicgrievances/Publicgrievance" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Public grievances Office</Link>
     </li>
             </div>
           </ul>
@@ -260,7 +260,7 @@ const handletrainingToggle=()=>{
                     </li>
                     <li className='inline-block md:border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
                       <Link to="/faculty/photogrammetry">
-                        Faculty of Photogrammetry & RS
+                        Faculty of P & RS
                       </Link>
                     </li>
                     <li className='inline-block md:border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
@@ -295,7 +295,7 @@ const handletrainingToggle=()=>{
           <Link to="/components/SOI project/soiprojects"  className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             SOI Projects
           </Link>
-          <Link to="/sitemap" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <Link to="/components/SiteMap/sitemap" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Site Map
           </Link>
           <Link to="/gallery" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
