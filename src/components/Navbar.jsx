@@ -119,8 +119,8 @@ const handletrainingToggle=()=>{
   }, [activeIndex, announcements.length]);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer">
-      <div className="block lg:hidden">
+    <nav  className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer">
+      <div  className="block lg:hidden">
         <button className="flex items-center px-3 py-2  rounded text-white hover:text-yellow-300 hover:border-white" >
           <GiHamburgerMenu onClick={toggle} />
         </button>
@@ -140,14 +140,14 @@ const handletrainingToggle=()=>{
       </div>
 
 
-      <div className={`${isOpen ? "block" : "hidden"} w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
+      <div  className={`${isOpen ? "block" : "hidden"}  w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
         <div className="text-sm lg:flex-grow relative md:flex lg:flex ">
           <button className="hidden md:block mr-4 lg:block px-3 py-2 text-white" onClick={showSidePanel}>
             <GiHamburgerMenu size='1.7em' />
           </button>
-          <ul className={`bg-[#1050A2] py-0 ml-0 absolute top-full md:-ml-4 lg:-ml-4  mt-1 z-50
+          <ul onMouseLeave={showSidePanel} className={`bg-[#1050A2] py-0 ml-0 absolute top-full md:-ml-4 lg:-ml-4  mt-1 z-50
              ${ispanelopen ? "block" : "hidden"}
-            `} style={{  overflowY: "auto" }}>
+            `} style={{  overflowY: "auto" }} >
             <div className='w-40  flex flex-col h-screen'>
             <li>
       <Link to="/tenders" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Tenders</Link>
@@ -358,12 +358,12 @@ const handletrainingToggle=()=>{
           )}
 
         </div>
-        <ul className={`block md:hidden bg-[#1050A2] py-0 ml-0   
+        <ul  className={`block md:hidden bg-[#1050A2] py-0 ml-0   
              
             `}>
             <div className='  flex flex-col'>
             <li>
-      <Link to="/tenders" className="block py-2 text-white  hover:font-semibold">Tenders</Link>
+      <Link to="/tenders" className="block py-2 text-white  hover:font-semibold" >Tenders</Link>
     </li>
   
     <li>

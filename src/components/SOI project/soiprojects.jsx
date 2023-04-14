@@ -103,11 +103,11 @@ function SCarousel() {
     </div>
     <Slider className="mt-4 mx-0 grid gap-0 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 " ref={setSliderRef} {...sliderSettings}>
       {hotelCards.map((card, index) => (
-        <div key={index} className="p-6 bg-white shadow-md h-full flex flex-col slider">
+        <div key={index} className="p-4 bg-white shadow-md h-full w flex flex-col slider">
           <h2 className="text-2xl font-bold mb-2">{card.title}</h2>
-          <img alt={card.title} src={card.imageSrc} className="w-full h-64 object-cover mb-4 rounded-lg" />
+          <img alt={card.title} src={card.imageSrc} className="w-full object-cover mb-4 rounded-lg" />
           <p className="text-gray-700 mb-4 flex-grow">{card.description}</p>
-          <div className="bg-[#1050a2] hover:bg-[#ffcb00] text-white font-bold py-2 px-4 rounded-sm inline-block mb-4 flex justify-center items-center">{card.pricingText}</div>
+          <div className="bg-[#1050a2] hover:bg-[#ffcb00] text-white font-bold w-full  py-2 px-4 rounded-sm inline-block mb-4 flex justify-center items-center">{card.pricingText}</div>
 
           
           

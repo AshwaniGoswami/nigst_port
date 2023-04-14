@@ -26,7 +26,8 @@
     padding: 3px 0px;
     margin-left: 15px;
 }
-a:hover {
-    color:blue;
+.content-container a:hover {
+    color: blue;
+    
     
 }
