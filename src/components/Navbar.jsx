@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { HiChevronRight } from "react-icons/hi"
@@ -21,6 +21,10 @@ const Navbar = () => {
   const [ispanelopen, setIspanelopen] = useState(false)
   const showSidePanel = () => {
     setIspanelopen(!ispanelopen)
+  }
+  const [ispanellopen, setIspanellopen] = useState(true)
+  const  hideSidePanel = () => {
+    setIspanellopen(!ispanellopen)
   }
   const [isGovernanceOpen, setIsGovernanceOpen] = useState(false);
   const [isGovernanceHovered, setIsGovernanceHovered] = useState(false)
@@ -118,6 +122,28 @@ const handletrainingToggle=()=>{
     return () => clearInterval(intervalId);
   }, [activeIndex, announcements.length]);
 
+
+  const [isSidePanelOpen, setIsSidePanelOpen] = useState(false);
+  const sidePanelRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidePanelRef.current && !sidePanelRef.current.contains(event.target)) {
+        setIsSidePanelOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const toggleSidePanel = () => {
+    setIsSidePanelOpen(!isSidePanelOpen);
+  }
+  
+
   return (
     <nav  className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer">
       <div  className="block lg:hidden">
@@ -142,31 +168,30 @@ const handletrainingToggle=()=>{
 
       <div  className={`${isOpen ? "block" : "hidden"}  w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
         <div className="text-sm lg:flex-grow relative md:flex lg:flex ">
-          <button className="hidden md:block mr-4 lg:block px-3 py-2 text-white" onClick={showSidePanel}>
+          <button className="hidden md:block mr-4 lg:block px-3 py-2 text-white" onClick={toggleSidePanel}>
             <GiHamburgerMenu size='1.7em' />
           </button>
-          <ul onMouseLeave={showSidePanel} className={`bg-[#1050A2] py-0 ml-0 absolute top-full md:-ml-4 lg:-ml-4  mt-1 z-50
-             ${ispanelopen ? "block" : "hidden"}
-            `} style={{  overflowY: "auto" }} >
+          <ul ref={sidePanelRef} className={`bg-[#1050A2] py-0 ml-0 absolute top-full md:-ml-4 lg:-ml-4  mt-1 z-50
+             side-panel ${isSidePanelOpen ? 'block' : 'hidden'}`} style={{  overflowY: "auto" }}  >
             <div className='w-40  flex flex-col h-screen'>
             <li>
-      <Link to="/tenders" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Tenders</Link>
+      <Link to="/tenders" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={toggleSidePanel} >Tenders</Link>
     </li>
   
     <li>
-      <Link to="/rti" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={showSidePanel}>RTI</Link>
+      <Link to="/rti" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={toggleSidePanel} >RTI</Link>
     </li>
     <li>
-      <Link to="https://www.surveyofindia.gov.in/pages/annual-reports" target='blank' onClick={showSidePanel} className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">SOI Annual Reports</Link>
+      <Link to="https://www.surveyofindia.gov.in/pages/annual-reports" target='blank' onClick={toggleSidePanel} className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">SOI Annual Reports</Link>
     </li>
     <li>
-      <Link to="./components/rajbhasha/rajbhasha" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Raj Bhasha</Link>
+      <Link to="./components/rajbhasha/rajbhasha" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={toggleSidePanel} >Raj Bhasha</Link>
     </li>
     <li>
-      <Link to="/components/geospatial" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Geo Spatial Policies</Link>
+      <Link to="/components/geospatial" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={toggleSidePanel}>Geo Spatial Policies</Link>
     </li>
     <li>
-      <Link to="/components/publicgrievances/Publicgrievance" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={showSidePanel}>Public grievances Office</Link>
+      <Link to="/components/publicgrievances/Publicgrievance" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={toggleSidePanel} >Public grievances Office</Link>
     </li>
             </div>
           </ul>
