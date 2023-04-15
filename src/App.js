@@ -58,9 +58,8 @@ function App() {
           <Route path='/training' element={<Training />} />
           <Route path='/about/introduction' element={<About />} />
           <Route path='/faculty/geodesy' element={<FacultyGeodesy />} />
-          <Route path='/faculty/Photogrammetry' element={<FacultyPhotogrammetry />} />
           <Route path='/about/nigst_campus' element={<NigstCampus />} />
-          <Route path='/training/registration' element={<Signup />} />
+          <Route path='/registration' element={<Signup />} />
           <Route path='/about/governance/board_of_governance' element={<Board_of_governance />} />
           <Route path='/about/governance/board_of_evaluation' element={<Board_of_evaluation />} />
           <Route path='/about/governance/board_of_studies' element={<Board_of_studies />} />

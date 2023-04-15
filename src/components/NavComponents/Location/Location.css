@@ -12,3 +12,8 @@
     text-align: justify;
     text-align: center;
 }
+.contentt-containerr{
+  display: flex;
+  flex-direction: column;
+
+}
