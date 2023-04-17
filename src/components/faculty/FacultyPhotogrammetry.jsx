@@ -18,17 +18,32 @@ const data = [
   {
     name: 'R K DASH',
     designation: 'Superintending Surveyor',
-    position: '-'
+    position: 'Faculty'
+  },
+  {
+    name: 'A K Rath',
+    designation: 'Superintending Surveyor (Adhoc)',
+    position: 'Faculty'
   },
   {
     name: 'L V PRASAD',
     designation: 'Officer Surveyor',
-    position: '-'
+    position: 'Faculty'
   },
   {
     name: 'P R K PRASAD',
     designation: 'Officer Surveyor',
-    position: '-'
+    position: 'Faculty'
+  },
+  {
+    name: 'CH.Anjaneyulu',
+    designation: 'Surveyor',
+    position: 'Instructor'
+  },
+  {
+    name: 'P. Ravi Kiran',
+    designation: 'Surveyor',
+    position: 'Instructor'
   }
 ];
 

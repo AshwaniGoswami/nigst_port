@@ -29,6 +29,16 @@ const data = [
     position: 'Faculty'
   },
   {
+      name: 'G. Kameshwar Rao',
+      designation: 'Officer Surveyor',
+      position: 'Faculty'
+    },
+    {
+      name: 'M. Mohan Kumar',
+      designation: 'Officer Surveyor',
+      position: 'Faculty'
+    },
+    {
       name: 'P. Yadish',
       designation: 'Officer Surveyor',
       position: 'Faculty'
@@ -36,7 +46,7 @@ const data = [
     {
       name: 'R.V.V. SATYANARAYANA',
       designation: 'Surveyor',
-      position: 'Faculty Instructor'
+      position: 'Instructor'
     },
     {
       name: 'Mrs. Syeda Hafeeza Sulthana',

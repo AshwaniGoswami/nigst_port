@@ -26,6 +26,11 @@ const data = [
     position: 'Faculty'
   },
   {
+    name: 'M.Rakesh',
+    designation: 'Officer Surveyor',
+    position: 'Faculty'
+  },
+  {
     name: 'Samir-Ud-Din-Khan',
     designation: 'Surveyor(Adhoc)',
     position: 'Instructor'
@@ -102,7 +107,7 @@ const facultyPage={
   ],
   
   heading:'Faculty Geodesy',
-  content:['Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, accusantium, recusandae suscipit minus mollitia tempore amet ducimus dolorum dicta quasi dignissimos voluptatibus. Doloremque quos, non omnis earum saepe placeat nulla necessitatibus fugit ex? Temporibus nisi cum tenetur in alias debitis corporis laborum numquam vel autem. Enim repellat nam doloremque dolorum quia, veritatis autem consequuntur.',' ipsum dolor sit amet consectetur adipisicing elit. Numquam, accusantium, recusandae suscipit minus mollitia tempore amet ducimus dolorum dicta quasi dignissimos voluptatibus. Doloremque quos, non omnis']
+  content:['Welcome to the Geodesy Faculty, where we are dedicated to providing comprehensive training to government, private and individual entities involved in geodetic survey work. Our primary mission is to equip trainee officers and staff with the knowledge and skills required to conduct geodetic survey for horizontal and vertical control work using GNSS, CORS, GPR, High Precision Levelling, Field Astronomy and other related technologies.Our courses cover theoretical concepts of geodetic surveying and are complemented with practical and lab exercises to provide a comprehensive understanding of the subject. We offer various training programs ranging from one week to one year, depending on the course. Additionally, we conduct tailor-made courses to cater specific needs of our clients.At our faculty, participants receive personalized attention and guidance from experienced trainers and ensure that they get a thorough understanding of the subject. Our faculty is committed to providing the highest quality education in the field of Geodesy. We invite you to join us today to take the first step towards a successful career in the geospatial domain.']
 }
 
 const FacultyGeodesy = () => {

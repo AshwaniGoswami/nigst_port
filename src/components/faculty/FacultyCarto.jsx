@@ -13,24 +13,38 @@ const headData = {
   
   const data = [
     {
+      name: 'Yogachander P. A.',
+      designation: 'Superintending Surveyor',
+      position: 'faculty'
+    },{
+      name: 'N. N. Rama Prasad',
+      designation: 'Superintending Surveyor (ADHOC)',
+      position: 'faculty'
+    },
+    {
       name: 'B C Sahoo',
       designation: 'Officer Surveyor',
-      position: '-'
+      position: 'faculty'
     },
     {
       name: 'Maheshwar Singh',
       designation: 'Officer Surveyor',
-      position: '-'
+      position: 'faculty'
     },
     {
       name: 'K G Sundara Rao',
       designation: 'Officer Surveyor',
-      position: '-'
+      position: 'faculty'
     },
     {
-        name: 'T Sivananda Kumar',
-        designation: 'Officer Surveyor',
-        position: '-'
+        name: 'A. Ramesh',
+        designation: 'Surveyor',
+        position: 'Instructor'
+      },
+      {
+        name: 'Anand Kumar Sahu',
+        designation: 'Surveyor',
+        position: 'Instructor'
       }
   ];
   
