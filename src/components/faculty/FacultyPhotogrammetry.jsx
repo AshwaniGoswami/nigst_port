@@ -99,10 +99,10 @@ const Modata = {
 
 const facultyPage={
   images:[
-    { path: require('../../assests/photogrammetry/Dummy Team 2.jpg') },
-    { path: require('../../assests/photogrammetry/Photogramtry.jpg') },
-    { path: require('../../assests/geodesy/Snapshot_1420.png') },
-    { path: require('../../assests/geodesy/Snapshot_1421.png') }
+    { path: require('../../assests/photogrammetry/1.jpeg') },
+    { path: require('../../assests/photogrammetry/10.jpeg') },
+    { path: require('../../assests/photogrammetry/17.jpeg') },
+    { path: require('../../assests/photogrammetry/18.jpeg') }
   ],
   
   heading:'Faculty of Photogrammetry & Remote Sensing',

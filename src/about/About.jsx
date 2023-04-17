@@ -153,10 +153,10 @@ const About = () => {
 
     return (
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8 m-0 md:m-8 '>
-            <div className='bg-[#f5eeee76] p-8 rounded-md  leading-normal'>
-                <h1 className='font-bold text-lg pt-6 mt-10 mb-4'>Message From Head</h1>
-                <img src={MessageFromHead.image} alt="Head" className='rounded-md ' />
-                <span className='font-semibold'>{MessageFromHead.name}</span>
+            <div className='bg-[#f5eeee76] p-8 rounded-md flex flex-col items-center leading-normal'>
+                <h1 className='font-bold text-center text-lg pt-6 mt-10 mb-4'>Message From Head</h1>
+                <img src={MessageFromHead.image} alt="Head" className='rounded-md justify-self-center' />
+                <span className='font-semibold text-center'>{MessageFromHead.name}</span>
                 <p className='text-justify '>{MessageFromHead.description}</p>
             </div>
             <div className=' bg-[#f5eeee76] p-6 rounded-md leading-normal md:col-span-2 '>

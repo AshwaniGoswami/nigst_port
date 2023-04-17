@@ -168,7 +168,7 @@ const handletrainingToggle=()=>{
 
       <div  className={`${isOpen ? "block" : "hidden"}  w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
         <div className="text-sm lg:flex-grow relative md:flex lg:flex ">
-          <button className="hidden md:block mr-4 lg:block px-3 py-2 text-white" onClick={toggleSidePanel}>
+          <button className="hidden lg:block mr-4 lg:block px-3 py-2 text-white" onClick={toggleSidePanel}>
             <GiHamburgerMenu size='1.7em' />
           </button>
           <ul ref={sidePanelRef} className={`bg-[#1050A2] py-0 ml-0 absolute top-full md:-ml-4 lg:-ml-4  mt-1 z-50
