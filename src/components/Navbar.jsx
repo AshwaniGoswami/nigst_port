@@ -145,50 +145,61 @@ const handletrainingToggle=()=>{
   
 
   return (
-    <nav  className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2  w-full cursor-pointer">
-      <div  className="block lg:hidden">
-        <button className="flex items-center px-3 py-2  rounded text-white hover:text-yellow-300 hover:border-white" >
-          <GiHamburgerMenu onClick={toggle} />
-        </button>
-      </div>
-
-      <div className='md:hidden lg:hidden flex items-center'>
-        <Searchbar />
-        <div className="flex items-center ml-2">
-          <Link to='/login' className='flex items-center justify-center'>
-            <BsFillPersonFill size='1.5em' color='white' />
-          </Link>
-          <div className="ml-2" onClick={handleAnnouncementClick} >
-            
-            <MdOutlineAnnouncement size='1.5em' color='white'   />
-          </div>
+    <nav className="flex items-center justify-between flex-wrap bg-[#1050A2] p-2 w-full cursor-pointer">
+    <div className="block lg:hidden">
+      <button className="flex items-center px-3 py-2 rounded text-white hover:text-yellow-300 hover:border-white">
+        <GiHamburgerMenu onClick={toggle} />
+      </button>
+    </div>
+  
+    <div className="md:hidden lg:hidden flex items-center">
+      <Searchbar />
+      <div className="flex items-center ml-2">
+        <Link to="/login" className="flex items-center justify-center">
+          <BsFillPersonFill size="1.5em" color="white" />
+        </Link>
+        <div className="ml-2" onClick={handleAnnouncementClick}>
+          <MdOutlineAnnouncement size="1.5em" color="white" />
         </div>
       </div>
-
-
-      <div  className={`${isOpen ? "block" : "hidden"}  w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
-        <div className="text-sm lg:flex-grow relative md:flex lg:flex ">
-          <button className="hidden md:block mr-4 lg:block px-3 py-2 text-white" onClick={toggleSidePanel}>
-            <GiHamburgerMenu size='1.7em' />
-          </button>
-          <ul ref={sidePanelRef} className={`bg-[#1050A2] py-0 ml-0 absolute top-full md:-ml-4 lg:-ml-4  mt-1 z-50
-             side-panel ${isSidePanelOpen ? 'block' : 'hidden'}`} style={{  overflowY: "auto" }}  >
-            <div className='w-40  flex flex-col h-screen'>
-            <li>
-      <Link to="/tenders" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={toggleSidePanel} >Tenders</Link>
-    </li>
+    </div>
   
-    <li>
-      <Link to="/rti" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={toggleSidePanel} >RTI</Link>
-    </li>
-    <li>
-      <Link to="https://www.surveyofindia.gov.in/pages/annual-reports" target='blank' onClick={toggleSidePanel} className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">SOI Annual Reports</Link>
-    </li>
-    <li>
-      <Link to="./components/rajbhasha/rajbhasha" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={toggleSidePanel} >Raj Bhasha</Link>
-    </li>
-    <li>
-      <Link to="/components/geospatial" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={toggleSidePanel}>Geo Spatial Policies</Link>
+    <div className={`${isOpen ? "block" : "hidden"} w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
+      <div className="text-sm lg:flex-grow relative md:flex lg:flex ">
+        <button className="hidden md:block mr-4 lg:block px-3 py-2 text-white" onClick={toggleSidePanel}>
+          <GiHamburgerMenu size="1.7em" />
+        </button>
+        <ul
+          ref={sidePanelRef}
+          className={`bg-[#1050A2] py-0 ml-0 relative top-full md:-ml-4 lg:-ml-4  mt-1 z-50 side-panel ${
+            isSidePanelOpen ? "block" : "hidden"
+          }`}
+          style={{ overflowY: "auto" }}
+        >
+          <div className="w-40  flex flex-col h-screen">
+            <li>
+              <Link to="/tenders" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={toggleSidePanel}>
+                Tenders
+              </Link>
+            </li>
+  
+            <li>
+              <Link to="/rti" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={toggleSidePanel}>
+                RTI
+              </Link>
+            </li>
+            <li>
+              <Link to="https://www.surveyofindia.gov.in/pages/annual-reports" target="blank" onClick={toggleSidePanel} className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold">
+                SOI Annual Reports
+              </Link>
+            </li>
+            <li>
+              <Link to="./components/rajbhasha/rajbhasha" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={toggleSidePanel}>
+                Raj Bhasha
+              </Link>
+            </li>
+            <li>
+              <Link to="/components/geospatial" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={toggleSidePanel}>Geo Spatial Policies</Link>
     </li>
     <li>
       <Link to="/components/publicgrievances/Publicgrievance" className="block px-4 py-2 text-white md:border-b-[1px] hover:font-semibold" onClick={toggleSidePanel} >Public grievances Office</Link>

@@ -102,3 +102,7 @@
     .next-btn {
       right: 10px;
     }
+    @media (max-width){
+      .announcement-container{position:absolute;}
+
+    }

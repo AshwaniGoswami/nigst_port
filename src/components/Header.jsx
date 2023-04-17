@@ -56,7 +56,7 @@ const Header = () => {
           <Link to="/login" className='text-white p-5'>Login</Link>
         </button>
       </div>
-      <div className=' relative px-0 py-0'>
+      <div className='px-0 py-0 item-center flex flex-row justify-center'>
         <Searchbar data={searchData}/>
       </div>
     </section>

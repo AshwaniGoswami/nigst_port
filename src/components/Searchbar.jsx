@@ -35,9 +35,9 @@ function SearchBar({ placeholder, data }) {
           value={wordEntered}
           onChange={handleFilter}
         />
-        <div className="absolute right-2 h-full">
+        <div className="py-2 px-2">
           {filteredData.length === 0 ? (
-            <AiOutlineSearch />
+            <AiOutlineSearch className="text-xl"/>
           ) : (
             <AiOutlineClose id="clearBtn" onClick={clearInput} />
           )}
