@@ -3,6 +3,7 @@ import {AiOutlineSearch} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import FontSizer from './fontsize/FontSizer';
 import Searchbar from './Searchbar';
+import searchData from "./searchdata.json";
 const Header = () => {
   return (
     <>
@@ -55,8 +56,8 @@ const Header = () => {
           <Link to="/login" className='text-white p-5'>Login</Link>
         </button>
       </div>
-      <div className='flex flex-row relative px-3 py-1'>
-        <Searchbar />
+      <div className=' relative px-0 py-0'>
+        <Searchbar data={searchData}/>
       </div>
     </section>
   </div>

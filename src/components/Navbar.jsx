@@ -219,7 +219,7 @@ const handletrainingToggle=()=>{
                   className="flex items-center text-white hover:text-yellow-300 mr-4 text-base cursor-pointer"
 
                 >
-                <div className='flex flex-row items-center ' onClick={handleGovernanceHoverEnd}>
+                <div className='flex flex-row items-center '>
                 <span className="block px-4 py-2">Governance Structure</span>
                   <HiChevronRight
                     className={`inline-block h-5 w-5 ml-1 ${isGovernanceOpen ? "transform rotate-90" : ""} `}
@@ -236,9 +236,9 @@ const handletrainingToggle=()=>{
                  
 
                        >
-                  <li className="block px-4 py-2 md:border-b-[0.5px] text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance'>Board Of Governance</Link></li>
-                  <li className="block px-4 py-2 md:border-b-[0.5px] text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation' >Board Of Evaluation</Link></li>
-                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies' >Board Of Studies</Link></li>
+                  <li className="block px-4 py-2 md:border-b-[0.5px] text-white hover:text-yellow-300"><Link to='/about/governance/board_of_governance'  onClick={handleAboutOpen}>Board Of Governance</Link></li>
+                  <li className="block px-4 py-2 md:border-b-[0.5px] text-white hover:text-yellow-300"><Link to='/about/governance/board_of_evaluation'  onClick={handleAboutOpen}>Board Of Evaluation</Link></li>
+                  <li className="block px-4 py-2 text-white hover:text-yellow-300"><Link to='/about/governance/board_of_studies' onClick={handleAboutOpen} >Board Of Studies</Link></li>
                 </ul>
               </div>
 
@@ -279,27 +279,27 @@ const handletrainingToggle=()=>{
                 >
                   <ul className="bg-[#1050A2] w-full flex flex-col justify-center py-0  ml-0 md:relative md:left-full lg:absolute lg:left-full">
                     <li className='inline-block md:border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
-                      <Link to="/faculty/geodesy">
+                      <Link to="/faculty/geodesy" onClick={handletrainingToggle}>
                         Faculty of Geodesy
                       </Link>
                     </li>
                     <li className='inline-block md:border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
-                      <Link to="/faculty/photogrammetry">
+                      <Link to="/faculty/photogrammetry" onClick={handletrainingToggle}>
                         Faculty of P & RS
                       </Link>
                     </li>
                     <li className='inline-block md:border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
-                      <Link to="/faculty/cartography">
+                      <Link to="/faculty/cartography" onClick={handletrainingToggle}>
                         Faculty of Carto, DM & GIS
                       </Link>
                     </li>
                     <li className='inline-block md:border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
-                      <Link to="/faculty/topographical">
+                      <Link to="/faculty/topographical" onClick={handletrainingToggle}>
                         Faculty of TS & LIS
                       </Link>
                     </li>
                     <li className='inline-block md:border-b-[0.5px] px-4 py-2 text-white hover:text-yellow-300'>
-                      <Link to="/faculty/geo_ict">
+                      <Link to="/faculty/geo_ict" onClick={handletrainingToggle}>
                         Faculty of GEO-ICT
                       </Link>
                     </li>
