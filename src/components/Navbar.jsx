@@ -206,6 +206,7 @@ const handletrainingToggle=()=>{
     </li>
             </div>
           </ul>
+ 
 
           <Link to="/" className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Home
