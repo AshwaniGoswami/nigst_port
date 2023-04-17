@@ -102,8 +102,8 @@
     .next-btn {
       right: 10px;
     }
-    @media (max-width:768px){
+    /* @media (max-width:768px){
       .announcement-container{position:absolute;
       z-index: 41;}
 
-    }
+    } */

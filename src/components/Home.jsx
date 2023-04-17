@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import About from '../about/About'
 import Carousel from '../carousel/Carousel'
-import banner1 from '../assests/Mann ki Baat.jfif'
+import banner1 from '../assests/X0qP81f7lg3YqNFI.jpeg'
 import banner2 from '../assests/g20 Banner.jpg'
 // import { HashScroll } from "react-hash-scroll";
 import SCarousel from '../components/SOI project/soiprojects';
