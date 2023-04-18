@@ -12,6 +12,7 @@
     z-index: 40;
     /* padding: 20px; */
   }
+  
   #ann-close-icon {
     color: white;
     z-index: 40;
@@ -19,7 +20,10 @@
     right: 10px;
     top: 10px;
   }
-  .announcement-container #announcemnt-heading {
+  .announcemnt-heading:hover{
+    color: #ffcb00;
+  }
+  .announcement-container .announcemnt-heading {
     color: white;
     font-size: 20px;
     padding-top: 15px;

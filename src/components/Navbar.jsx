@@ -8,7 +8,7 @@ import { MdOutlineAnnouncement } from 'react-icons/md'
 import Searchbar from './Searchbar';
 import { FaTimes } from 'react-icons/fa';
 import './announcement.css'
-import { style } from '@mui/system';
+import { color, style } from '@mui/system';
 
 
 const Navbar = () => {
@@ -309,8 +309,8 @@ const handletrainingToggle=()=>{
 
 
 
-              <Link to="/training/courses" className="block px-4 py-2 text-white hover:text-yellow-300">Courses</Link>
-              <Link to="/training/course_enrollment" className="block px-4 py-2 text-white hover:text-yellow-300">Course Enrollment</Link>
+              <Link to="/login" className="block px-4 py-2 text-white hover:text-yellow-300">Courses</Link>
+              <Link to="/login" className="block px-4 py-2 text-white hover:text-yellow-300">Course Enrollment</Link>
               <Link to="/feesandpayment" className="block px-4 py-2 text-white hover:text-yellow-300">Fee and Payment</Link>
             </div>
           </div>
@@ -336,15 +336,13 @@ const handletrainingToggle=()=>{
             <button className="block md:py-2 ml-0 mt-3 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4  text-base  float-right absolute top-0 right-0"
               onClick={handleAnnouncementClick}>Announcements</button>)}
           {showAnnouncement && (
-            <div
-          
-            >
+            <div>
               <div className="announcement-container" >
                 <div id="ann-close-icon">
                   <button onClick={handleAnnouncementClick} > <FaTimes size={20} /></button>
                 </div>
                 <Link to="/Tables/Announcementtable">
-                  <h3 id="announcemnt-heading">Announcement</h3>
+                  <h3 className='hover:text-[#ffcb00] text-lg py-1 text-white'>Announcement</h3>
                 </Link>
                 <div className="Acarousel-container">
                   <div className="Acarousel-wrapper">

@@ -15,26 +15,26 @@ const headData = {
     {
       name: 'Yogachander P. A.',
       designation: 'Superintending Surveyor',
-      position: 'faculty'
+      position: 'Faculty'
     },{
       name: 'N. N. Rama Prasad',
       designation: 'Superintending Surveyor (ADHOC)',
-      position: 'faculty'
+      position: 'Faculty'
     },
     {
       name: 'B C Sahoo',
       designation: 'Officer Surveyor',
-      position: 'faculty'
+      position: 'Faculty'
     },
     {
       name: 'Maheshwar Singh',
       designation: 'Officer Surveyor',
-      position: 'faculty'
+      position: 'Faculty'
     },
     {
       name: 'K G Sundara Rao',
       designation: 'Officer Surveyor',
-      position: 'faculty'
+      position: 'Faculty'
     },
     {
         name: 'A. Ramesh',

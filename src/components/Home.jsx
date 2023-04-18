@@ -56,13 +56,16 @@ const Home = () => {
     },
   ],
 };
+function mannkibaat() {
+  window.open = 'https://tailwindcss.com/docs/justify-self';
+}
   return (
     <>
       <div className=''>
         <Carousel />
-        <div className='flex flex-col md:flex-row lg:flex-row xl:row 2xl:flex-row ' >
+        <div onclick={mannkibaat} className='flex flex-col md:flex-row lg:flex-row xl:row 2xl:flex-row ' >
           {Banner.map((image, index) => (
-            <img src={image} alt="banner" className=' w-full md:w-[50%] object-cover  ' />
+            <img  src={image} alt="banner" className=' w-full md:w-[50%] object-cover  ' />
           ))}
         </div>
       </div>

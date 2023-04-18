@@ -36,7 +36,7 @@ const data = [
     position: 'Faculty'
   },
   {
-    name: 'CH.Anjaneyulu',
+    name: 'Ch.Anjaneyulu',
     designation: 'Surveyor',
     position: 'Instructor'
   },
