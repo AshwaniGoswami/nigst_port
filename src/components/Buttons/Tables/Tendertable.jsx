@@ -65,7 +65,7 @@ function Tendertable() {
       <button className="togglebtn" onClick={handleButtonClick}>{buttonText}</button>
       {showDiv1 && <div>
         <div id="postedNotices" style={{ height: "600px", overflowY: "scroll" }}>
-          <input type="text" id="SearchInput" placeholder="Enter date YYYY-MM-DD" value={searchDate1} onChange={handleInputChange1} />
+          <input type="text" id="SearchInput" placeholder="Search Tenders" value={searchDate1} onChange={handleInputChange1} />
 
           <table>
             <thead>

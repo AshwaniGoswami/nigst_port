@@ -4,7 +4,14 @@ import { Link } from 'react-router-dom'
 import FontSizer from './fontsize/FontSizer';
 import Searchbar from './Searchbar';
 import searchData from "./searchdata.json";
+function openLink() {
+  window.open('https://amritmahotsav.nic.in/', '_blank');
+}
+function openLink1() {
+  window.open('https://www.g20.org/en/', '_blank');
+}
 const Header = () => {
+  
   return (
     <>
       <FontSizer />
@@ -21,12 +28,8 @@ const Header = () => {
             </div>
             <div className="flex p-0 md:p-5 md:mt-auto justify-center h-14 md:h-28 lg-32">
               <div className='flex flex-row '>
-                <a href="https://amritmahotsav.nic.in/" className='justify-self-center' target="_blank" rel="noopener noreferrer">
-                  <img src={require("../assests/75 Yrs Aazadi ka Mahautsav Small.png")} alt="Azadi_ka_amrit_mahotsav" className="w-1/2 h-auto object-contain rounded-md" />
-                </a>
-                <a href="https://www.g20.org/en/" target="_blank" rel="noopener noreferrer">
-                  <img src={require("../assests/G20Small.png")} alt="G-20" className="w-1/2 h-auto object-contain rounded-md" />
-                </a>
+                  <img onClick={openLink} src={require("../assests/75 Yrs Aazadi ka Mahautsav Small.png")} alt="Azadi_ka_amrit_mahotsav" className="w-1/2 h-auto object-contain rounded-md" />
+                  <img onClick={openLink1} src={require("../assests/G20Small.png")} alt="G-20" className="w-1/2 h-auto object-contain rounded-md" />
               </div>
             </div>
 

@@ -7,7 +7,9 @@ import banner2 from '../assests/g20 Banner.jpg'
 // import { HashScroll } from "react-hash-scroll";
 import SCarousel from '../components/SOI project/soiprojects';
 
-
+function mankibat() {
+  window.open = ('https://www.mygov.in/group-issue/inviting-ideas-celebrate-100th-episode-mann-ki-baat/?target=inapp&type=group_issue&nid=336471','_blank');
+}
 
 const Banner = [banner1, banner2]
 
@@ -56,17 +58,15 @@ const Home = () => {
     },
   ],
 };
-function mannkibaat() {
-  window.open = 'https://tailwindcss.com/docs/justify-self';
-}
+
   return (
     <>
       <div className=''>
         <Carousel />
-        <div onclick={mannkibaat} className='flex flex-col md:flex-row lg:flex-row xl:row 2xl:flex-row ' >
+        <div className='flex flex-col md:flex-row lg:flex-row xl:row 2xl:flex-row ' >
           {Banner.map((image, index) => (
             <img  src={image} alt="banner" className=' w-full md:w-[50%] object-cover  ' />
-          ))}
+          ))} 
         </div>
       </div>
       {/* <HashScroll hash="#hash-section-1"> */}
