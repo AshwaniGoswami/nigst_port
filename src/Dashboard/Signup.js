@@ -5,7 +5,7 @@ import Button from '../components/Buttons/Button';
 export default function Signup() {
   return (
     <div className='flex justify-center py-20 '>
-      <div className="department-creation-wrapper mx-auto my-auto md:w-1/2 lg:w-1/3 xl:w-1/4">
+      <div className="department-creation-wrapper rounded-md mx-auto my-auto md:w-1/2 lg:w-1/3 xl:w-1/4">
         <h3 className="text-center mb-6">Sign Up</h3>
         <div className="flex flex-wrap mb-2">
           <div className="w-full md:w-1/3 px-2 mb-4 md:mb-0">

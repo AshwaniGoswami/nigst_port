@@ -100,11 +100,11 @@ const headData = {
   
   const facultyPage={
     images:[
-      { path: require('../../assests/cartodmphotos/carto1.jpeg') },
-      { path: require('../../assests/cartodmphotos/carto2.jpeg') },
+      { path: require('../../assests/catoDM_GIS/DSC_0052.JPG') },
+      { path: require('../../assests/catoDM_GIS/DSC_0199.JPG') },
   
-      { path: require('../../assests/cartodmphotos/carto3.jpeg') },
-      { path: require('../../assests/cartodmphotos/carto1.jpeg') },
+      { path: require('../../assests/catoDM_GIS/DSC_0403.JPG') },
+      { path: require('../../assests/catoDM_GIS/DSC_0405.JPG') },
       
     ],
     
