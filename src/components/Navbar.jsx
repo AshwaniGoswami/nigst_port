@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation,NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { HiChevronRight } from "react-icons/hi"
 import { AiOutlineSearch, AiOutlineLogin } from 'react-icons/ai'
@@ -10,6 +10,7 @@ import { FaTimes } from 'react-icons/fa';
 import './announcement.css'
 import { color, style } from '@mui/system';
 import searchData from '../components/searchdata.json'
+import './activeTabs.css'
 
 
 const Navbar = () => {
@@ -197,9 +198,9 @@ const handletrainingToggle=()=>{
             </div>
           </ul>
 
-          <Link to="/" className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <NavLink exact to="/" activeClassName='ActiveTab' className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Home
-          </Link>
+          </NavLink>
           <div className="group block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             <span className="group-hover:text-yellow-300"   onClick={handleAboutOpen}>About NIGST
             <HiChevronRight className={`inline-block h-5 w-5 ml-1 md:hidden  ${!isaboutOpen ? "transform rotate-90" : ""} `}  />            </span>
