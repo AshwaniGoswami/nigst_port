@@ -1,5 +1,5 @@
 
-import { HashRouter as Router, Routes, Route, Link, HashRouter } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, NavLink, HashRouter } from 'react-router-dom'
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
@@ -52,7 +52,7 @@ function App() {
       <HashRouter>
 
         <OpenPageFromTop />
-        <Fixed />
+        <Fixed/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/training' element={<Training />} />

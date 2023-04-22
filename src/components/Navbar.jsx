@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Link, useLocation,NavLink } from 'react-router-dom';
+import { NavLink ,Link, useLocation} from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { HiChevronRight } from "react-icons/hi"
 import { AiOutlineSearch, AiOutlineLogin } from 'react-icons/ai'
@@ -8,9 +8,8 @@ import { MdOutlineAnnouncement } from 'react-icons/md'
 import Searchbar from './Searchbar';
 import { FaTimes } from 'react-icons/fa';
 import './announcement.css'
-import { color, style } from '@mui/system';
 import searchData from '../components/searchdata.json'
-import './activeTabs.css'
+
 
 
 const Navbar = () => {
@@ -198,7 +197,7 @@ const handletrainingToggle=()=>{
             </div>
           </ul>
 
-          <NavLink exact to="/" activeClassName='ActiveTab' className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <NavLink  to="/"  activeStyle={{ color: " #fde047 !important" }} className=" block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Home
           </NavLink>
           <div className="group block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
@@ -319,7 +318,7 @@ const handletrainingToggle=()=>{
           <Link to="/registration" className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Training Registration
           </Link>
-          <Link to="/components/SOI project/soiprojects"  className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
+          <Link to="/components/SOI project/soiprojects" className="block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             SOI Projects
           </Link>
           <Link to="/components/SiteMap/sitemap" className="block md:py-2 mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
