@@ -69,6 +69,15 @@
     .search input{
       width: 200px;
     }
+    .dataResult{
+      width:222px;
+    }
+    .search input {
+      border:1px solid white
+    }
+    .close{
+      color:white;
+    }
    
 
   }

@@ -6,7 +6,7 @@ import { AiOutlineSearch, AiOutlineClose } from 'react-icons/ai'
 function SearchBar({ placeholder, data }) {
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
-
+console.log(data)
   const handleFilter = (event) => {
     const searchWord = event.target.value;
     setWordEntered(searchWord);
@@ -37,17 +37,17 @@ function SearchBar({ placeholder, data }) {
         />
         <div className="py-2 px-2">
           {filteredData.length === 0 ? (
-            <AiOutlineSearch className="text-xl"/>
+            <AiOutlineSearch className="text-xl close" />
           ) : (
-            <AiOutlineClose id="clearBtn" onClick={clearInput} />
+            <AiOutlineClose id="clearBtn" color="red" onClick={clearInput} />
           )}
         </div>
       </div>
-      {filteredData.length != 0 && (
+      {filteredData.length !== 0 && (
         <div className="dataResult">
           {filteredData.slice(0, 15).map((value, key) => {
             return (
-              <a className="dataItem" href={value.link} >
+              <a className="dataItem" href={value.link} key={key} >
                 <p>{value.title} </p>
               </a>
             );

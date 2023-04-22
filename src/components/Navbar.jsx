@@ -9,6 +9,7 @@ import Searchbar from './Searchbar';
 import { FaTimes } from 'react-icons/fa';
 import './announcement.css'
 import { color, style } from '@mui/system';
+import searchData from '../components/searchdata.json'
 
 
 const Navbar = () => {
@@ -153,7 +154,7 @@ const handletrainingToggle=()=>{
       </div>
 
       <div className='md:hidden lg:hidden flex items-center'>
-        <Searchbar />
+        <Searchbar data={searchData} />
         <div className="flex items-center ml-2">
           <Link to='/login' className='flex items-center justify-center'>
             <BsFillPersonFill size='1.5em' color='white' />
