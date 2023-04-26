@@ -1,5 +1,5 @@
 
-import { HashRouter as Router, Routes, Route, NavLink, HashRouter } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
@@ -44,17 +44,18 @@ import SimpleSlider from './components/SOI project/soiprojects';
 import RajBhasha from './components/rajbhasha/rajbhasha';
 import NavigationMenu from './components/SiteMap/sitemap';
 import Citizen from './components/NavComponents/citizencharacter/citizen';
+import Courses from './components/Buttons/Tables/Courses';
 
 
 function App() {
   return (
     <>
-      <HashRouter>
-
+      <Router>
         <OpenPageFromTop />
         <Fixed/>
         <Routes>
           <Route path='/' element={<Home />} />
+
           <Route path='/training' element={<Training />} />
           <Route path='/about/introduction' element={<About />} />
           <Route path='/faculty/geodesy' element={<FacultyGeodesy />} />
@@ -94,13 +95,12 @@ function App() {
           <Route path='/components/rajbhasha/rajbhasha' element={<RajBhasha />} />
           <Route path='/components/SiteMap/sitemap' element={<NavigationMenu />} />
           <Route path='/citizen' element={<Citizen />} />
-
-
+          <Route path='/Courses' element={<Courses />} />
         </Routes>
         <Footer />
         <Copyright />
 
-      </HashRouter>
+      </Router>
     </>
   );
 }

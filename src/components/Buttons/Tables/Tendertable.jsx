@@ -124,8 +124,8 @@ function Tendertable() {
         <td>{tender.description}</td>
           <td>{corrigendum.corrigendum}</td>
           
-          <td>{corrigendum.created_at}</td>
-          <td></td>
+          <td>{tender.start_date}</td>
+        <td>{tender.end_date}</td>
           <td></td>
         </tr>
       ))}
@@ -180,8 +180,8 @@ function Tendertable() {
         <td>{tender.description}</td>
           <td>{corrigendum.corrigendum}</td>
           
-          <td>{corrigendum.created_at}</td>
-          <td></td>
+          <td>{tender.startdate}</td>
+        <td>{tender.enddate}</td>
           <td></td>
         </tr>
       ))}

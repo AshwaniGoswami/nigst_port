@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { NavLink ,Link, useLocation} from 'react-router-dom';
+import { NavLink ,Link, useLocation, HashRouter} from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { HiChevronRight } from "react-icons/hi"
 import { AiOutlineSearch, AiOutlineLogin } from 'react-icons/ai'
@@ -196,10 +196,10 @@ const handletrainingToggle=()=>{
     </li>
             </div>
           </ul>
-
           <NavLink  to="/"  activeStyle={{ color: " #fde047 !important" }} className=" block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             Home
           </NavLink>
+          
           <div className="group block mt-4 md:py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-300 mr-4 text-base">
             <span className="group-hover:text-yellow-300"   onClick={handleAboutOpen}>About NIGST
             <HiChevronRight className={`inline-block h-5 w-5 ml-1 md:hidden  ${!isaboutOpen ? "transform rotate-90" : ""} `}  />            </span>
@@ -310,7 +310,7 @@ const handletrainingToggle=()=>{
 
 
 
-              <Link to="/login" className="block px-4 py-2 text-white hover:text-yellow-300">Courses</Link>
+              <Link to="/Courses" className="block px-4 py-2 text-white hover:text-yellow-300">Courses</Link>
               <Link to="/login" className="block px-4 py-2 text-white hover:text-yellow-300">Course Enrollment</Link>
               <Link to="/feesandpayment" className="block px-4 py-2 text-white hover:text-yellow-300">Fee and Payment</Link>
             </div>
