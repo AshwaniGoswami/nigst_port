@@ -23,6 +23,7 @@ o	Following notes to be added at the bottom of the calendar:
            
     <table>
       <thead>
+       
         <tr>
           <th>Sl. No.</th>
           <th>Course No.</th>
@@ -33,6 +34,9 @@ o	Following notes to be added at the bottom of the calendar:
           <th>Duration/Tuition Fee (per trainee)</th>
           <th>Course Capacity</th>
           <th>Eligibility Criteria (Applicable to extra-departmental candidates)</th>
+        </tr>
+        <tr>
+        <th colspan="9" style={{ textAlign: "center", backgroundColor: "#ffcb00" }}>Basic Courses</th>
         </tr>
       </thead>
       <tbody>
@@ -51,28 +55,7 @@ o	Following notes to be added at the bottom of the calendar:
 b) The academic qualification may be relaxed based on the experience in the Geospatial field on case-to-case basis.
 </td>
         </tr>
-        <tr>
-          <td>2</td>
-          <td>202</td>
-          <td>ECE202</td>
-          <td>2023B</td>
-          <td>Electronic Circuits</td>
-          <td>2023-06-01</td>
-          <td>$600</td>
-          <td>25</td>
-          <td>Minimum qualification: B.Tech in ECE</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>303</td>
-          <td>ME303</td>
-          <td>2023C</td>
-          <td>Thermodynamics</td>
-          <td>2023-07-01</td>
-          <td>$700</td>
-          <td>20</td>
-          <td>Minimum qualification: B.Tech in Mechanical Engineering</td>
-        </tr>
+       
       </tbody>
     </table>
 
