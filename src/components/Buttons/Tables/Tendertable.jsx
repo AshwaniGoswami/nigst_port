@@ -70,6 +70,15 @@ function Tendertable() {
       .catch(error => console.error(error));
   }, []);
 
+  const [archiveData, setArchiveData]= useState([]);
+
+  useEffect(() => {
+    fetch('https://nigst.onrender.com/tender/view_archive')
+      .then(response => response.json())
+      .then(data => setArchiveData(data))
+      .catch(error => console.error(error));
+  }, []);
+
   return (
     <div>
       <button className="togglebtn" onClick={handleButtonClick}>{buttonText}</button>
@@ -95,19 +104,38 @@ function Tendertable() {
             </thead>
 
             <tbody className="main-wrapper" id="Names">
-            {tenderData.map((tender, index) => (
-          <tr key={index}>
-            <td>{index + 1}</td>
-            <td>{tender.title}</td>
-            <td>{tender.tender_ref_no}</td>
-            <td>{tender.description}</td>
-            <td>{tender.corrigenda.length}</td>
-            <td>{tender.start_date}</td>
-            <td>{tender.end_date}</td>
-            <td>{tender.corrigenda.length > 0 ? 'Yes' : 'No'}</td>
-          </tr>
-        ))}
-            </tbody>
+  {tenderData.map((tender, index) => (
+    <React.Fragment key={index}>
+      <tr>
+        <td>{index + 1}</td>
+        <td>{tender.title}</td>
+        <td>{tender.tender_ref_no}</td>
+        <td>{tender.description}</td>
+        <td></td>
+        <td>{tender.start_date}</td>
+        <td>{tender.end_date}</td>
+        <td>{tender.corrigenda.length > 0 ? 'Yes' : 'No'}</td>
+      </tr>
+      {tender.corrigenda.map((corrigendum, index) => (
+        <tr key={index}>
+          <td></td>
+           <td>{tender.title}</td>
+        <td>{tender.tender_ref_no}</td>
+        <td>{tender.description}</td>
+          <td>{corrigendum.corrigendum}</td>
+          
+          <td>{corrigendum.created_at}</td>
+          <td></td>
+          <td></td>
+        </tr>
+      ))}
+    </React.Fragment>
+  ))}
+</tbody>
+
+
+
+
           </table>
         </div></div>}
       {showDiv2 && <div>
@@ -132,117 +160,34 @@ function Tendertable() {
             </thead>
 
             <tbody className="main-wrapper" id="names">
-              <tr>
-                <td>2</td>
-                <td>Notice 4</td>
-                <td>98163135</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>lonec varius justo sit amet sapien lobortis consectetur.</td>
-                <td>2023-02-25</td>
-                <td>2023-03-27</td>
-                <td><a href="https://www.google.com" target="_blank" rel="noreferrer">google.com</a></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Notice 3</td>
-                <td>98163134</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
-                <td>2023-02-26</td>
-                <td>2023-03-28</td>
-                <td><a href="https://www.google.com" target="_blank" rel="noreferrer">google.com</a></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Notice 3</td>
-                <td>98163134</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
-                <td>2023-02-26</td>
-                <td>2023-03-28</td>
-                <td><a href="https://www.google.com" target="_blank" rel="noreferrer">google.com</a></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Notice 3</td>
-                <td>98163134</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
-                <td>2023-02-26</td>
-                <td>2023-03-28</td>
-                <td><a href="https://www.google.com" target="_blank" rel="noreferrer">google.com</a></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Notice 3</td>
-                <td>98163134</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
-                <td>2023-02-26</td>
-                <td>2023-03-28</td>
-                <td><a href="https://www.google.com" target="_blank" rel="noreferrer">google.com</a></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Notice 3</td>
-                <td>98163134</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
-                <td>2023-02-26</td>
-                <td>2023-03-28</td>
-                <td><a href="https://www.google.com" target="_blank" rel="noreferrer">google.com</a></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Notice 3</td>
-                <td>98163134</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
-                <td>2023-02-26</td>
-                <td>2023-03-28</td>
-                <td><a href="https://www.google.com" target="_blank" rel="noreferrer">google.com</a></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Notice 3</td>
-                <td>98163134</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
-                <td>2023-02-26</td>
-                <td>2023-03-28</td>
-                <td><a href="https://www.google.com" target="_blank" rel="noreferrer">google.com</a></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Notice 3</td>
-                <td>98163134</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
-                <td>2023-02-26</td>
-                <td>2023-03-28</td>
-                <td><a href="https://www.google.com" target="_blank" rel="noreferrer">google.com</a></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Notice 3</td>
-                <td>98162134</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
-                <td>2023-02-26</td>
-                <td>2023-03-28</td>
-                <td><a href="https://www.google.com" target="_blank" rel="noreferrer">google.com</a></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Notice 3</td>
-                <td>98163134</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Donec varius justo sit amet sapien lobortis consectetur.</td>
-                <td>2023-02-26</td>
-                <td>2023-03-28</td>
-                <td><a href="https://www.google.com" target="_blank" rel="noreferrer">google.com</a></td>
-              </tr>
-            </tbody>
+  {archiveData.data.map((tender, index) => (
+    <React.Fragment key={index}>
+      <tr>
+        <td>{index + 1}</td>
+        <td>{tender.title}</td>
+        <td>{tender.tender_ref_no}</td>
+        <td>{tender.description}</td>
+        <td></td>
+        <td>{tender.startdate}</td>
+        <td>{tender.enddate}</td>
+        <td>{tender.corrigendum.length > 0 ? 'Yes' : 'No'}</td>
+      </tr>
+      {tender.corrigendum.map((corrigendum, index) => (
+        <tr key={index}>
+          <td></td>
+           <td>{tender.title}</td>
+        <td>{tender.tender_ref_no}</td>
+        <td>{tender.description}</td>
+          <td>{corrigendum.corrigendum}</td>
+          
+          <td>{corrigendum.created_at}</td>
+          <td></td>
+          <td></td>
+        </tr>
+      ))}
+    </React.Fragment>
+  ))}
+</tbody>
           </table>
         </div>
       </div>}
