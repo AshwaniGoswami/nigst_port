@@ -68,6 +68,10 @@ const Home = () => {
       {/* <HashScroll hash="#hash-section-1"> */}
       <About />
       {/* </HashScroll> */}
+      <div>
+
+      </div>
+      <h2 className='font-bold text-lg text-center'>SOI Projects</h2>
       <SCarousel />
       </div>
 
