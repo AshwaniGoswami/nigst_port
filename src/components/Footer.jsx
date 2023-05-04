@@ -85,7 +85,7 @@ const [visitor, setVisitor] = useState('')
 
 useEffect(() => {
   const interval = setInterval(() => {
-    axios.get('https://ec2-18-183-155-70.ap-northeast-1.compute.amazonaws.com/viscount')
+    axios.get('http://ec2-13-127-162-89.ap-south-1.compute.amazonaws.com/viscount')
       .then(response => {
         const newCount = response.data;
         if (newCount !== visitor) {
