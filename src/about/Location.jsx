@@ -2,7 +2,7 @@ import React from 'react'
 
 const Location = () => {
   return (
-    <div className="content-container">
+    <div className="flex-row">
     <div className="address font-semibold text-[24px] m-5 text-justify">
       National Institute of Geo-Informatics Science and Technology
       <br />

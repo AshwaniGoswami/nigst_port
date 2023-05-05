@@ -3,8 +3,10 @@ import React from 'react'
 
 function Websitepolicy() {
     return (
+      <div>
+      <div class="heading"><h2>Website Policy</h2></div>
         <div class="content-container">
-        <div class="heading"><h2>Website Policy</h2></div>
+        
     
         <div>
           
@@ -53,6 +55,7 @@ function Websitepolicy() {
         </div>
       </div>
       </div>
+    </div>
     </div>
     )
 }

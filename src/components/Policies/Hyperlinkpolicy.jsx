@@ -3,8 +3,10 @@ import React from 'react'
 
 const Hyperlinkpolicy = () => {
   return (
+    <div>
+    <div class="heading"><h2>Hyperlink Policy</h2></div>
     <div class="content-container">
-      <div class="heading"><h2>Hyperlink Policy</h2></div>
+      
 
       <div>
 
@@ -15,6 +17,7 @@ const Hyperlinkpolicy = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }

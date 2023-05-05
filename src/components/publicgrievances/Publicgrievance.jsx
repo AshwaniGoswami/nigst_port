@@ -3,10 +3,11 @@ import './Publicgrievance.css'
 
 const Publicgrievance = () => {
     return (
-        <div class="content-container">
-            <div class="heading-container">
+        <div class="heading-container">
                 <h4>Public Grievence</h4>
-            </div>
+            
+        <div class="content-container">
+            
 
             <div class="rti-container">
                 <div class="hindi-rti">
@@ -43,6 +44,7 @@ const Publicgrievance = () => {
 
                 </div>
             </div>
+        </div>
         </div>
     )
 }

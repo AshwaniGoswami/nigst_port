@@ -1,10 +1,11 @@
 import React from 'react'
-import './privacypolicy.css'
+import './Privacypolicy.css'
 
 const Privacypolicy = () => {
   return (
+    <div><div class="heading"><h2>Privacy Policy</h2></div>
     <div class="content-container">
-    <div class="heading"><h2>Privacy Policy</h2></div>
+   
 
     <div>
       
@@ -37,6 +38,7 @@ const Privacypolicy = () => {
     </div>
   </div>
   </div>
+</div>
 </div>
   )
 }

@@ -18,8 +18,15 @@
 .faq-content-wrapper .faq h2{
     margin: 20px 0px 10px 0px;
     padding: 0px;
-    font-weight: 400;
+    font-weight: 600;
 }
 .faq p{
     color: #1b3058;
+}
+@media  (max-width: 768px) {
+    div.faq{
+        padding: 0px 5px 0px 5px;
+        margin: 0px auto;
+    }
+   
 }

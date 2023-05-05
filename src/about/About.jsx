@@ -4,6 +4,11 @@ import image1 from '../assests/Home Banner NIGST.png';
 import image2 from '../assests/IMG-20230225-WA0070.jpg';
 import image3 from '../assests/Home Banner NIGST.png';
 import imageHead from '../assests/Dr. Srivari Chandrasekhar.jpg'
+import NIGST from '../assests/NIGST Org Chart.svg'
+import NIGST1 from '../assests/NIGST Org Chart.svg'
+import Modal from 'react-modal';
+import { FaTimes } from 'react-icons/fa';
+
 
 //static for showing in page
 const StaticImages = [
@@ -97,20 +102,68 @@ const About = () => {
         }
         setIsEnglish(!isEnglish);
     };
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [modalIsOpen1, setModalIsOpen1] = useState(false);
+    const modalStyle = {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        backgroundColor: 'rgb(255,255,255)',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        zIndex: 78,
+    };
+    const closeButtonStyle = {
+        position: 'absolute',
+        top: '10px',
+        right: '10px',
+        padding: '5px',
+        backgroundColor: 'transparent',
+        border: 'none',
+
+        cursor: 'pointer',
+        color: '#000000',
+    };
+    const modalStyle1 = {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        backgroundColor: 'rgb(255,255,255)',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        zIndex: 78,
+    };
+    const closeButtonStyle1 = {
+        position: 'absolute',
+        top: '10px',
+        right: '10px',
+        padding: '5px',
+        backgroundColor: 'transparent',
+        border: 'none',
+
+        cursor: 'pointer',
+        color: '#000000',
+    };
 
     return (
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8 m-0 md:m-8 '>
-            <div className='bg-[#f5eeee76] p-8 rounded-md  leading-normal'>
-                <h1 className='font-bold text-lg pt-6 mt-10 mb-4'>Message From Head</h1>
-                <img src={MessageFromHead.image} alt="Head" className='rounded-md ' />
-                <span className='font-semibold'>{MessageFromHead.name}</span>
+            <div className='bg-[#f5eeee76] p-8 rounded-md flex flex-col items-center leading-normal'>
+                <h1 className='font-bold text-center text-lg pt-6 mt-10 mb-4'>Message From Head</h1>
+                <img src={MessageFromHead.image} alt="Head" className='rounded-md justify-self-center' />
+                <span className='font-semibold text-center'>{MessageFromHead.name}</span>
                 <p className='text-justify '>{MessageFromHead.description}</p>
             </div>
             <div className=' bg-[#f5eeee76] p-6 rounded-md leading-normal md:col-span-2 '>
                 <button onClick={handleTranslate} className='bg-blue-900 rounded-md p-2 text-white float-right   hover:bg-blue-700' >{isEnglish ? 'हिंदी' : 'English'}</button>
                 {isEnglish ? (
-                    <div className='english text-justify p-6 md:p-16 lg:p-24'>
-                        <h1 className='font-bold text-lg pt-6 mt-10 mb-4'>{InformationDiv.headingEnglish}</h1>
+                    <div className='english text-justify p-0 md:p-0 lg:p-24'>
+                        <h1 className='font-bold text-lg pt-0 mt-0 mb-4'>{InformationDiv.headingEnglish}</h1>
 
                         {
                             InformationDiv.englishPara.map((para, index) => (
@@ -118,17 +171,37 @@ const About = () => {
                             ))
                         }
 
-                        <button className=' bg-blue-500 p-2 m-3 rounded-md'>Click to View Structure of NIGST</button>
+                        <div><button className=' bg-blue-500 p-2 m-3 rounded-md' onClick={() => setModalIsOpen1(true)}>Click to View Structure of NIGST</button>
+                            {modalIsOpen1 && (
+                                <div style={modalStyle1}>
+                                    <div style={{ width: '100%', height: '100%' }} >
+                                        <img src={NIGST1} alt="NIGST Structure" style={{ width: '2200px', height: '100%' }} />
+                                        <button style={closeButtonStyle1} onClick={() => setModalIsOpen1(false)}> <FaTimes size={30} /></button>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+
                     </div>
                 ) : (
-                    <div className='hindi leading-relaxed text-justify p-6 md:p-16 lg:p-24'>
-                        <h1 className='font-bold text-lg pt-6 mt-10 mb-4'>{InformationDiv.headingHindi}</h1>
+                    <div className='hindi leading-relaxed text-justify p-0 md:p-0 lg:p-24'>
+                        <h1 className='font-bold text-lg pt-0 mt-0 mb-3'>{InformationDiv.headingHindi}</h1>
                         {
                             InformationDiv.contentHindi.map((para, index) => (
                                 <p key={index}>{para}</p>
                             ))
                         }
-                        <button className='bg-blue-500 p-2 m-3 rounded-md' >Click to View Structure of NIGST</button>
+                        <div><button className='bg-blue-500 p-2 m-3 rounded-md' onClick={() => setModalIsOpen(true)}>Click to View Structure of NIGST</button>
+                            {modalIsOpen && (
+                                <div style={modalStyle}>
+                                    <div style={{ width: '100%', height: '100%' }}>
+                                        <img src={NIGST} alt="NIGST Structure" style={{ width: '100%', height: '100%' }} />
+                                        <button style={closeButtonStyle} onClick={() => setModalIsOpen(false)}> <FaTimes size={30} /></button>
+                                    </div>
+                                </div>
+                            )}
+
+                        </div>
                     </div>
                 )}
 

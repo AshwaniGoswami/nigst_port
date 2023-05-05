@@ -1,45 +1,61 @@
-import React, { useState } from 'react'
-import {AiOutlineSearch} from 'react-icons/ai'
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState } from "react";
+import "./Searchbar.css";
+import { AiOutlineSearch, AiOutlineClose } from 'react-icons/ai'
 
-const Searchbar = () => {
-    const [searchTerm, setSearchTerm] = useState('');
-    const location = useLocation();
-  
-    const handleSearchSubmit = (e) => {
-      e.preventDefault();
-      const encodedSearchTerm = encodeURIComponent(searchTerm);
-      setSearchTerm('');
-  
-      const destinationUrl = `/${encodedSearchTerm}`;
-  
-      window.location.href = destinationUrl;
-  
-      setTimeout(() => {
-        if (location.pathname === '/search') {
-          window.location.reload();
-        }
-      }, 100);
-    };
-  
-    const handleSearchChange = (e) => {
-      setSearchTerm(e.target.value);
-    };
+
+function SearchBar({ placeholder, data }) {
+  const [filteredData, setFilteredData] = useState([]);
+  const [wordEntered, setWordEntered] = useState("");
+console.log(data)
+  const handleFilter = (event) => {
+    const searchWord = event.target.value;
+    setWordEntered(searchWord);
+    const newFilter = data.filter((value) => {
+      return value.title.toLowerCase().includes(searchWord.toLowerCase());
+    });
+
+    if (searchWord === "") {
+      setFilteredData([]);
+    } else {
+      setFilteredData(newFilter);
+    }
+  };
+
+  const clearInput = () => {
+    setFilteredData([]);
+    setWordEntered("");
+  };
+
   return (
-    <form onSubmit={handleSearchSubmit} className="flex items-center relative flex-grow">
-    <input
-      type="search"
-      name="search"
-      placeholder="Search here.."
-      className="py-0.5 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-transparent w-full"
-      value={searchTerm}
-      onChange={handleSearchChange}
-    />
-    <button type="submit" className="absolute right-2 h-full">
-      <AiOutlineSearch />
-    </button>
-  </form>
-  )
+    <div className="search">
+      <div className="searchInputs">
+        <input
+          type="text"
+          placeholder={placeholder}
+          value={wordEntered}
+          onChange={handleFilter}
+        />
+        <div className="py-2 px-2">
+          {filteredData.length === 0 ? (
+            <AiOutlineSearch className="text-xl close" />
+          ) : (
+            <AiOutlineClose id="clearBtn" color="red" onClick={clearInput} />
+          )}
+        </div>
+      </div>
+      {filteredData.length !== 0 && (
+        <div className="dataResult">
+          {filteredData.slice(0, 15).map((value, key) => {
+            return (
+              <a className="dataItem" href={value.link} key={key} >
+                <p>{value.title} </p>
+              </a>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
 }
 
-export default Searchbar
+export default SearchBar;
